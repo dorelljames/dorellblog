@@ -57,16 +57,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Dorell's Blog`,
+        short_name: `d||ell`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#134896`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
     },
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
