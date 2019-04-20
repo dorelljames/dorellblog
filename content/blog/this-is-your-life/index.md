@@ -39,7 +39,7 @@ format: image
 
 [<img src="https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/08/life-is-short.jpg?resize=334%2C593" alt="life-is-short" width="334" height="593" class="alignleft size-full wp-image-898" srcset="https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/08/life-is-short.jpg?w=334 334w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/08/life-is-short.jpg?resize=260%2C461 260w" sizes="(max-width: 334px) 100vw, 334px" data-recalc-dims="1" />][1]
 
-Do what you love, and do it often. Life is short for you to live on someone else&#8217;s life. Of course, quitting your job without a plan isn&#8217;t wise, but overall, agree with this. Be happy and contented in the long run. That&#8217;s life, and your life matters. <span class="wp-font-emots-emo-happy"></span>
+Do what you love, and do it often. Life is short for you to live on someone else's life. Of course, quitting your job without a plan isn't wise, but overall, agree with this. Be happy and contented in the long run. That's life, and your life matters. <span class="wp-font-emots-emo-happy"></span>
 
 &#8211; Props to <a href="https://plus.google.com/107415989115407435914" target="_blank">Scott Buehler</a> on Google+.
 

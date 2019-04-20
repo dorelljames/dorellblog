@@ -24,7 +24,7 @@ tags:
   - mailtrap
 ---
 
-So today in my usual development job, I stumbled on an **error 550 (too many emails per second)** using [**Mailtrap**][1] because I&#8217;m sending a lot of emails at once (probably 50 in a second). This most probably won&#8217;t happen on your mail provider but sure Mailtrap did put a limit on this and that you can only **send 3 emails per second**. See below:
+So today in my usual development job, I stumbled on an **error 550 (too many emails per second)** using [**Mailtrap**][1] because I'm sending a lot of emails at once (probably 50 in a second). This most probably won't happen on your mail provider but sure Mailtrap did put a limit on this and that you can only **send 3 emails per second**. See below:
 
 ![MailTrap Error Image](./mailtrap-emails-per-second.png)
 
@@ -52,6 +52,6 @@ transporter = nodemailer.createTransport({
 })
 ```
 
-That&#8217;s it folks. Hopefully you save yourself some time solving your way out that _error 550 (too many emails sent)_ using Mailtrap.
+That's it folks. Hopefully you save yourself some time solving your way out that _error 550 (too many emails sent)_ using Mailtrap.
 
 [1]: http://mailtrap.io

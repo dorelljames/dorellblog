@@ -26,13 +26,13 @@ tags:
   - valet driver
 ---
 
-So today I&#8217;ve stumbled myself working with <a href="http://www.abantecart.com/" target="_blank">AbanteCart</a> on my dev machine running El Capitan OS X. I&#8217;ve been using <a href="https://github.com/laravel/valet" target="_blank">Laravel Valet</a> since it was initially released due to how it made things so easy on my end. If you&#8217;re working on a WordPress site and other PHP-based apps, I encourage you to check it out and spend a good 20 minutes to get it up and running. I promise, it&#8217;ll make your lives easier as a developer. <span class="wp-font-emots-emo-happy"></span>
+So today I've stumbled myself working with <a href="http://www.abantecart.com/" target="_blank">AbanteCart</a> on my dev machine running El Capitan OS X. I've been using <a href="https://github.com/laravel/valet" target="_blank">Laravel Valet</a> since it was initially released due to how it made things so easy on my end. If you're working on a WordPress site and other PHP-based apps, I encourage you to check it out and spend a good 20 minutes to get it up and running. I promise, it'll make your lives easier as a developer. <span class="wp-font-emots-emo-happy"></span>
 
-But hey, let&#8217;s go back. I got halted by the fact that I need to run AbanteCart &#8211; an opensource eCommerce platform that&#8217;s really promising as well. Anyhow, let&#8217;s cut the chase, valet doesn&#8217;t support AbanteCart out of the box and I was left with no choice but to make things work.
+But hey, let's go back. I got halted by the fact that I need to run AbanteCart &#8211; an opensource eCommerce platform that's really promising as well. Anyhow, let's cut the chase, valet doesn't support AbanteCart out of the box and I was left with no choice but to make things work.
 
-Fast forward minutes later, I have finally created a custom driver for AbanteCart and if you&#8217;re on the same boat like me, you can use my work below to save time and don&#8217;t bother yourself tinkering and tinkering and end up worst wasting your time.
+Fast forward minutes later, I have finally created a custom driver for AbanteCart and if you're on the same boat like me, you can use my work below to save time and don't bother yourself tinkering and tinkering and end up worst wasting your time.
 
-Here&#8217;s <a href="https://gist.github.com/dorelljames/2325b191dd050c67a105bd7235befd99" target="_blank">a link to the gist that you can grab at GitHub</a>. <span class="wp-font-emots-emo-happy"></span>
+Here's <a href="https://gist.github.com/dorelljames/2325b191dd050c67a105bd7235befd99" target="_blank">a link to the gist that you can grab at GitHub</a>. <span class="wp-font-emots-emo-happy"></span>
 
 And oh before I forgot, just save this file to **~/.valet/Drivers** in your machine.
 

@@ -16,7 +16,7 @@ tags:
 
 So finally I have [WordPress Messenger Customer Chat Plugin (WPMCCP)][1] listed in WordPress Plugins directory. Weeee. Awesome and really cool. <span class="wp-font-emots-emo-happy"></span>
 
-If you&#8217;re not a fan of using WordPress plugins, here&#8217;s [how to add Messenger Customer Chat Plugin on your WordPress site][2].
+If you're not a fan of using WordPress plugins, here's [how to add Messenger Customer Chat Plugin on your WordPress site][2].
 
 And now, below is a short video of how to install and quickly set it up on your site. <span class="wp-font-emots-emo-happy"></span>
 

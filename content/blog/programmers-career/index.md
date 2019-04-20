@@ -27,4 +27,6 @@ categories:
 format: quote
 ---
 
-I stumbled on this quote last night while I was browsing premium themes. Now, you might not agree with me but I believe it&#8217;s true. I&#8217;ll just leave it here and maybe you can and try to see if this goes the same for you &#8211; developers / programmers out there? <span class="wp-font-emots-emo-happy"></span>
+I stumbled on this quote last night while I was browsing premium themes. Now, you might not agree with me but I believe it's true. I'll just leave it here and maybe you can and try to see if this goes the same for you &#8211; developers / programmers out there? <span class="wp-font-emots-emo-happy"></span>
+
+> I think most programmers spend the first 5 years of their career mastering complexity and the rest of their lives learning simplicity

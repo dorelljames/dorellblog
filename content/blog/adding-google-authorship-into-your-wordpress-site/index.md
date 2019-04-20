@@ -39,13 +39,13 @@ tags:
   - wordpress
 ---
 
-Based from Craig Fifield&#8217;s article on <a href="http://www.craigfifield.com/google-authorship-wordpress.htm" target="_blank" rel="nofollow">How-To Add Google Authorship To WordPress Correctly</a> I was able to put a better way (hopefully) of doing the said thing.
+Based from Craig Fifield's article on <a href="http://www.craigfifield.com/google-authorship-wordpress.htm" target="_blank" rel="nofollow">How-To Add Google Authorship To WordPress Correctly</a> I was able to put a better way (hopefully) of doing the said thing.
 
 The catch here is not to waste your time downloading plugins for you to easily integrate the <a href="http://www.google.com/insidesearch/features/authorship/" target="_blank">Google Authorship</a> recently from Google.
 
-Here&#8217;s how you do it in as easy as 1, 2, 3&#8230;
+Here's how you do it in as easy as 1, 2, 3&#8230;
 
-1.) Open your theme&#8217;s **functions.php** file. If you&#8217;re using a child theme, use that one (_definitely better_).
+1.) Open your theme's **functions.php** file. If you're using a child theme, use that one (_definitely better_).
 
 2.) Add the following code below:
 

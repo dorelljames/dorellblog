@@ -27,20 +27,20 @@ thb_meta_bigfoot_post_related_thumb:
   - 1
 categories:
   - Personal
-
 ---
-Okay, I find it hard to sleep without giving my opinion with <a href="https://www.facebook.com/TheWalkingDeadAMC?group_id=0" data-hovercard="/ajax/hovercard/page.php?id=110475388978628&extragetparams=%7B%22group_id%22%3A0%7D">The Walking Dead</a>&#8216;s last episode after watching this just this past 12 AM. 
 
-**_&#8220;Episode 15 is the most epic episode this entire Season 3.&#8221;_** 
+Okay, I find it hard to sleep without giving my opinion with <a href="https://www.facebook.com/TheWalkingDeadAMC?group_id=0" data-hovercard="/ajax/hovercard/page.php?id=110475388978628&extragetparams=%7B%22group_id%22%3A0%7D">The Walking Dead</a>'s last episode after watching this just this past 12 AM.
 
-**Merle** &#8211; There&#8217;s nothing but I feel pity on him. He maybe seen as one of the bad characters in this series but he just turn it all in a sudden if you&#8217;re able to watch this episode. I admire how he was able to choose the right thing before it&#8217;s too late; freeing up Michonne. He was just pushed by the uncertainty of acceptance. He tried to prove himself but ended up not well in the hands of the governor; beat up and killed with a gunshot. You&#8217;re the man I must say. Cheers&#8230; 
+**_&#8220;Episode 15 is the most epic episode this entire Season 3.&#8221;_**
 
-**Daryl** &#8211; All he was looking for is his brother to come back; the way he was before. Merle as well Daryl love each other so much but it&#8217;s too late when Daryl was able to track down Merle. After Merle being killed by the Governor, he turned and faced Daryl. Crying hard, couldn&#8217;t accept things and couldn&#8217;t believe the reality before his weary eyes. He then killed his turned brother. Epic. Now, on the upcoming finale, he&#8217;s not seen able to come back and the rest of the team leaving the prison. <span class="wp-font-emots-emo-unhappy"></span> 
+**Merle** &#8211; There's nothing but I feel pity on him. He maybe seen as one of the bad characters in this series but he just turn it all in a sudden if you're able to watch this episode. I admire how he was able to choose the right thing before it's too late; freeing up Michonne. He was just pushed by the uncertainty of acceptance. He tried to prove himself but ended up not well in the hands of the governor; beat up and killed with a gunshot. You're the man I must say. Cheers&#8230;
 
-**Rick** &#8211; I don&#8217;t want to blame you for you were just played well by the circumstances around you but then you were the sole reason why all those things happened. And now you can never turn back things again. I&#8217;m sorry. In the end, I&#8217;m glad you made up your mind and stand yourself in front of the group saying how you were really sorry about the plan of sacrificing Michonne. You got the balls man but still I salute Merle more over you. <span class="wp-font-emots-emo-tongue"></span> 
+**Daryl** &#8211; All he was looking for is his brother to come back; the way he was before. Merle as well Daryl love each other so much but it's too late when Daryl was able to track down Merle. After Merle being killed by the Governor, he turned and faced Daryl. Crying hard, couldn't accept things and couldn't believe the reality before his weary eyes. He then killed his turned brother. Epic. Now, on the upcoming finale, he's not seen able to come back and the rest of the team leaving the prison. <span class="wp-font-emots-emo-unhappy"></span>
 
-And with the upcoming finale. Good luck. Hope we can sleep well unlike this very day I wrote something like this. This isn&#8217;t normal but sorry I just really feel the urge. Sorry for my grammar in this post. 
+**Rick** &#8211; I don't want to blame you for you were just played well by the circumstances around you but then you were the sole reason why all those things happened. And now you can never turn back things again. I'm sorry. In the end, I'm glad you made up your mind and stand yourself in front of the group saying how you were really sorry about the plan of sacrificing Michonne. You got the balls man but still I salute Merle more over you. <span class="wp-font-emots-emo-tongue"></span>
 
-FTW #TheWalkingDead 
+And with the upcoming finale. Good luck. Hope we can sleep well unlike this very day I wrote something like this. This isn't normal but sorry I just really feel the urge. Sorry for my grammar in this post.
+
+FTW #TheWalkingDead
 
 Now I think I could sleep well now&#8230; <span class="wp-font-emots-emo-happy"></span>

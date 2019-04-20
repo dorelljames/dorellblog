@@ -4,7 +4,9 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import moment from "moment"
 import { rhythm } from "../utils/typography"
+import { formatReadingTime } from "../utils/helpers"
 
 class BlogIndex extends React.Component {
   render() {
@@ -38,7 +40,11 @@ class BlogIndex extends React.Component {
                   display: "inline-block",
                 }}
               >
-                {node.frontmatter.date}
+                {moment(node.frontmatter.date).fromNow()}
+              </small>{" "}
+              &middot;{" "}
+              <small>
+                <em>{formatReadingTime(node.timeToRead)}</em>
               </small>
               <p
                 dangerouslySetInnerHTML={{
@@ -62,13 +68,17 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { draft: { ne: true } } }
+    ) {
       edges {
         node {
           excerpt
           fields {
             slug
           }
+          timeToRead
           frontmatter {
             date
             title

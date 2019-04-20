@@ -5,22 +5,6 @@ type: post
 date: 2017-11-30T03:38:12+00:00
 url: /web-development/adding-messenger-customer-chat-plugin-wordpress-site/
 featured_image: /wp-content/uploads/2017/11/dorell-fb-messenger-1.png
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 3
-thb_meta_bigfoot_post_related_thumb:
-  - 1
-ampforwp-amp-on-off:
-  - default
-ampforwp-redirection-on-off:
-  - enable
 categories:
   - Web Development
 tags:
@@ -34,15 +18,15 @@ Facebook recently made available in open beta their [Messenger Customer Chat Plu
 
 > Are you interested in using a WordPress Plugin on this?
 >
-> If yes, search <a style="color: #fff;" href="https://wordpress.org/plugins/wp-messenger-customer-chat/">WPMCCP</a> at WordPress Plugins. Activate, and then follow the instructions. <a style="color: #fff;" href="http://dorellwp.localhost/personal/wordpress-messenger-customer-chat-plugin-installation/">Watch how-to video here</a>.
+> If yes, search <a href="https://wordpress.org/plugins/wp-messenger-customer-chat/">WPMCCP</a> at WordPress Plugins. Activate, and then follow the instructions. <a href="/wordpress-messenger-customer-chat-plugin-installation/">Watch how-to video here</a>.
 >
 > NOTE: If you use this plugin, skip the guide below and/or undo what you did as per this guide.
 
 But how do you integrate this into your WordPress site? Of course, there will be probably a lot of plugins created by now to do that easily but why not do it yourself for such a simple thing?
 
-Here&#8217;s how you do it in as easy as 1, 2, 3&#8230;
+Here's how you do it in as easy as 1, 2, 3&#8230;
 
-1.) Let&#8217;s look up your **Facebook Page ID** which we need in Step 2. For this, let&#8217;s use a free service at <a href="https://findmyfbid.in/" target="_blank" rel="noopener">Find Your Facebook ID</a> and paste your Facebook Page URL.
+1.) Let's look up your **Facebook Page ID** which we need in Step 2. For this, let's use a free service at <a href="https://findmyfbid.in/" target="_blank" rel="noopener">Find Your Facebook ID</a> and paste your Facebook Page URL.
 
 E.g.: https://www.facebook.com/pg/iamDJBot.
 
@@ -54,13 +38,13 @@ Alternatively, you can go to your **Facebook Page** > **About** and scroll down 
 
  <img class="alignone size-full wp-image-1826" src="https://i1.wp.com/dorellwp.localhost//wp-content/uploads/2017/11/Screen-Shot-2017-11-30-at-11.26.41-AM.png?resize=1051%2C607" alt="" width="1051" height="607" srcset="https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/Screen-Shot-2017-11-30-at-11.26.41-AM.png?w=1051 1051w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/Screen-Shot-2017-11-30-at-11.26.41-AM.png?resize=300%2C173 300w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/Screen-Shot-2017-11-30-at-11.26.41-AM.png?resize=768%2C444 768w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/Screen-Shot-2017-11-30-at-11.26.41-AM.png?resize=260%2C150 260w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/Screen-Shot-2017-11-30-at-11.26.41-AM.png?resize=360%2C208 360w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/Screen-Shot-2017-11-30-at-11.26.41-AM.png?resize=560%2C323 560w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/Screen-Shot-2017-11-30-at-11.26.41-AM.png?resize=760%2C439 760w" sizes="(max-width: 1051px) 100vw, 1051px" data-recalc-dims="1" />
 
-2.) Add your website&#8217;s domain to **Whitelisted Domains** on your Facebook Page. Go to your **Facebook Page** > **Settings** > **Messenger Platform** then scroll below and find **Whitelisted Domains**.
+2.) Add your website's domain to **Whitelisted Domains** on your Facebook Page. Go to your **Facebook Page** > **Settings** > **Messenger Platform** then scroll below and find **Whitelisted Domains**.
 
 E:g: http://dorellwp.localhost
 
  <img class="alignnone size-full wp-image-1845" src="https://i1.wp.com/dorellwp.localhost//wp-content/uploads/2017/11/messenger-whitelist-domain.png?resize=1040%2C472" alt="" width="1040" height="472" srcset="https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/messenger-whitelist-domain.png?w=1040 1040w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/messenger-whitelist-domain.png?resize=300%2C136 300w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/messenger-whitelist-domain.png?resize=768%2C349 768w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/messenger-whitelist-domain.png?resize=260%2C118 260w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/messenger-whitelist-domain.png?resize=360%2C163 360w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/messenger-whitelist-domain.png?resize=560%2C254 560w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2017/11/messenger-whitelist-domain.png?resize=760%2C345 760w" sizes="(max-width: 1040px) 100vw, 1040px" data-recalc-dims="1" />
 
-3.) Open your theme&#8217;s **functions.php** file. If you&#8217;re using a child theme, use that one (_definitely better_).
+3.) Open your theme's **functions.php** file. If you're using a child theme, use that one (_definitely better_).
 
 In WordPress sidebar menu, go to **Appearance** > **Editor**. Make sure that your **active theme** is selected. Then, locate the **functions.php** file on the right side and click that.
 
@@ -82,7 +66,7 @@ In WordPress sidebar menu, go to **Appearance** > **Editor**. Make sure that you
 
     // DO NOT INSERT CODE HERE
 
-**Here&#8217;s the right way below&#8230;**
+**Here's the right way below&#8230;**
 
     <?php
 

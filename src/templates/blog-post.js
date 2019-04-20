@@ -4,7 +4,9 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import moment from "moment"
 import { rhythm, scale } from "../utils/typography"
+import { formatReadingTime } from "../utils/helpers"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -27,7 +29,10 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-2 / 5),
           }}
         >
-          {post.frontmatter.date}
+          {moment(post.frontmatter.date).format("MMMM DD, YYYY")} &middot;{" "}
+          <small>
+            <em>{formatReadingTime(post.timeToRead)}</em>
+          </small>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -80,6 +85,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date

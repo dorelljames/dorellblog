@@ -5,16 +5,6 @@ type: post
 date: 2018-06-21T08:56:28+00:00
 url: /web-development/wordpress-messenger-customer-chat-plugin-releases/
 featured_image: /wp-content/uploads/2017/12/banner-772×250-2.jpg
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-ampforwp-amp-on-off:
-  - default
-ampforwp-redirection-on-off:
-  - enable
 categories:
   - Web Development
 tags:

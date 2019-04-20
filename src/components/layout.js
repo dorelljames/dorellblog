@@ -33,10 +33,12 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3
+        <h2
           style={{
-            fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
+            boxShadow: `none`,
+            textDecoration: `none`,
+            backgroundImage: `none`,
           }}
         >
           <Link
@@ -49,7 +51,7 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h3>
+        </h2>
       )
     }
     return (
@@ -63,7 +65,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
+        <footer style={{ marginTop: `${rhythm(3.5)}` }}>
           Copyright © {new Date().getFullYear()}, <em>d||ell</em>. Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

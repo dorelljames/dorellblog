@@ -5,24 +5,6 @@ type: post
 date: 2015-03-26T15:07:27+00:00
 url: /personal/what-does-it-feel-like-to-be-in-love/
 featured_image: /wp-content/uploads/2015/03/falling-in-love3.jpg
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_color:
-  - "#dd3333"
-thb_meta_bigfoot_background_opacity:
-  - 0.25
-thb_meta_bigfoot_sidebar:
-  - post-sidebar
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Personal
 tags:
@@ -33,4 +15,4 @@ tags:
 
 ---
 
-PS: I wish I can say and deny everything that&#8217;s written above. I stumbled on this tonight but I just can&#8217;t get my head around it. How true? I&#8217;m re-reading everything, line after line but after all, I still don&#8217;t know how I can disagree with it. I wonder if I could write something better than this. It&#8217;s not easy to fall in love and you must fucking deal with it. Nothing&#8217;s gonna answer your question and above all the thinking, you still don&#8217;t know why. At times you doubt yourself and you feel insecure. And you wish you could stop thinking about that someone but once in a while, she keeps running again in your head. Now you end up wondering, will she ever fall in love with you?
+PS: I wish I can say and deny everything that's written above. I stumbled on this tonight but I just can't get my head around it. How true? I'm re-reading everything, line after line but after all, I still don't know how I can disagree with it. I wonder if I could write something better than this. It's not easy to fall in love and you must fucking deal with it. Nothing's gonna answer your question and above all the thinking, you still don't know why. At times you doubt yourself and you feel insecure. And you wish you could stop thinking about that someone but once in a while, she keeps running again in your head. Now you end up wondering, will she ever fall in love with you?

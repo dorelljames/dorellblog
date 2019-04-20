@@ -39,9 +39,9 @@ tags:
   - php tips
 ---
 
-Just in case you might ran into the same problem like I do when trying to add or merge two arrays but don&#8217;t want to re-index their keys. Might be in useful in cases where the index values or the keys of the array serves as a unique identifier to other related data.
+Just in case you might ran into the same problem like I do when trying to add or merge two arrays but don't want to re-index their keys. Might be in useful in cases where the index values or the keys of the array serves as a unique identifier to other related data.
 
-So let&#8217;s go take a look at the example below:
+So let's go take a look at the example below:
 
     $colors = array(
        '10' => 'blue',
@@ -63,7 +63,7 @@ So let&#8217;s go take a look at the example below:
        string(6) "yellow"
     }
 
-&#8220;Uh oh!&#8221;&#8230; Now that isn&#8217;t right. Notice that the indexes/keys are re-indexed. So here&#8217;s what you need to do.
+&#8220;Uh oh!&#8221;&#8230; Now that isn't right. Notice that the indexes/keys are re-indexed. So here's what you need to do.
 
     $colors = array(
        '10' => 'blue',
@@ -85,6 +85,6 @@ So let&#8217;s go take a look at the example below:
        string(6) "yellow"
     }
 
-&#8220;Tadaa!&#8221;. That&#8217;s it. When using the &#8220;+&#8221; operator, ensure that both must of type array or else you&#8217;ll be thrown with fatal error. The difference between the first example from the second example is that in the second we just simply prepend/append depending on the index value on the second array. The first example when using <a href="http://php.net/manual/en/function.array-merge.php" target="_blank" rel="noopener noreferrer"><em>array_merge</em></a> on the other hand re-indexes the keys.
+&#8220;Tadaa!&#8221;. That's it. When using the &#8220;+&#8221; operator, ensure that both must of type array or else you'll be thrown with fatal error. The difference between the first example from the second example is that in the second we just simply prepend/append depending on the index value on the second array. The first example when using <a href="http://php.net/manual/en/function.array-merge.php" target="_blank" rel="noopener noreferrer"><em>array_merge</em></a> on the other hand re-indexes the keys.
 
-Note: This is meant for simple array manipulation. I&#8217;ll later add an article describing how you&#8217;ll be able to achieve this on multi-dimentional arrays.
+Note: This is meant for simple array manipulation. I'll later add an article describing how you'll be able to achieve this on multi-dimentional arrays.

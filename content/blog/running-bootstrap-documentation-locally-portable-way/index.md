@@ -27,11 +27,11 @@ categories:
 
 At times we need to able to access web resources such as documentations, websites, apps and run them locally on our machine either because the internet is wonky or we might need those at times when we go to areas where internet is not available. But hey who goes to a dark forest all alone and why would you that? <span class="wp-font-emots-emo-happy"></span>
 
-Let&#8217;s cut the chase. This guide is intended to be able to run <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> &#8211; the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web on your local machine. While most other web resource documentations that can be downloaded are just plain easy to run, Bootstrap on the other hand can only be run on using [Jekyll][1] &#8211; Simple, blog-aware, static sites.
+Let's cut the chase. This guide is intended to be able to run <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> &#8211; the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web on your local machine. While most other web resource documentations that can be downloaded are just plain easy to run, Bootstrap on the other hand can only be run on using [Jekyll][1] &#8211; Simple, blog-aware, static sites.
 
-Now, getting this up and running on a Linux machine is pretty straightforward by just following this [guide][2] from Jekyll&#8217;s installation guide page itself but how about on Windows? The poor me took a couple of hours to just get this done and for anyone not to beat my own bad experience, I have written this guide to get you running Bootstrap documentation locally. It&#8217;s probably the easiest way as per my experience and probably a plus thing for it&#8217;s portable and you can easily share it to your friends. <span class="wp-font-emots-emo-happy"></span>
+Now, getting this up and running on a Linux machine is pretty straightforward by just following this [guide][2] from Jekyll's installation guide page itself but how about on Windows? The poor me took a couple of hours to just get this done and for anyone not to beat my own bad experience, I have written this guide to get you running Bootstrap documentation locally. It's probably the easiest way as per my experience and probably a plus thing for it's portable and you can easily share it to your friends. <span class="wp-font-emots-emo-happy"></span>
 
-### Let&#8217;s go with the requirements
+### Let's go with the requirements
 
 1.) First things first, using git we need to download our PortableJekyll from https://github.com/madhur/PortableJekyll. Thanks a lot to this Madhur Ahuja guy who have gone all the trouble and created this portable version of Jekyll for us to be able to use it easily. The portable version contains everything which is required to run Jekyll on Windows:
 
@@ -40,11 +40,11 @@ Now, getting this up and running on a Linux machine is pretty straightforward by
 - Git 1.9.2
 - Python 2.7.5
 
-So without further ado, let&#8217;s download the complete PortableJekyll package using the command below (source from his GitHub repo):
+So without further ado, let's download the complete PortableJekyll package using the command below (source from his GitHub repo):
 
 `git clone git@github.com:madhur/PortableJekyll.git`
 
-2.) Also, we need Bootstrap of course. Let&#8217;s get down to it by cloning Twitter&#8217;s bootstrap Github repo as well using command below:
+2.) Also, we need Bootstrap of course. Let's get down to it by cloning Twitter's bootstrap Github repo as well using command below:
 
 `git clone git@github.com:twbs/bootstrap.git`
 
@@ -52,7 +52,7 @@ So without further ado, let&#8217;s download the complete PortableJekyll package
 
 1.) Extract contents of PortableJekyll-master.zip in any directory you want. In my case, I will extracted it on drive C and that I have renamed folder <span class="file">PortableJekyll-master</span> to <span class="file">PortableJekyll</span>.
 
-2.) Right now, Jekyll isn&#8217;t known by Windows so we need to set the correct %PATH% to get and properly recognized needed binaries and executable to execute jekyll. So, let&#8217;s add or update our PATH environment variable on Windows. Use this [guide here][3] to how to do that.
+2.) Right now, Jekyll isn't known by Windows so we need to set the correct %PATH% to get and properly recognized needed binaries and executable to execute jekyll. So, let's add or update our PATH environment variable on Windows. Use this [guide here][3] to how to do that.
 
 3.) Input the following where PortableJekyll folder can be found on drive C:. Update as it seem appropriate on your end if PortableJekyll is located somewhere else other than drive C:
 
