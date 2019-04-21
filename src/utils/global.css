@@ -1,6 +1,6 @@
 body {
   --bg: #fff;
-  --bgSecondary: #0000000a;
+  --bgSecondary: #e6ecf0;
   --textPrimary: #222;
   --textNormal: rgb(34, 34, 34, 0.8);
   --textSecondary: #425a63;
@@ -22,7 +22,7 @@ body.dark {
 
 .bottomMenu {
   display: none;
-  border-top: 1px solid var(--textSecondary);
+  border-top: 1px solid var(--bgSecondary);
   list-style-type: none;
   justify-content: space-around;
   align-items: center;
@@ -47,6 +47,9 @@ body.dark {
   flex: 1;
   align-items: center;
   margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .bottomMenu li a {

@@ -46,7 +46,7 @@ class BlogPostTemplate extends React.Component {
 
           <ul
             style={{
-              display: `flex`,
+              display: window && window.innerWidth <= 768 ? `none` : `flex`,
               flexWrap: `wrap`,
               justifyContent: `space-between`,
               listStyle: `none`,
