@@ -7,7 +7,7 @@ const BlogPage = props => (
     <Layout location={props.location} title="Blog">
       <p>Index Page</p>
     </Layout>
-    <BottomMenu />
+    <BottomMenu location={props.location} />
   </>
 )
 

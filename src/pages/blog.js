@@ -56,7 +56,7 @@ class BlogIndex extends React.Component {
             )
           })}
         </Layout>
-        <BottomMenu />
+        <BottomMenu location={this.props.location} />
       </>
     )
   }
