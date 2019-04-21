@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component {
             }}
           >
             {moment(post.frontmatter.date).format("MMMM DD, YYYY")}
-            <span>&middot;</span>
+            <span> &middot; </span>
             <em>{formatReadingTime(post.timeToRead)}</em>
           </p>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
