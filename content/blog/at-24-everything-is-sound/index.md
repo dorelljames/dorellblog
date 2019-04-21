@@ -5,12 +5,6 @@ type: post
 date: 2014-07-20T16:00:47+00:00
 draft: true
 url: /?p=1468
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
 categories:
   - Personal
 ---

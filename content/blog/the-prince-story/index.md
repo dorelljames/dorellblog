@@ -15,7 +15,9 @@ tags:
   - prince story
 ---
 
-<img class="alignright size-medium wp-image-179" alt="prince's silhouette" src="https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2013/03/Vocaloid_Oliver_Silhouette.jpg?resize=287%2C300" width="287" height="300" srcset="https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2013/03/Vocaloid_Oliver_Silhouette.jpg?resize=287%2C300 287w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2013/03/Vocaloid_Oliver_Silhouette.jpg?resize=260%2C271 260w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2013/03/Vocaloid_Oliver_Silhouette.jpg?resize=360%2C376 360w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2013/03/Vocaloid_Oliver_Silhouette.jpg?resize=560%2C584 560w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2013/03/Vocaloid_Oliver_Silhouette.jpg?resize=760%2C793 760w, https://i2.wp.com/dorellwp.localhost/wp-content/uploads/2013/03/Vocaloid_Oliver_Silhouette.jpg?w=919 919w" sizes="(max-width: 287px) 100vw, 287px" data-recalc-dims="1" />_Tonight I'm going to tell you a story. Know that I'm not good at storytelling, so please bear with me._
+![](./Vocaloid_Oliver_Silhouette.jpg)
+
+Tonight I'm going to tell you a story. Know that I'm not good at storytelling, so please bear with me.
 
 Here we go&#8230;
 

@@ -5,22 +5,6 @@ type: post
 date: 2015-05-16T15:11:32+00:00
 url: /web-development/running-bootstrap-documentation-locally-portable-way/
 featured_image: /wp-content/uploads/2015/05/bootstrap.png
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_color:
-  - "#5c4383"
-thb_meta_bigfoot_background_opacity:
-  - 0.90
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Web Development
 ---

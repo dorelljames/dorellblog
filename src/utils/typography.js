@@ -11,6 +11,7 @@ theme.overrideThemeStyles = () => {
       color: `var(--textSecondary)`,
     },
     "a,a:hover": {
+      fontWeight: `bold`,
       textShadow: `none`,
       color: `var(--textInteractive)`,
       backgroundImage: `var(--textInteractive)`,
@@ -32,6 +33,9 @@ theme.overrideThemeStyles = () => {
     },
     "p, li, code, label": {
       color: `var(--textNormal)`,
+    },
+    "tt, code, pre": {
+      backgroundColor: `var(--bgSecondary)`,
     },
     "small,em": {
       color: `var(--textSecondary)`,

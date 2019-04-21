@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const BottomMenuIndex = () => {
+const BottomMenuIndex = props => {
   return (
     <ul className="bottomMenu">
       <li>
@@ -12,7 +12,11 @@ const BottomMenuIndex = () => {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke={`var(--textInteractive)`}
+            stroke={
+              props.location.pathname === "/"
+                ? `var(--textPrimary)`
+                : `var(--textInteractive)`
+            }
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -32,7 +36,11 @@ const BottomMenuIndex = () => {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke={`var(--textInteractive)`}
+            stroke={
+              props.location.pathname === "/about"
+                ? `var(--textPrimary)`
+                : `var(--textInteractive)`
+            }
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -54,7 +62,11 @@ const BottomMenuIndex = () => {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke={`var(--textInteractive)`}
+            stroke={
+              props.location.pathname === "/projects"
+                ? `var(--textPrimary)`
+                : `var(--textInteractive)`
+            }
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -73,7 +85,11 @@ const BottomMenuIndex = () => {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke={`var(--textInteractive)`}
+            stroke={
+              props.location.pathname === "/blog"
+                ? `var(--textPrimary)`
+                : `var(--textInteractive)`
+            }
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

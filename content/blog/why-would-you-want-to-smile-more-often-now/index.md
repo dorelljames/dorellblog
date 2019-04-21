@@ -5,24 +5,6 @@ type: post
 date: 2014-02-08T13:55:12+00:00
 url: /personal/why-would-you-want-to-smile-more-often-now/
 featured_image: /wp-content/uploads/2014/02/smile-gif.gif
-thb_meta_bigfoot_video_url:
-  - http://www.youtube.com/watch?v=U9cGdRNMdQQ
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_opacity:
-  - .25
-thb_meta_bigfoot_sidebar:
-  - post-sidebar
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Personal
 tags:

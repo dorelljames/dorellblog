@@ -24,24 +24,33 @@ class Layout extends React.Component {
   }
 
   handleResize(event) {
+    const bottomMenu = document.querySelector(".bottomMenu")
+    const primaryMenu = document.querySelector(".primaryMenu")
+
     if (window && window.innerWidth <= 768) {
-      document.querySelector(".bottomMenu").classList.add("show")
-      document.querySelector(".bottomMenu").classList.remove("hidden")
+      bottomMenu.classList.add("show")
+      bottomMenu.classList.remove("hidden")
+      primaryMenu.classList.add("hidden")
+      primaryMenu.classList.remove("show")
     } else {
-      document.querySelector(".bottomMenu").classList.add("hidden")
-      document.querySelector(".bottomMenu").classList.remove("show")
+      bottomMenu.classList.add("hidden")
+      bottomMenu.classList.remove("show")
+      primaryMenu.classList.add("show")
+      primaryMenu.classList.remove("hidden")
     }
   }
 
   handleScroll(event) {
     if (window && window.innerWidth <= 768) {
+      const bottomMenu = document.querySelector(".bottomMenu")
+
       var st = window.pageYOffset || document.documentElement.scrollTop // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
       if (st > this.state.lastScrollTop) {
-        document.querySelector(".bottomMenu").classList.add("hidden")
-        document.querySelector(".bottomMenu").classList.remove("show")
+        bottomMenu.classList.add("hidden")
+        bottomMenu.classList.remove("show")
       } else {
-        document.querySelector(".bottomMenu").classList.add("show")
-        document.querySelector(".bottomMenu").classList.remove("hidden")
+        bottomMenu.classList.add("show")
+        bottomMenu.classList.remove("hidden")
       }
 
       this.setState({
@@ -56,7 +65,6 @@ class Layout extends React.Component {
     const { children, title } = this.props
     let header
 
-    // if (location.pathname === rootPath) {
     header = (
       <h1
         style={{
@@ -78,29 +86,7 @@ class Layout extends React.Component {
         </Link>
       </h1>
     )
-    // } else {
-    //   header = (
-    //     <h2
-    //       style={{
-    //         marginTop: 0,
-    //         boxShadow: `none`,
-    //         textDecoration: `none`,
-    //         backgroundImage: `none`,
-    //       }}
-    //     >
-    //       <Link
-    //         style={{
-    //           boxShadow: `none`,
-    //           textDecoration: `none`,
-    //           color: `inherit`,
-    //         }}
-    //         to={`/`}
-    //       >
-    //         {title}
-    //       </Link>
-    //     </h2>
-    //   )
-    // }
+
     return (
       <>
         <div
@@ -119,7 +105,20 @@ class Layout extends React.Component {
               marginBottom: rhythm(1.5),
             }}
           >
-            <div>{header}</div>
+            <div style={{ display: `flex` }}>
+              {header}
+              <ul className="primaryMenu">
+                <li>
+                  <Link to="/about">About.</Link>
+                </li>
+                <li>
+                  <Link to="/projects">Projects.</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog.</Link>
+                </li>
+              </ul>
+            </div>
             <div style={{ position: "relative" }}>
               <LightDarkModeToggler />
             </div>

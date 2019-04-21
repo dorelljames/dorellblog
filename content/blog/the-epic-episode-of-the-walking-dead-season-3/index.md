@@ -5,26 +5,8 @@ type: post
 date: 2013-03-25T17:57:08+00:00
 url: /personal/the-epic-episode-of-the-walking-dead-season-3/
 featured_image: /wp-content/uploads/2013/03/BGNlOEMCUAEvn0u.jpg
-roki_postmeta:
-  - 'a:5:{s:17:"head_info_display";s:5:"false";s:15:"heading_display";s:4:"true";s:22:"heading_search_display";s:5:"false";s:22:"heading_social_display";s:4:"true";s:10:"subheading";s:0:"";}'
 dsq_thread_id:
   - 1860435941
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_opacity:
-  - 0.2
-thb_meta_bigfoot_sidebar:
-  - post-sidebar
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Personal
 ---

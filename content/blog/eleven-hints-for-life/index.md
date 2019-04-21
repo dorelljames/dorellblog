@@ -5,30 +5,6 @@ type: post
 date: 2013-05-23T16:27:57+00:00
 url: /personal/eleven-hints-for-life/
 featured_image: /wp-content/uploads/2013/05/karneeva_elena_child_photography_81.jpg
-roki_postmeta:
-  - 'a:5:{s:17:"head_info_display";s:5:"false";s:15:"heading_display";s:4:"true";s:22:"heading_search_display";s:5:"false";s:22:"heading_social_display";s:4:"true";s:10:"subheading";s:0:"";}'
-qode_show-sidebar:
-  - default
-qode_hide-featured-image:
-  - no
-qode_use-slider-instead-of-image:
-  - no
-dsq_thread_id:
-  - 1832953777
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_sidebar:
-  - post-sidebar
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Personal
 tags:

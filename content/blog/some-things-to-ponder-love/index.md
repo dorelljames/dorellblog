@@ -15,20 +15,6 @@ qode_use-slider-instead-of-image:
   - no
 dsq_thread_id:
   - 1840412142
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_sidebar:
-  - post-sidebar
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Personal
 tags:

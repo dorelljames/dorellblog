@@ -4,18 +4,6 @@ author: Dorell James Galang
 type: post
 date: 2015-12-26T09:00:01+00:00
 url: /personal/start-saying-thank-you-instead-of-sorry/
-thb_meta_bigfoot_pageheader_layout:
-  - center
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_color:
-  - "#1e73be"
-thb_meta_bigfoot_background_opacity:
-  - .8
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-ampforwp-amp-on-off:
-  - default
 categories:
   - Personal
 ---

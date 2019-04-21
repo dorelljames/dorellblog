@@ -5,16 +5,6 @@ type: post
 date: 2015-02-24T04:14:30+00:00
 url: /web-development/abantecart-seo-urls-on-nginx-server/
 featured_image: /wp-content/uploads/2015/02/abantecart-seo-settings-banner.png
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_color:
-  - "#064770"
-thb_meta_bigfoot_background_opacity:
-  - 0.05
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
 categories:
   - Web Development
 ---

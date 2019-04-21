@@ -5,20 +5,6 @@ type: post
 date: 2015-05-04T23:36:46+00:00
 url: /personal/moral-fiber/
 featured_image: /wp-content/uploads/2015/05/original_504400_BmbXxIr7H4icQDKc2XUfnH4x8.jpg
-thb_meta_bigfoot_pageheader_layout:
-  - center
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_opacity:
-  - 0.50
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Personal
 tags:

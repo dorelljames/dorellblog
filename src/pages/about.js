@@ -7,7 +7,7 @@ const AboutPage = props => (
     <Layout location={props.location} title="About Page">
       <p>About Page</p>
     </Layout>
-    <BottomMenu />
+    <BottomMenu location={props.location} />
   </>
 )
 

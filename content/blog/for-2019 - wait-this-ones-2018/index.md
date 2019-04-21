@@ -5,12 +5,6 @@ type: post
 date: 2019-01-05T13:35:04+00:00
 url: /personal/for-2019 - wait-this-ones-2018/
 featured_image: /wp-content/uploads/2019/01/luca-zanon-38843-unsplash.jpg
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
 categories:
   - Personal
 ---
