@@ -33,6 +33,9 @@ theme.overrideThemeStyles = () => {
     "p, li, code, label": {
       color: `var(--textNormal)`,
     },
+    "tt, code": {
+      backgroundColor: `var(--bgSecondary)`,
+    },
     "small,em": {
       color: `var(--textSecondary)`,
     },

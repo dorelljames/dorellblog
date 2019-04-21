@@ -1,5 +1,6 @@
 body {
   --bg: #fff;
+  --bgSecondary: #0000000a;
   --textPrimary: #222;
   --textNormal: rgb(34, 34, 34, 0.8);
   --textSecondary: #425a63;
@@ -11,6 +12,7 @@ body {
 
 body.dark {
   --bg: #1c2938;
+  --bgSecondary: #10171e;
   --textPrimary: #fefefe;
   --textNormal: #dedede;
   --textSecondary: #8899a6;
