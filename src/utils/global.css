@@ -18,10 +18,54 @@ body.dark {
   --textInteractiveHover: #e81c4f;
 }
 
+.bottomMenu {
+  display: none;
+  border-top: 1px solid var(--textSecondary);
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0;
+  padding-bottom: 0;
+  position: fixed;
+  background-color: var(--bg);
+  width: 100%;
+  bottom: 0;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.bottomMenu.show {
+  display: flex;
+}
+
+.bottomMenu.hidden {
+  display: none;
+}
+
+.bottomMenu li {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.bottomMenu li a {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--textPrimary);
+  font-family: "Varela Round", sans-serif;
+}
+
+.bottomMenu li a:hover {
+  text-decoration: none;
+}
+
 #sun-moon {
   position: relative;
   z-index: 5;
   margin: auto;
+  margin-right: 15px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -75,4 +119,10 @@ body.dark #sun-moon:after {
   box-shadow: 0 0 0 0 #3f3f4c, 0 0 0 0 #3f3f4c, 0 0 0 3px #a5abb0,
     0 0 0 15px #3f3f4c;
   border-color: #3f3f4c;
+}
+
+@media only screen and (max-width: 768px) {
+  .bottomMenu {
+    display: flex;
+  }
 }
