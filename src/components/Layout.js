@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import LightDarkModeToggler from "./toggler"
+import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
