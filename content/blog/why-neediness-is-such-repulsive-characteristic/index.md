@@ -37,7 +37,7 @@ This game is simpler than real life, but the essence holds: if someone is desper
 
 Conversely, if someone is aloof with their affections, they probably think they can do better. They may also be wrong, but in both cases we're wired to interpret this as feedback on our own attractiveness. You're trying to guess the number on your head, and their feedback is all you have.
 
-[<img src="https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/Dating-game-3.png?resize=900%2C566" alt="Dating-game-3" width="900" height="566" class="aligncenter size-full wp-image-1154" srcset="https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/Dating-game-3.png?w=900 900w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/Dating-game-3.png?resize=300%2C188 300w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/Dating-game-3.png?resize=260%2C163 260w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/Dating-game-3.png?resize=360%2C225 360w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/Dating-game-3.png?resize=560%2C352 560w, https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/Dating-game-3.png?resize=760%2C477 760w" sizes="(max-width: 900px) 100vw, 900px" data-recalc-dims="1" />][3]
+![](./Dating-game-3.png)
 
 You can't help being influenced by this, and it's one reason why 'playing it cool' is such an attractive trait, even if it's such an easily contrived one. Being needy essentially says &#8220;you're so much better than me, please pick me&#8221;. Not a great sales pitch.
 
@@ -48,7 +48,3 @@ If this strikes you as depressing and soulless, take heart.
 Real life has a few extra qualities that make it less of a one-dimensional meat market. For one: all numbers can change. But most of all: everyone sees a slightly different number when they look at each other.
 
 Originally shared on <a href="http://www.quora.com/Psychology/Why-is-neediness-such-a-repulsive-characteristic" target="_blank">Quora</a> and of course all credits go to <a href="http://www.quora.com/Oliver-Emberton" target="_blank">Oliver Emberton</a>
-
-[1]: https://i1.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/numebers-in-person.png
-[2]: https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/numbers-ranking.png
-[3]: https://i0.wp.com/dorellwp.localhost/wp-content/uploads/2013/06/Dating-game-3.png

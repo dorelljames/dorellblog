@@ -5,8 +5,6 @@ type: post
 date: 2013-02-14T00:57:41+00:00
 url: /personal/happy-hearts-day-2013/
 featured_image: /wp-content/uploads/2013/02/30-Days-...-Heart-Touching-Story.jpg
-roki_postmeta:
-  - 'a:5:{s:17:"head_info_display";s:5:"false";s:15:"heading_display";s:4:"true";s:22:"heading_search_display";s:5:"false";s:22:"heading_social_display";s:4:"true";s:10:"subheading";s:0:"";}'
 dsq_thread_id:
   - 1860370818
 categories:

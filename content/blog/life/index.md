@@ -5,28 +5,6 @@ type: post
 date: 2014-05-15T14:50:51+00:00
 url: /personal/life/
 featured_image: /wp-content/uploads/2014/05/life-horizon.jpg
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_opacity:
-  - .0
-thb_meta_bigfoot_sidebar:
-  - post-sidebar
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
-fsb_social_google:
-  - 6
-fsb_social_facebook:
-  - 14
-fsb_social_twitter:
-  - 2
 categories:
   - Personal
 tags:

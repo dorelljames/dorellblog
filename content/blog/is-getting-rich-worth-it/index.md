@@ -5,20 +5,6 @@ type: post
 date: 2014-09-13T14:26:05+00:00
 url: /personal/is-getting-rich-worth-it/
 featured_image: /wp-content/uploads/2014/09/money-falling.jpg
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_opacity:
-  - .10
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Personal
 tags:

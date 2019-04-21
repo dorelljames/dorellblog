@@ -5,24 +5,6 @@ type: post
 date: 2013-12-17T10:41:28+00:00
 url: /personal/meet-chris-rene-young-homie/
 featured_image: /wp-content/uploads/2013/12/chris-rene-staying-sober-in-stressful-times.jpeg
-thb_meta_bigfoot_video_url:
-  - http://www.youtube.com/watch?v=dYPTS_39I8g
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_opacity:
-  - .85
-thb_meta_bigfoot_sidebar:
-  - post-sidebar
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Personal
 format: video

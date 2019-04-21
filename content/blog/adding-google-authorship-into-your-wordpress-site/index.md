@@ -5,30 +5,6 @@ type: post
 date: 2013-09-11T05:33:29+00:00
 url: /web-development/adding-google-authorship-into-your-wordpress-site/
 featured_image: /wp-content/uploads/2013/09/google_authorship.png
-qode_show-sidebar:
-  - default
-qode_hide-featured-image:
-  - no
-qode_use-slider-instead-of-image:
-  - no
-qode_page-subtitle:
-  - hopefully the better way
-dsq_thread_id:
-  - 1790872145
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_sidebar:
-  - post-sidebar
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
 categories:
   - Search Engine Optimization
   - Web Development

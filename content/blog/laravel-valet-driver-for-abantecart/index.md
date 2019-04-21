@@ -34,6 +34,6 @@ Fast forward minutes later, I have finally created a custom driver for AbanteCar
 
 Here's <a href="https://gist.github.com/dorelljames/2325b191dd050c67a105bd7235befd99" target="_blank">a link to the gist that you can grab at GitHub</a>. <span class="wp-font-emots-emo-happy"></span>
 
-And oh before I forgot, just save this file to **~/.valet/Drivers** in your machine.
+And oh before I forgot, just save this file to **`~/.valet/Drivers`** in your machine.
 
 Enjoy, hope that helps!

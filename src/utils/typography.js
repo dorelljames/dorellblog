@@ -11,6 +11,7 @@ theme.overrideThemeStyles = () => {
       color: `var(--textSecondary)`,
     },
     "a,a:hover": {
+      fontWeight: `bold`,
       textShadow: `none`,
       color: `var(--textInteractive)`,
       backgroundImage: `var(--textInteractive)`,

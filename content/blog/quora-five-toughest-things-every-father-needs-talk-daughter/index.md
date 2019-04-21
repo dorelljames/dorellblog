@@ -5,22 +5,6 @@ type: post
 date: -001-11-30T00:00:00+00:00
 draft: true
 url: /?p=1425
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_color:
-  - "#dd3333"
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-thb_meta_bigfoot_post_related:
-  - 1
-thb_meta_bigfoot_post_related_number:
-  - 4
-thb_meta_bigfoot_post_related_thumb:
-  - 1
-ampforwp-amp-on-off:
-  - default
 categories:
   - Personal
 ---

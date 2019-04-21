@@ -5,14 +5,6 @@ type: post
 date: 2015-11-25T09:26:24+00:00
 url: /personal/heres-to-woman-looking-for-their-perfect-guy/
 featured_image: /wp-content/uploads/2015/11/perfect-guy2.jpg
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_opacity:
-  - .10
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
 categories:
   - Personal
 ---
