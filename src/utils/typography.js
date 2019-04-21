@@ -1,18 +1,46 @@
 import Typography from "typography"
 import CodePlugin from "typography-plugin-code"
 import theme from "typography-theme-lincoln"
+import "./global.css"
 
 theme.plugins = [new CodePlugin()]
 
 theme.overrideThemeStyles = () => {
   return {
+    body: {
+      color: `var(--textSecondary)`,
+    },
     "a,a:hover": {
       textShadow: `none`,
+      color: `var(--textInteractive)`,
+      backgroundImage: `var(--textInteractive)`,
+    },
+    "a:hover": {
+      textDecoration: `underline`,
+      color: `var(--textInteractiveHover)`,
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
       textDecoration: `none`,
       backgroundImage: `none`,
+    },
+    "h1, h2, h3, h4, h5, h6": {
+      color: `var(--textPrimary)`,
+    },
+    blockquote: {
+      borderLeftColor: `var(--textInteractive)`,
+    },
+    "p, li, code, label": {
+      color: `var(--textNormal)`,
+    },
+    "small,em": {
+      color: `var(--textSecondary)`,
+    },
+    'a.anchor svg[aria-hidden="true"]': {
+      stroke: `var(--textInteractive)`,
+    },
+    hr: {
+      background: `var(--hr)`,
     },
   }
 }

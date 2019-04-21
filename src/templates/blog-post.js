@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Bio from "../components/Bio"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import moment from "moment"
 import { rhythm, scale } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
@@ -27,12 +27,12 @@ class BlogPostTemplate extends React.Component {
             display: `block`,
             marginBottom: rhythm(1),
             marginTop: rhythm(-2 / 5),
+            color: `var(--textSecondary)`,
           }}
         >
-          {moment(post.frontmatter.date).format("MMMM DD, YYYY")} &middot;{" "}
-          <small>
-            <em>{formatReadingTime(post.timeToRead)}</em>
-          </small>
+          {moment(post.frontmatter.date).format("MMMM DD, YYYY")}
+          <span>&middot;</span>
+          <em>{formatReadingTime(post.timeToRead)}</em>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr

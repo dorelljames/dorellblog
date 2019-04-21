@@ -5,22 +5,11 @@ type: post
 date: 2018-04-25T07:18:56+00:00
 url: /web-development/solving-mailtraps-error-550-too-many-emails-per-second/
 featured_image: /wp-content/uploads/2018/04/mailtrap-emails-per-second.png
-thb_meta_bigfoot_pageheader_layout:
-  - left
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_opacity:
-  - .8
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
-ampforwp-amp-on-off:
-  - default
-ampforwp-redirection-on-off:
-  - enable
+
 categories:
   - Web Development
 tags:
-  - 550 error
+  - "550 error"
   - mailtrap
 ---
 

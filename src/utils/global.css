@@ -1,0 +1,78 @@
+body {
+  --bg: #fff;
+  --textPrimary: #222;
+  --textNormal: rgb(34, 34, 34, 0.8);
+  --textSecondary: #425a63;
+  --textInteractive: #e81c4f;
+  --textInteractiveHover: #ec4972;
+
+  background-color: var(--bg);
+}
+
+body.dark {
+  --bg: #1c2938;
+  --textPrimary: #fefefe;
+  --textNormal: #dedede;
+  --textSecondary: #8899a6;
+  --textInteractive: #ec4972;
+  --textInteractiveHover: #e81c4f;
+}
+
+#sun-moon {
+  position: relative;
+  z-index: 5;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f5f8f8;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#sun-moon:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  background: #a5abb0;
+  transition: border-radius 0.5s ease, background-color 0.5s ease,
+    width 0.5s ease, transform 0.5s ease;
+}
+
+#sun-moon:after {
+  content: "";
+  white-space: nowrap;
+  text-indent: 60px;
+  line-height: 45px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #f5f8f8;
+  box-shadow: 0 0 0 0 #f5f8f8, 0 0 0 3px #a5abb0, 0 0 0 15px #f5f8f8;
+  box-sizing: border-box;
+  transition: border-color 0.5s ease, box-shadow 0.1s ease;
+}
+
+body.dark #sun-moon {
+  background-color: #a5abb0;
+}
+
+body.dark #sun-moon:before {
+  background: #3f3f4c;
+  border-radius: 50%;
+  width: 100%;
+  transform: translate(-10%, -7%) rotate(0deg);
+}
+
+body.dark #sun-moon:after {
+  content: "";
+  box-shadow: 0 0 0 0 #3f3f4c, 0 0 0 0 #3f3f4c, 0 0 0 3px #a5abb0,
+    0 0 0 15px #3f3f4c;
+  border-color: #3f3f4c;
+}

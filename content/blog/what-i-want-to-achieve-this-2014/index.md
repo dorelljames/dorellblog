@@ -8,7 +8,6 @@ featured_image: /wp-content/uploads/2014/01/ayala-terraces-cebu.jpg
 categories:
   - Personal
 tags:
-  - 2014
   - achieve
   - goal
 ---

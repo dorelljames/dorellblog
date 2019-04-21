@@ -61,12 +61,12 @@ module.exports = {
         short_name: `d||ell`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#134896`,
+        theme_color: `#e81c4f`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -74,5 +74,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    "gatsby-plugin-dark-mode",
   ],
 }

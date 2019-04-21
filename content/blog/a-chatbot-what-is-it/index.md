@@ -5,16 +5,6 @@ type: post
 date: 2016-11-20T02:10:36+00:00
 url: /web-development/a-chatbot-what-is-it/
 featured_image: /wp-content/uploads/2016/11/mz-newsroom-01.jpg
-thb_meta_bigfoot_pageheader_layout:
-  - center
-thb_meta_bigfoot_pageheader_height:
-  - pageheader-big
-thb_meta_bigfoot_background_color:
-  - "#1e73be"
-thb_meta_bigfoot_background_opacity:
-  - 0.5
-thb_meta_bigfoot_sidebar_position:
-  - sidebar-right
 categories:
   - Web Development
 tags:
