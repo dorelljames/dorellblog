@@ -23,16 +23,13 @@ body.dark {
   border-top: 1px solid var(--textSecondary);
   list-style-type: none;
   justify-content: space-around;
+  align-items: center;
   margin: 0;
   padding-bottom: 0;
   position: fixed;
   background-color: var(--bg);
   width: 100%;
   bottom: 0;
-
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .bottomMenu.show {
@@ -45,11 +42,14 @@ body.dark {
 
 .bottomMenu li {
   display: flex;
+  flex: 1;
+  align-items: center;
   margin-bottom: 0;
 }
 
 .bottomMenu li a {
-  padding: 15px;
+  padding: 10px;
+  flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;

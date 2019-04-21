@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const BottomMenu = () => {
+const BottomMenuProject = () => {
   return (
     <ul className="bottomMenu">
       <li>
@@ -89,4 +89,4 @@ const BottomMenu = () => {
   )
 }
 
-export default BottomMenu
+export default BottomMenuProject

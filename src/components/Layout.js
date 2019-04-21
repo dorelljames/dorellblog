@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
-import BottomMenu from "./BottomMenu"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -131,7 +130,6 @@ class Layout extends React.Component {
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>
-        <BottomMenu />
       </>
     )
   }
