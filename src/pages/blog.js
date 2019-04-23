@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Bio from "../components/Bio"
-import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import moment from "moment"
 import { rhythm } from "../utils/typography"
@@ -16,46 +15,44 @@ class BlogIndex extends React.Component {
 
     return (
       <>
-        <Layout location={this.props.location} title={siteTitle}>
-          <SEO
-            title="All posts"
-            keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-          />
-          <Bio />
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <div key={node.fields.slug}>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                    display: "inline-block",
-                  }}
-                >
-                  {moment(node.frontmatter.date).fromNow()}
-                </small>{" "}
-                &middot;{" "}
-                <small>
-                  <em>{formatReadingTime(node.timeToRead)}</em>
-                </small>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </div>
-            )
-          })}
-        </Layout>
+        <SEO
+          title="All posts"
+          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        />
+        <Bio />
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <small
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                  display: "inline-block",
+                }}
+              >
+                {moment(node.frontmatter.date).fromNow()}
+              </small>{" "}
+              &middot;{" "}
+              <small>
+                <em>{formatReadingTime(node.timeToRead)}</em>
+              </small>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </div>
+          )
+        })}
         <BottomMenu location={this.props.location} />
       </>
     )

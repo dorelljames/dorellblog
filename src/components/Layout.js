@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
+import MessengerCustomerChat from "react-messenger-customer-chat"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -124,6 +125,10 @@ class Layout extends React.Component {
             </div>
           </header>
           <main>{children}</main>
+          <MessengerCustomerChat
+            pageId="566722000166680"
+            appId="1678638095724206"
+          />
           <footer style={{ marginTop: `${rhythm(3.5)}` }}>
             Copyright © {new Date().getFullYear()}, <em>d||ell</em>. Built with
             {` `}

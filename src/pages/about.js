@@ -1,12 +1,9 @@
 import React from "react"
-import Layout from "../components/Layout"
 import BottomMenu from "../components/BottomMenu/About"
 
 const AboutPage = props => (
   <>
-    <Layout location={props.location} title="About Page">
-      <p>About Page</p>
-    </Layout>
+    <p>About Page</p>
     <BottomMenu location={props.location} />
   </>
 )
