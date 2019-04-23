@@ -3,7 +3,7 @@ module.exports = {
     title: `d||rell`,
     author: `Dorell James`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://dorellblog.netlify.com/`,
     social: {
       twitter: `dorelljames`,
     },
@@ -54,6 +54,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-feed`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
