@@ -82,5 +82,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-dark-mode",
+    {
+      resolve: "gatsby-plugin-html2amp",
+      options: {
+        files: ["blog/**", "index.html", "about.html", "projects.html"],
+        dist: "public/amp",
+      },
+    },
   ],
 }
