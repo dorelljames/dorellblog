@@ -5,8 +5,8 @@ import SEO from "../components/SEO"
 
 class NotFoundPage extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    // const { data } = this.props
+    // const siteTitle = data.site.siteMetadata.title
 
     return (
       <>

@@ -1,6 +1,7 @@
 import Typography from "typography"
 import CodePlugin from "typography-plugin-code"
 import theme from "typography-theme-lincoln"
+
 import "./global.css"
 
 theme.plugins = [new CodePlugin()]
@@ -48,6 +49,8 @@ theme.overrideThemeStyles = () => {
     },
   }
 }
+
+delete theme.googleFonts
 
 const typography = new Typography(theme)
 
