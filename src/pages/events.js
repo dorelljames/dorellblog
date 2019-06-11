@@ -5,9 +5,25 @@ const EventsPage = props => (
   <>
     <p>
       I give talks and conduct workshops as a way to share back to the
-      community. I've spoken at WordCamp, Facebook Dev Circles, and many more.
-      If you'd like to invite me to give a talk or conduct a workshop at your
-      event, please feel free to <a href="mailto:">get in touch</a>.
+      community. I've spoken at{" "}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://2019.cebu.wordcamp.org/speakers/#wcorg-speaker-dorell-james-galang"
+      >
+        WordCamp Cebu
+      </a>
+      ,{" "}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.facebook.com/events/270482970543471/"
+      >
+        FB Dev Circles
+      </a>
+      , and many more. If you'd like to invite me to give a talk or conduct a
+      workshop at your event, please feel free to{" "}
+      <a href="mailto:">get in touch</a>.
     </p>
 
     <h2>Upcoming Events</h2>
