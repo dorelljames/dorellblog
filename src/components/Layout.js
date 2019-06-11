@@ -133,7 +133,6 @@ class Layout extends React.Component {
             style={{
               fontSize: rhythm(0.5),
               marginTop: rhythm(3.5),
-              position: `fixed`,
               bottom: 0,
               marginBottom: rhythm(0.5),
             }}
