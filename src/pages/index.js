@@ -5,7 +5,7 @@ const BlogPage = props => (
   <>
     <h1>Hi, I'm Dorell James</h1>
     <p>
-      <span>Full Stack Developer</span> passionate JavaScript developer.
+      <span>Full Stack Developer</span>
     </p>
 
     <BottomMenu location={props.location} />
