@@ -110,13 +110,13 @@ class Layout extends React.Component {
               {header}
               <ul className="primaryMenu">
                 <li>
-                  <Link to="/about">About.</Link>
+                  <Link to="/projects">Projects</Link>
                 </li>
                 <li>
-                  <Link to="/projects">Projects.</Link>
+                  <Link to="/events">Events</Link>
                 </li>
                 <li>
-                  <Link to="/blog">Blog.</Link>
+                  <Link to="/blog">Blog</Link>
                 </li>
               </ul>
             </div>
@@ -129,10 +129,28 @@ class Layout extends React.Component {
             pageId="566722000166680"
             appId="1678638095724206"
           />
-          <footer style={{ marginTop: `${rhythm(3.5)}` }}>
-            Copyright © {new Date().getFullYear()}, <em>d||ell</em>. Built with
+          <footer
+            style={{
+              fontSize: rhythm(0.5),
+              marginTop: rhythm(3.5),
+              position: `fixed`,
+              bottom: 0,
+              marginBottom: rhythm(0.5),
+            }}
+          >
+            Copyright © {new Date().getFullYear()},
+            <strong
+              style={{
+                fontFamily: `Varela Round, sans-serif`,
+                marginLeft: `5px`,
+              }}
+            >
+              d||ell
+            </strong>
+            . Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a href="https://www.gatsbyjs.org">Gatsby</a>. Source on{" "}
+            <a href="https://github.com">GitHub</a>
           </footer>
         </div>
       </>

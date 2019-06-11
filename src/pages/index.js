@@ -3,7 +3,11 @@ import BottomMenu from "../components/BottomMenu/Index"
 
 const BlogPage = props => (
   <>
-    <p>Index Page</p>
+    <h1>Hi, I'm Dorell James</h1>
+    <p>
+      <span>Full Stack Developer</span> passionate JavaScript developer.
+    </p>
+
     <BottomMenu location={props.location} />
   </>
 )

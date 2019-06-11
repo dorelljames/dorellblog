@@ -3,7 +3,7 @@ import BottomMenu from "../components/BottomMenu/Index"
 
 const ProjectsPage = props => (
   <>
-    <p>Projects Page</p>
+    <p>Projects</p>
     <BottomMenu location={props.location} />
   </>
 )
