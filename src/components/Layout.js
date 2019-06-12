@@ -148,8 +148,21 @@ class Layout extends React.Component {
             </strong>
             . Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>. Source on{" "}
-            <a href="https://github.com">GitHub</a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.gatsbyjs.org"
+            >
+              Gatsby
+            </a>
+            . Source on{" "}
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/dorelljames/dorellblog"
+            >
+              GitHub
+            </a>
           </footer>
         </div>
       </>
