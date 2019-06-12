@@ -2,10 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `d||rell`,
     author: `Dorell James`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Personal website of Dorell James.`,
     siteUrl: `https://dorellblog.netlify.com/`,
     social: {
       twitter: `dorelljames`,
+      github: `dorelljames`,
     },
   },
   plugins: [
