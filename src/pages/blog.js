@@ -5,7 +5,17 @@ import SEO from "../components/SEO"
 import moment from "moment"
 import { rhythm } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
-import BottomMenu from "../components/BottomMenu/Index"
+import posed from "react-pose"
+
+const List = posed.section({
+  enter: { staggerChildren: 50 },
+  exit: { staggerChildren: 20, staggerDirection: -1 },
+})
+
+const Item = posed.div({
+  enter: { x: 0, opacity: 1 },
+  exit: { x: 100, opacity: 0 },
+})
 
 class BlogIndex extends React.Component {
   render() {
@@ -20,43 +30,45 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link
-                  style={{ boxShadow: `none` }}
-                  to={"blog" + node.fields.slug}
+
+        <List>
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <Item key={node.fields.slug}>
+                <h3
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                  }}
                 >
-                  {title}
-                </Link>
-              </h3>
-              <small
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                  display: "inline-block",
-                }}
-              >
-                {moment(node.frontmatter.date).fromNow()}
-              </small>{" "}
-              &middot;{" "}
-              <small>
-                <em>{formatReadingTime(node.timeToRead)}</em>
-              </small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
-        <BottomMenu location={this.props.location} />
+                  <Link
+                    style={{ boxShadow: `none` }}
+                    to={"blog" + node.fields.slug}
+                  >
+                    {title}
+                  </Link>
+                </h3>
+                <small
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                    display: "inline-block",
+                  }}
+                >
+                  {moment(node.frontmatter.date).fromNow()}
+                </small>{" "}
+                &middot;{" "}
+                <small>
+                  <em>{formatReadingTime(node.timeToRead)}</em>
+                </small>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </Item>
+            )
+          })}
+        </List>
       </>
     )
   }

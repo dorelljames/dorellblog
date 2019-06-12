@@ -1,35 +1,35 @@
 import React from "react"
-import BottomMenu from "../components/BottomMenu/Index"
 import { rhythm } from "../utils/typography"
 
-const BlogPage = props => (
-  <>
-    <h1>
+import { Section, H1, P } from "../components/Animations"
+
+const IndexPage = props => (
+  <Section>
+    <H1>
       <span style={{ display: `block` }}>Hi, I'm Dorell James!</span>
       <small style={{ fontSize: rhythm(0.5) }}>FULL STACK DEVELOPER</small>
       <small style={{ fontSize: rhythm(0.5) }}> &middot; </small>
       <small style={{ fontSize: rhythm(0.5) }}>CEBU, PHILIPPINES</small>
-    </h1>
-    <p>
-      I write code that makes the world sing. I write songs of love and special
-      things. I write the code that makes the young girls cry. I write the code,
-      I write the code.
-    </p>
+    </H1>
+    <br />
+    <P>
+      I’m a web developer in Cebu City, PH passionately crafting valuable
+      digital products.
+    </P>
+    <P>I am @dorelljames at </P>
 
     <h2>Talks & Workshops</h2>
-    <p>I speak the truth</p>
+    <P>I speak the truth</P>
 
     <h2>Play</h2>
-    <p>I write useless things.</p>
+    <P>I write useless things.</P>
 
     <h2>Get In Touch</h2>
-    <p>
+    <P>
       Feel free to <a href="mailto:">ping me</a> or reach me through social
       media and let's make the Web more awesome!
-    </p>
-
-    <BottomMenu location={props.location} />
-  </>
+    </P>
+  </Section>
 )
 
-export default BlogPage
+export default IndexPage

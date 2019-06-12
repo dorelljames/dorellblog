@@ -1,5 +1,4 @@
 import React from "react"
-import BottomMenu from "../components/BottomMenu/About"
 
 const EventsPage = props => (
   <>
@@ -31,8 +30,6 @@ const EventsPage = props => (
 
     <h2>Previous Events</h2>
     <p>No previous events yet...</p>
-
-    <BottomMenu location={props.location} />
   </>
 )
 

@@ -3,6 +3,16 @@ import { Link } from "gatsby"
 import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
 import MessengerCustomerChat from "react-messenger-customer-chat"
+import BottomMenu from "../components/BottomMenu/Index"
+import Footer from "./Footer"
+import posed, { PoseGroup } from "react-pose"
+
+// const Transition = posed.div({
+//   enter: { opacity: 1, delay: 300, beforeChildren: true },
+//   exit: { opacity: 0 },
+// })
+
+const Transition = posed.div()
 
 class Layout extends React.Component {
   constructor(props) {
@@ -63,7 +73,7 @@ class Layout extends React.Component {
   render() {
     // const { location, title, children } = this.props
     // const rootPath = `${__PATH_PREFIX__}/`
-    const { children, title } = this.props
+    const { children, title, location } = this.props
     let header
 
     header = (
@@ -95,6 +105,9 @@ class Layout extends React.Component {
             marginLeft: `auto`,
             marginRight: `auto`,
             maxWidth: rhythm(24),
+            // location && location.pathname.includes("/blog")
+            //   ? rhythm(24)
+            //   : rhythm(60),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
@@ -124,47 +137,19 @@ class Layout extends React.Component {
               <LightDarkModeToggler />
             </div>
           </header>
-          <main>{children}</main>
-          <MessengerCustomerChat
-            pageId="566722000166680"
-            appId="1678638095724206"
-          />
-          <footer
-            style={{
-              fontSize: rhythm(0.5),
-              marginTop: rhythm(3.5),
-              bottom: 0,
-              marginBottom: rhythm(0.5),
-            }}
-          >
-            Copyright © {new Date().getFullYear()},
-            <strong
-              style={{
-                fontFamily: `Varela Round, sans-serif`,
-                marginLeft: `5px`,
-              }}
-            >
-              d||ell
-            </strong>
-            . Built with
-            {` `}
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://www.gatsbyjs.org"
-            >
-              Gatsby
-            </a>
-            . Source on{" "}
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://github.com/dorelljames/dorellblog"
-            >
-              GitHub
-            </a>
-          </footer>
+          <PoseGroup>
+            <Transition key={location && location.key}>
+              <main>{children}</main>
+              <Footer />
+            </Transition>
+          </PoseGroup>
         </div>
+
+        <BottomMenu location={location} />
+        <MessengerCustomerChat
+          pageId="566722000166680"
+          appId="1678638095724206"
+        />
       </>
     )
   }

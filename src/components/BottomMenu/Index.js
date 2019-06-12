@@ -60,7 +60,7 @@ const BottomMenuIndex = props => {
             viewBox="0 0 24 24"
             fill="none"
             stroke={
-              props.location.pathname === "/about"
+              props.location.pathname === "/events"
                 ? `var(--textPrimary)`
                 : `var(--textInteractive)`
             }
