@@ -4,32 +4,32 @@ import { rhythm } from "../utils/typography"
 import { Section, H1, P } from "../components/Animations"
 
 const IndexPage = props => (
-  <Section>
-    <H1>
+  <>
+    <h1>
       <span style={{ display: `block` }}>Hi, I'm Dorell James!</span>
       <small style={{ fontSize: rhythm(0.5) }}>FULL STACK DEVELOPER</small>
       <small style={{ fontSize: rhythm(0.5) }}> &middot; </small>
       <small style={{ fontSize: rhythm(0.5) }}>CEBU, PHILIPPINES</small>
-    </H1>
+    </h1>
     <br />
-    <P>
+    <p>
       I’m a web developer in Cebu City, PH passionately crafting valuable
       digital products.
-    </P>
-    <P>I am @dorelljames at </P>
+    </p>
+    <p>I am @dorelljames at </p>
 
     <h2>Talks & Workshops</h2>
-    <P>I speak the truth</P>
+    <p>I speak the truth</p>
 
     <h2>Play</h2>
-    <P>I write useless things.</P>
+    <p>I write useless things.</p>
 
     <h2>Get In Touch</h2>
-    <P>
+    <p>
       Feel free to <a href="mailto:">ping me</a> or reach me through social
       media and let's make the Web more awesome!
-    </P>
-  </Section>
+    </p>
+  </>
 )
 
 export default IndexPage

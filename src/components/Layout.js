@@ -7,12 +7,10 @@ import BottomMenu from "../components/BottomMenu/Index"
 import Footer from "./Footer"
 import posed, { PoseGroup } from "react-pose"
 
-// const Transition = posed.div({
-//   enter: { opacity: 1, delay: 300, beforeChildren: true },
-//   exit: { opacity: 0 },
-// })
-
-const Transition = posed.div()
+const Transition = posed.div({
+  enter: { opacity: 1, beforeChildren: true },
+  exit: { opacity: 0, beforeChildren: true },
+})
 
 class Layout extends React.Component {
   constructor(props) {
@@ -140,7 +138,7 @@ class Layout extends React.Component {
           <PoseGroup>
             <Transition key={location && location.key}>
               <main>{children}</main>
-              <Footer />
+              {/*<Footer />*/}
             </Transition>
           </PoseGroup>
         </div>
