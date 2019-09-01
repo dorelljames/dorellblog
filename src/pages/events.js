@@ -19,17 +19,33 @@ const EventsPage = props => (
         rel="noopener noreferrer"
         href="https://www.facebook.com/events/270482970543471/"
       >
-        FB Dev Circles
+        Facebook Developer Circle
       </a>
       , and many more. If you'd like to invite me to give a talk or conduct a
       workshop at your event, please feel free to{" "}
       <a href="mailto:">get in touch</a>.
     </p>
 
-    <h2>Upcoming Events</h2>
+    <h6
+      style={{
+        borderBottom: `2px solid #f0f0f0`,
+        paddingBottom: `5px`,
+        display: `inline-block`,
+      }}
+    >
+      UPCOMING EVENTS
+    </h6>
     <p>No upcoming events yet...</p>
 
-    <h2>Previous Events</h2>
+    <h6
+      style={{
+        borderBottom: `2px solid #f0f0f0`,
+        paddingBottom: `5px`,
+        display: `inline-block`,
+      }}
+    >
+      PREVIOUS EVENTS
+    </h6>
     <p>No previous events yet...</p>
 
     <BottomMenu location={props.location} />
