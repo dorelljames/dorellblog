@@ -8,3 +8,7 @@ export function formatReadingTime(minutes) {
     return `${new Array(cups || 1).fill("☕️").join("")} ${minutes} min read`
   }
 }
+
+export function isPathBlogPost(path) {
+  return new RegExp(/^\/blog\//).test(path)
+}

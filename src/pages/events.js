@@ -1,11 +1,10 @@
 import React from "react"
-import BottomMenu from "../components/BottomMenu/Events"
 
 const EventsPage = props => (
   <>
     <p>
-      I give talks and conduct workshops as a way to share back to the
-      community. I've spoken at{" "}
+      Aside from organizing events, I also give talks and conduct workshops as a
+      way to share back to the community. I've spoken at{" "}
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -35,7 +34,23 @@ const EventsPage = props => (
     >
       UPCOMING EVENTS
     </h6>
-    <p>No upcoming events yet...</p>
+    <ul>
+      <li>
+        <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
+          <a
+            href="https://www.facebook.com/events/505464013360120/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gatsby Workshop
+          </a>
+        </h3>
+        <small>10/12/2019</small>
+        <p>
+          <em>Learn to build blazing fast websites and apps</em>
+        </p>
+      </li>
+    </ul>
 
     <h6
       style={{
@@ -47,8 +62,6 @@ const EventsPage = props => (
       PREVIOUS EVENTS
     </h6>
     <p>No previous events yet...</p>
-
-    <BottomMenu location={props.location} />
   </>
 )
 

@@ -5,7 +5,6 @@ import SEO from "../../components/SEO"
 import moment from "moment"
 import { rhythm } from "../../utils/typography"
 import { formatReadingTime } from "../../utils/helpers"
-import BottomMenu from "../../components/BottomMenu/Index"
 
 class BlogIndex extends React.Component {
   render() {
@@ -56,7 +55,6 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-        <BottomMenu location={this.props.location} />
       </>
     )
   }

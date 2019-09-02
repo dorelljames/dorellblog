@@ -2,7 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
-import MessengerCustomerChat from "react-messenger-customer-chat"
+// import MessengerCustomerChat from "react-messenger-customer-chat"
+import NavBottomMenu from "../components/NavBottomMenu"
+import { isPathBlogPost } from "../utils/helpers"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -125,10 +127,11 @@ class Layout extends React.Component {
             </div>
           </header>
           <main>{children}</main>
-          <MessengerCustomerChat
+          {/*<MessengerCustomerChat
             pageId="566722000166680"
             appId="1678638095724206"
-          />
+          />*/}
+
           <footer
             style={{
               fontSize: rhythm(0.5),
@@ -165,6 +168,10 @@ class Layout extends React.Component {
             </a>
           </footer>
         </div>
+
+        {!isPathBlogPost(this.props.location.pathname) && (
+          <NavBottomMenu location={this.props.location} />
+        )}
       </>
     )
   }

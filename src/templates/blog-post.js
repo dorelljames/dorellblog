@@ -6,7 +6,7 @@ import SEO from "../components/SEO"
 import moment from "moment"
 import { rhythm, scale } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
-import BottomMenu from "../components/BottomMenu/Blog"
+import NavBottomMenu from "../components/NavBottomMenu"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -67,7 +67,11 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
-        <BottomMenu previous={previous} next={next} />
+        <NavBottomMenu
+          location={this.props.location}
+          previous={previous}
+          next={next}
+        />
       </>
     )
   }

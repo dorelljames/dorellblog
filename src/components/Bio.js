@@ -11,7 +11,7 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
-function Bio() {
+function Bio(props) {
   return (
     <StaticQuery
       query={bioQuery}
@@ -37,13 +37,21 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
-              Personal blog by{" "}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                <strong>{author}</strong>
-              </a>
-              <br />I love you and coding!
-            </p>
+            {(props.heading && (
+              <p>
+                {props.heading}
+                <br />
+                {props.subHeading}
+              </p>
+            )) || (
+              <p>
+                Personal blog by{" "}
+                <a href="https://twitter.com/{social.twitter}">
+                  <strong>{author}</strong>
+                </a>
+                <br />I love you and coding!
+              </p>
+            )}
           </div>
         )
       }}
@@ -55,7 +63,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 60, height: 60) {
           ...GatsbyImageSharpFixed
         }
       }

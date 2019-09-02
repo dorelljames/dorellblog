@@ -1,14 +1,28 @@
 import React from "react"
-import BottomMenu from "../components/BottomMenu/Index"
 
 const ProjectsPage = props => (
   <>
-    <p>I write code and I write and write and write and write.</p>
+    <p>Code is poetry so I just write, write and write...</p>
 
-    <h2>Recent Works</h2>
-    <p>KAYU: Kitchen + Bar</p>
-
-    <BottomMenu location={props.location} />
+    <ul>
+      <li>
+        <h3>
+          <a
+            href="https://wordpress.org/plugins/wp-messenger-customer-chat/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WordPress Messenger Customer Chat Plugin (WPMCCP)
+          </a>
+        </h3>
+        <p>
+          <em>
+            Integrate Facebook messenger experience directly into your WordPress
+            site.
+          </em>
+        </p>
+      </li>
+    </ul>
   </>
 )
 
