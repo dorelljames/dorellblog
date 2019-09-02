@@ -1,9 +1,14 @@
 import React from "react"
 import Bio from "../components/Bio"
 import Emoji from "../components/Emoji"
+import SEO from "../components/SEO"
 
 const IndexPage = props => (
   <>
+    <SEO
+      title="Full Stack Developer"
+      description="Developer (Web & Software) in Cebu City, PH passionately crafting valuable digital products offering you the best that'll surely make you 100% satisfied."
+    />
     <h1>
       <span style={{ display: `block` }}>Hi, I'm Dorell James!</span>
     </h1>

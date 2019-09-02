@@ -1,7 +1,10 @@
 import React from "react"
+import SEO from "../components/SEO"
 
 const ProjectsPage = props => (
   <>
+    <SEO title="Projects" />
+
     <p>Code is poetry so I just write, write and write...</p>
 
     <ul>

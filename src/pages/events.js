@@ -1,7 +1,10 @@
 import React from "react"
+import SEO from "../components/SEO"
 
 const EventsPage = props => (
   <>
+    <SEO title="Tech Events in Cebu" description="" />
+
     <p>
       Aside from organizing events, I also give talks and conduct workshops as a
       way to share back to the community. I've spoken at{" "}
