@@ -1,5 +1,5 @@
 import React from "react"
-import BottomMenu from "../components/BottomMenu/About"
+import BottomMenu from "../components/BottomMenu/Events"
 
 const EventsPage = props => (
   <>
@@ -19,7 +19,7 @@ const EventsPage = props => (
         rel="noopener noreferrer"
         href="https://www.facebook.com/events/270482970543471/"
       >
-        Facebook Developer Circle
+        Facebook Developer Circle goes to Cebu
       </a>
       , and many more. If you'd like to invite me to give a talk or conduct a
       workshop at your event, please feel free to{" "}
