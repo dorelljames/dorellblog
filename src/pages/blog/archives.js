@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Bio from "../components/Bio"
-import SEO from "../components/SEO"
+import Bio from "../../components/Bio"
+import SEO from "../../components/SEO"
 import moment from "moment"
-import { rhythm } from "../utils/typography"
-import { formatReadingTime } from "../utils/helpers"
-import BottomMenu from "../components/BottomMenu/Index"
+import { rhythm } from "../../utils/typography"
+import { formatReadingTime } from "../../utils/helpers"
+import BottomMenu from "../../components/BottomMenu/Index"
 
 class BlogIndex extends React.Component {
   render() {
@@ -73,7 +73,12 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { ne: true } } }
+      filter: {
+        frontmatter: {
+          categories: { ne: "Web Development" }
+          draft: { ne: true }
+        }
+      }
     ) {
       edges {
         node {
