@@ -1,23 +1,27 @@
 body {
   --bg: #fff;
   --bgSecondary: #e6ecf0;
-  --textPrimary: #222;
-  --textNormal: rgb(34, 34, 34, 0.8);
-  --textSecondary: #425a63;
-  --textInteractive: #e0245e;
-  --textInteractiveHover: #d21e57;
+  --textPrimary: #14171a;
+  --textNormal: #14171a;
+  --textSecondary: #657786;
+  --textInteractive: #794bc4;
+  --textInteractiveHover: #865dca;
 
   background-color: var(--bg);
 }
 
 body.dark {
   --bg: #15202b;
-  --bgSecondary: #8899a6;
-  --textPrimary: #fefefe;
-  --textNormal: #dedede;
+  --bgSecondary: #192734;
+  --textPrimary: #fff;
+  --textNormal: rgba(255, 255, 255, 0.8);
   --textSecondary: #8899a6;
-  --textInteractive: #ec4972;
-  --textInteractiveHover: #e81c4f;
+  --textInteractive: #794bc4;
+  --textInteractiveHover: #865dca;
+}
+
+h1.header {
+  font-family: "Varela Round", sans-serif;
 }
 
 .primaryMenu {
@@ -28,22 +32,23 @@ body.dark {
 }
 
 .primaryMenu li {
-  padding: 15px 20px 0;
+  padding: 20px 20px 0;
 }
 
 .primaryMenu li a {
-  font-family: "Varela Round", sans-serif;
+  /*font-family: "Varela Round", sans-serif;*/
+  color: var(--textPrimary);
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .primaryMenu li a[aria-current="page"],
 .primaryMenu li a:hover {
-  color: var(--textNormal);
+  color: var(--textInteractive);
 }
 
 .primaryMenu li a[aria-current="page"] {
-  color: var(--textNormal);
+  color: var(--textInteractive);
   text-decoration: underline;
 }
 

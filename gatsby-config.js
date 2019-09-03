@@ -48,22 +48,22 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
+    //   },
+    // },
     `gatsby-plugin-feed`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dorell's Blog`,
+        name: `Dorell's Personal Website`,
         short_name: `d||ell`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#e81c4f`,
+        theme_color: `#794bc4`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },

@@ -75,6 +75,7 @@ class Layout extends React.Component {
           marginBottom: 0,
           marginTop: 0,
         }}
+        class="header"
       >
         <Link
           style={{

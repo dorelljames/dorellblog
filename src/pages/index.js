@@ -6,7 +6,7 @@ import SEO from "../components/SEO"
 const IndexPage = props => (
   <>
     <SEO
-      title="Full Stack Developer"
+      title="Full Stack Developer in Cebu City, Philippines"
       description="Developer (Web & Software) in Cebu City, PH passionately crafting valuable digital products offering you the best that'll surely make you 100% satisfied."
     />
     <h1>
@@ -61,16 +61,15 @@ const IndexPage = props => (
         display: `inline-block`,
       }}
     >
-      TALKS, WORKSHOPS & EVENTS
+      Talks, Workshops & Events
     </h2>
     <p>
       I give talks and conduct workshops as a way to share back to the
       community. If you also need something get organized, I'll gladly help.
     </p>
-    <p>Here's a list of my upcoming talks / workshops:</p>
     <ul>
       <li>
-        <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
+        <h3>
           <a
             href="https://www.facebook.com/events/505464013360120/"
             target="_blank"
@@ -79,7 +78,6 @@ const IndexPage = props => (
             Gatsby Workshop
           </a>
         </h3>
-        <small>10/12/2019</small>
         <p>
           <em>Learn to build blazing fast websites and apps</em>
         </p>
@@ -92,7 +90,7 @@ const IndexPage = props => (
         display: `inline-block`,
       }}
     >
-      PLAYGROUND
+      Playground
     </h2>
     <p>
       Here are some useless things I've built. Who knows, it might be a treasure
@@ -124,7 +122,7 @@ const IndexPage = props => (
         display: `inline-block`,
       }}
     >
-      GET IN TOUCH
+      Get In Touch
     </h2>
     <p>
       Feel free to <a href="mailto:">ping me</a> or reach me through any channel
