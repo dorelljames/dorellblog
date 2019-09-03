@@ -39,6 +39,7 @@
     "typeface-varela-round": "^0.0.71",
     "typography": "^0.16.19",
     "typography-plugin-code": "^0.16.19",
+    "typography-theme-github": "^0.16.19",
     "typography-theme-lincoln": "^0.16.19"
   },
   "devDependencies": {

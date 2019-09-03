@@ -4,15 +4,15 @@ body {
   --textPrimary: #222;
   --textNormal: rgb(34, 34, 34, 0.8);
   --textSecondary: #425a63;
-  --textInteractive: #e81c4f;
-  --textInteractiveHover: #ec4972;
+  --textInteractive: #e0245e;
+  --textInteractiveHover: #d21e57;
 
   background-color: var(--bg);
 }
 
 body.dark {
-  --bg: #1c2938;
-  --bgSecondary: #10171e;
+  --bg: #15202b;
+  --bgSecondary: #8899a6;
   --textPrimary: #fefefe;
   --textNormal: #dedede;
   --textSecondary: #8899a6;

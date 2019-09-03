@@ -55,14 +55,14 @@ const IndexPage = props => (
       <Emoji symbol="😊" label="happy-face" />
     </p>
 
-    <h4
+    <h2
       style={{
         borderBottom: `1px dotted var(--textInteractive)`,
         display: `inline-block`,
       }}
     >
       TALKS, WORKSHOPS & EVENTS
-    </h4>
+    </h2>
     <p>
       I give talks and conduct workshops as a way to share back to the
       community. If you also need something get organized, I'll gladly help.
@@ -86,14 +86,14 @@ const IndexPage = props => (
       </li>
     </ul>
 
-    <h4
+    <h2
       style={{
         borderBottom: `1px dotted var(--textInteractive)`,
         display: `inline-block`,
       }}
     >
       PLAYGROUND
-    </h4>
+    </h2>
     <p>
       Here are some useless things I've built. Who knows, it might be a treasure
       for you or anyone, right?
@@ -118,14 +118,14 @@ const IndexPage = props => (
       </li>
     </ul>
 
-    <h4
+    <h2
       style={{
         borderBottom: `1px dotted var(--textInteractive)`,
         display: `inline-block`,
       }}
     >
       GET IN TOUCH
-    </h4>
+    </h2>
     <p>
       Feel free to <a href="mailto:">ping me</a> or reach me through any channel
       below:

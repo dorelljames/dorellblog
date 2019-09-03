@@ -1,8 +1,13 @@
 import Typography from "typography"
 import CodePlugin from "typography-plugin-code"
-import theme from "typography-theme-lincoln"
+// import theme from "typography-theme-lincoln"
+import theme from "typography-theme-github"
 
 import "./global.css"
+
+theme.baseFontSize = "20px"
+theme.baseLineHeight = 1.9
+theme.blockMarginBottom = 1.35
 
 theme.plugins = [new CodePlugin()]
 
@@ -12,7 +17,7 @@ theme.overrideThemeStyles = () => {
       color: `var(--textSecondary)`,
     },
     "a,a:hover": {
-      fontWeight: `bold`,
+      fontWeight: `700`,
       textShadow: `none`,
       color: `var(--textInteractive)`,
       backgroundImage: `var(--textInteractive)`,
