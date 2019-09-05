@@ -1,18 +1,22 @@
 import Typography from "typography"
 import CodePlugin from "typography-plugin-code"
-import theme from "typography-theme-lincoln"
+import theme from "typography-theme-github"
 
 import "./global.css"
+
+theme.baseFontSize = "20px"
+theme.baseLineHeight = 1.9
+theme.blockMarginBottom = 1.35
 
 theme.plugins = [new CodePlugin()]
 
 theme.overrideThemeStyles = () => {
   return {
     body: {
-      color: `var(--textSecondary)`,
+      color: `var(--textNormal)`,
     },
     "a,a:hover": {
-      fontWeight: `bold`,
+      fontWeight: `700`,
       textShadow: `none`,
       color: `var(--textInteractive)`,
       backgroundImage: `var(--textInteractive)`,
@@ -28,6 +32,16 @@ theme.overrideThemeStyles = () => {
     },
     "h1, h2, h3, h4, h5, h6": {
       color: `var(--textPrimary)`,
+      border: `0`,
+    },
+    "h1 a, h2 a, h3 a, h4 a, h5 a, h6 a": {
+      color: `var(--textPrimary)`,
+      border: `0`,
+    },
+    "h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover": {
+      color: `var(--textInteractive)`,
+      border: `0`,
+      textDecoration: `none`,
     },
     blockquote: {
       borderLeftColor: `var(--textInteractive)`,

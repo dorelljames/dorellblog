@@ -6,7 +6,7 @@ import SEO from "../components/SEO"
 const IndexPage = props => (
   <>
     <SEO
-      title="Full Stack Developer"
+      title="Full Stack Developer in Cebu City, Philippines"
       description="Developer (Web & Software) in Cebu City, PH passionately crafting valuable digital products offering you the best that'll surely make you 100% satisfied."
     />
     <h1>
@@ -55,22 +55,21 @@ const IndexPage = props => (
       <Emoji symbol="😊" label="happy-face" />
     </p>
 
-    <h4
+    <h2
       style={{
         borderBottom: `1px dotted var(--textInteractive)`,
         display: `inline-block`,
       }}
     >
-      TALKS, WORKSHOPS & EVENTS
-    </h4>
+      Talks, Workshops & Events
+    </h2>
     <p>
       I give talks and conduct workshops as a way to share back to the
       community. If you also need something get organized, I'll gladly help.
     </p>
-    <p>Here's a list of my upcoming talks / workshops:</p>
     <ul>
       <li>
-        <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
+        <h3>
           <a
             href="https://www.facebook.com/events/505464013360120/"
             target="_blank"
@@ -79,21 +78,20 @@ const IndexPage = props => (
             Gatsby Workshop
           </a>
         </h3>
-        <small>10/12/2019</small>
         <p>
           <em>Learn to build blazing fast websites and apps</em>
         </p>
       </li>
     </ul>
 
-    <h4
+    <h2
       style={{
         borderBottom: `1px dotted var(--textInteractive)`,
         display: `inline-block`,
       }}
     >
-      PLAYGROUND
-    </h4>
+      Playground
+    </h2>
     <p>
       Here are some useless things I've built. Who knows, it might be a treasure
       for you or anyone, right?
@@ -118,14 +116,14 @@ const IndexPage = props => (
       </li>
     </ul>
 
-    <h4
+    <h2
       style={{
         borderBottom: `1px dotted var(--textInteractive)`,
         display: `inline-block`,
       }}
     >
-      GET IN TOUCH
-    </h4>
+      Get In Touch
+    </h2>
     <p>
       Feel free to <a href="mailto:">ping me</a> or reach me through any channel
       below:

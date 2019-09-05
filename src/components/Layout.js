@@ -75,6 +75,7 @@ class Layout extends React.Component {
           marginBottom: 0,
           marginTop: 0,
         }}
+        class="header"
       >
         <Link
           style={{
@@ -96,7 +97,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(24),
+            maxWidth: rhythm(20),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >

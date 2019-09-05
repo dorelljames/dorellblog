@@ -19,42 +19,44 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link
-                  style={{ boxShadow: `none` }}
-                  to={"blog" + node.fields.slug}
+        <ul style={{ listStyle: `none`, marginLeft: 0 }}>
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <li key={node.fields.slug} style={{ marginBottom: rhythm(1.9) }}>
+                <h2
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                  }}
                 >
-                  {title}
-                </Link>
-              </h3>
-              <small
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                  display: "inline-block",
-                }}
-              >
-                {moment(node.frontmatter.date).fromNow()}
-              </small>{" "}
-              &middot;{" "}
-              <small>
-                <em>{formatReadingTime(node.timeToRead)}</em>
-              </small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
+                  <Link
+                    style={{ boxShadow: `none` }}
+                    to={"blog" + node.fields.slug}
+                  >
+                    {title}
+                  </Link>
+                </h2>
+                <small
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                    display: "inline-block",
+                  }}
+                >
+                  {moment(node.frontmatter.date).fromNow()}
+                </small>{" "}
+                &middot;{" "}
+                <small>
+                  <em>{formatReadingTime(node.timeToRead)}</em>
+                </small>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </li>
+            )
+          })}
+        </ul>
         <hr />
         <p>
           It seems you have reached the bottom of the page, didn't you find what
