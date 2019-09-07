@@ -24,8 +24,6 @@ const HomeLink = props => (
 )
 
 const NavBottomMenu = props => {
-  console.log(props.location)
-
   if (isPathBlogPost(props.location.pathname)) {
     const { previous, next } = props
 
