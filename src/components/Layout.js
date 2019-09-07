@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
 // import MessengerCustomerChat from "react-messenger-customer-chat"
+import Bio from "../components/Bio"
 import NavBottomMenu from "../components/NavBottomMenu"
 import { isPathBlogPost } from "../utils/helpers"
 
@@ -65,7 +66,7 @@ class Layout extends React.Component {
   render() {
     // const { location, title, children } = this.props
     // const rootPath = `${__PATH_PREFIX__}/`
-    const { children, title } = this.props
+    const { children, title, location } = this.props
     let header
 
     header = (
@@ -75,7 +76,7 @@ class Layout extends React.Component {
           marginBottom: 0,
           marginTop: 0,
         }}
-        class="header"
+        className="header"
       >
         <Link
           style={{
@@ -127,7 +128,23 @@ class Layout extends React.Component {
               <LightDarkModeToggler />
             </div>
           </header>
-          <main>{children}</main>
+          <main>
+            {!isPathBlogPost(location.pathname) &&
+              location.pathname !== "/blog" && (
+                <>
+                  <h1>
+                    <span style={{ display: `block` }}>
+                      Hi, I'm Dorell James!
+                    </span>
+                  </h1>
+                  <Bio
+                    heading="Full Stack Developer"
+                    subHeading="Cebu City, Philippines"
+                  />
+                </>
+              )}
+            {children}
+          </main>
           {/*<MessengerCustomerChat
             pageId="566722000166680"
             appId="1678638095724206"
@@ -170,8 +187,8 @@ class Layout extends React.Component {
           </footer>
         </div>
 
-        {!isPathBlogPost(this.props.location.pathname) && (
-          <NavBottomMenu location={this.props.location} />
+        {!isPathBlogPost(location.pathname) && (
+          <NavBottomMenu location={location} />
         )}
       </>
     )
