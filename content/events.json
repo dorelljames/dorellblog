@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "name": "Gatsby Workshop",
+      "description": "Learn to build blazing fast websites and apps",
+      "date": "10/12/2019",
+      "link": "https://www.facebook.com/events/505464013360120/"
+    },
+    {
+      "name": "React and Beyond",
+      "description": "Beginner workshop to learn ReactJS and take it to the world",
+      "date": "11/23/2019",
+      "link": "https://www.facebook.com/events/505464013360120/"
+    }
+  ]
+}

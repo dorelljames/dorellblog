@@ -129,20 +129,19 @@ class Layout extends React.Component {
             </div>
           </header>
           <main>
-            {!isPathBlogPost(location.pathname) &&
-              location.pathname !== "/blog" && (
-                <>
-                  <h1>
-                    <span style={{ display: `block` }}>
-                      Hi, I'm Dorell James!
-                    </span>
-                  </h1>
-                  <Bio
-                    heading="Full Stack Developer"
-                    subHeading="Cebu City, Philippines"
-                  />
-                </>
-              )}
+            {location.pathname === "/" && (
+              <>
+                <h1>
+                  <span style={{ display: `block` }}>
+                    Hi, I'm Dorell James!
+                  </span>
+                </h1>
+                <Bio
+                  heading="Full Stack Developer"
+                  subHeading="Cebu City, Philippines"
+                />
+              </>
+            )}
             {children}
           </main>
           {/*<MessengerCustomerChat

@@ -1,7 +1,9 @@
 import React from "react"
-
 import Emoji from "../components/Emoji"
 import SEO from "../components/SEO"
+import SocialMedia from "../components/SocialMedia"
+
+import events from "../../content/events.json"
 
 const IndexPage = props => (
   <>
@@ -42,9 +44,9 @@ const IndexPage = props => (
       >
         JavaScript Cebu
       </a>
-      . I work together with these amazing peeps who relentlessly share their
-      time towards bringing these events - meetups, workshops and more to the
-      benefit of the community. 💯
+      . I work together with these amazing people who relentlessly share their
+      enourmous efforts and dedicate their time towards bringing these events -
+      meetups, workshops and more for the benefit of the community. 💯
     </p>
     <p>
       If you ever see me, please say hi!{" "}
@@ -60,7 +62,7 @@ const IndexPage = props => (
       Talks, Workshops & Events
     </h2>
     <p>
-      I give talks and conduct workshops as a way to share back to the
+      I also give talks and conduct workshops as a way to share back to the
       community. If you also need something get organized, I'll gladly help.
     </p>
     <ul>
@@ -112,18 +114,21 @@ const IndexPage = props => (
       </li>
     </ul>
 
-    <h2
-      style={{
-        borderBottom: `1px dotted var(--textInteractive)`,
-        display: `inline-block`,
-      }}
-    >
-      Get In Touch
-    </h2>
-    <p>
-      Feel free to <a href="mailto:">ping me</a> or reach me through any channel
-      below:
-    </p>
+    <div id="contact">
+      <h2
+        style={{
+          borderBottom: `1px dotted var(--textInteractive)`,
+          display: `inline-block`,
+        }}
+      >
+        Get In Touch
+      </h2>
+      <p>
+        Feel free to <a href="mailto:">ping me</a> or reach me through any
+        channel below:
+      </p>
+      <SocialMedia />
+    </div>
   </>
 )
 
