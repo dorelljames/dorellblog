@@ -138,8 +138,9 @@ const IndexPage = props => {
           Get In Touch
         </h2>
         <p>
-          Feel free to <a href="mailto: galangdj+website@gmail.com">ping me</a>{" "}
-          or reach me through any channel below:
+          Plese feel free to{" "}
+          <a href="mailto: galangdj+website@gmail.com">ping me</a> anytime or
+          reach me through any channel below:
         </p>
         <SocialMedia />
       </div>
