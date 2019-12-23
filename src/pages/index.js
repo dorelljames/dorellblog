@@ -25,7 +25,7 @@ const IndexPage = props => {
         />
       </p>
       <p>
-        I also a lead / co-lead different tech communities here in Cebu namely{" "}
+        I also lead / co-lead different tech communities here in Cebu namely{" "}
         <a
           href="https://www.facebook.com/laravelcebu"
           target="_blank"
