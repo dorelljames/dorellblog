@@ -183,6 +183,14 @@ class Layout extends React.Component {
             >
               GitHub
             </a>
+            . Visit{" "}
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://archive.dorelljames.com"
+            >
+              old website
+            </a>
           </footer>
         </div>
 
