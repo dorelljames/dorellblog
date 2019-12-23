@@ -1,8 +1,8 @@
 import React from "react"
 
 const SocialMedia = () => (
-  <ul style={{ display: `flex`, listStyle: `none` }}>
-    <li>
+  <ul style={{ display: `flex`, listStyle: `none`, marginLeft: `0` }}>
+    <li style={{ marginRight: `1rem` }}>
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -24,7 +24,7 @@ const SocialMedia = () => (
         </svg>
       </a>
     </li>
-    <li>
+    <li style={{ marginRight: `1rem` }}>
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -46,7 +46,7 @@ const SocialMedia = () => (
         </svg>
       </a>
     </li>
-    <li>
+    <li style={{ marginRight: `1rem` }}>
       <a
         target="_blank"
         rel="noopener noreferrer"
