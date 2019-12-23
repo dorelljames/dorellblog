@@ -57,10 +57,15 @@ class BlogIndex extends React.Component {
             )
           })}
         </ul>
-        <hr />
+        <hr
+          style={{
+            borderTop: `1px dotted var(--textPrimary)`,
+            marginTop: `5rem`,
+          }}
+        />
         <p>
-          It seems you have reached the bottom of the page, didn't you find what
-          you're looking for? Perhaps{" "}
+          It seems you have reached the end and have gone through all the blog
+          posts. Didn't you find what you're looking for? Perhaps{" "}
           <Link to="/blog/archives">try going to the archives</Link>.
         </p>
       </>
