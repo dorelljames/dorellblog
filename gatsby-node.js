@@ -18,8 +18,15 @@ exports.createPages = ({ graphql, actions }) => {
           index === posts.length - 1 ? null : posts[index + 1].node
         const next = index === 0 ? null : posts[index - 1].node
 
+        const path = `blog${
+          post.node.frontmatter.categories.includes("Web Development")
+            ? ""
+            : "/archives"
+        }${post.node.fields.slug}`
+
         createPage({
-          path: "blog" + post.node.fields.slug,
+          path,
+
           component: blogPostTemplate,
           context: {
             slug: post.node.fields.slug,
