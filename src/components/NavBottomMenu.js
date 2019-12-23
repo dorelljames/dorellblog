@@ -32,7 +32,7 @@ const NavBottomMenu = props => {
         <li>
           {(previous && (
             <Link to={"blog" + previous.fields.slug} rel="prev">
-              ← Prev
+              <p style={{ marginBottom: `0` }}>← Prev</p>
               <small>{previous.frontmatter.title}</small>
             </Link>
           )) || <HomeLink />}
@@ -40,7 +40,8 @@ const NavBottomMenu = props => {
         <li>
           {(next && (
             <Link to={"blog" + next.fields.slug} rel="next">
-              Next →<small>{next.frontmatter.title} </small>
+              <p style={{ marginBottom: `0` }}>Next →</p>
+              <small>{next.frontmatter.title} </small>
             </Link>
           )) || <HomeLink />}
         </li>
