@@ -89,7 +89,7 @@ const IndexPage = props => {
           ))}
         </ul>
       ) : (
-        <p>
+        <p style={{ marginLeft: `2.375rem` }}>
           <em>No upcoming events at the moment...</em>
 
           <Emoji symbol="😊" label="happy-face" />
