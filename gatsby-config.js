@@ -82,7 +82,8 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    "gatsby-plugin-dark-mode",
+    `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-netlify`,
     {
       resolve: "gatsby-plugin-html2amp",
       options: {
