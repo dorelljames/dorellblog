@@ -26,11 +26,15 @@ Now, getting this up and running on a Linux machine is pretty straightforward by
 
 So without further ado, let's download the complete PortableJekyll package using the command below (source from his GitHub repo):
 
-`git clone git@github.com:madhur/PortableJekyll.git`
+```bash
+git clone git@github.com:madhur/PortableJekyll.git
+```
 
 2.) Also, we need Bootstrap of course. Let's get down to it by cloning Twitter's bootstrap Github repo as well using command below:
 
-`git clone git@github.com:twbs/bootstrap.git`
+```bash
+git clone git@github.com:twbs/bootstrap.git
+```
 
 ### A Little Bit Of Configuration
 
@@ -40,7 +44,9 @@ So without further ado, let's download the complete PortableJekyll package using
 
 3.) Input the following where PortableJekyll folder can be found on drive C:. Update as it seem appropriate on your end if PortableJekyll is located somewhere else other than drive C:
 
-`C:\PortableJekyll\ruby\bin;C:\PortableJekyll\devkit\bin;C:\PortableJekyll\Git;C:\PortableJekyll\Python\App;C:\PortableJekyll\devkit\mingw\bin;C:\PortableJekyll\curl\bin;`
+```
+C:\PortableJekyll\ruby\bin;C:\PortableJekyll\devkit\bin;C:\PortableJekyll\Git;C:\PortableJekyll\Python\App;C:\PortableJekyll\devkit\mingw\bin;C:\PortableJekyll\curl\bin;
+```
 
 4.) Launch cmd or Windows powershell and check if command &#8220;jekyll&#8221; is now available. If not, go back to Step 2 & 3.
 
@@ -50,8 +56,11 @@ So without further ado, let's download the complete PortableJekyll package using
 
 2.) Using cmd or any Windows powershell, navigate to the Twitter bootstrap directory and issue the command below to build the documentation.
 
-`jekyll build`
+```bash
+jekyll build
+```
 
+  
 3.) Now, lastly run command and more importantly do not close this shell and leave it running: `jekyll serve`
 
 4.) Voila! Browse in your browser the URL: <a href="http://localhost:9001" target="_blank"><span class="file">http://localhost:9001</span></a>

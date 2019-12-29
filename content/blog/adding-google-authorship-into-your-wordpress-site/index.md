@@ -25,15 +25,18 @@ Here's how you do it in as easy as 1, 2, 3&#8230;
 
 2.) Add the following code below:
 
-    // Google Authorship Integration
-    if ( ! function_exists('google_authorship') ) {
-        function google_authorship() {
-            if ( is_single() || is_page() ) {
-                echo '<link rel="author" href="YOUR-GOOGLE-PLUS-PROFILE-LINK" />';
-            }
-        }
+```php
+// Google Authorship Integration
+if (!function_exists('google_authorship')) {
+  function google_authorship()
+  {
+    if (is_single() || is_page()) {
+      echo '<link rel="author" href="YOUR-GOOGLE-PLUS-PROFILE-LINK" />';
     }
-    add_action('wp_head', 'google_authorship');
+  }
+}
+add_action('wp_head', 'google_authorship');
+```
 
 3.) Replace &#8220;**YOUR-GOOGLE-PLUS-PROFILE-LINK**&#8221; with your <a href="https://plus.google.com/me" target="_blank">Google+ profile</a>. Save/Upload it and test using <a href="http://www.google.com/webmasters/tools/richsnippets" target="_blank"><strong>Webmaster Structured Data Testing Tool</strong></a>
 

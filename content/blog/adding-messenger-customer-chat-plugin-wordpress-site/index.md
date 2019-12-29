@@ -54,45 +54,58 @@ In WordPress sidebar menu, go to **Appearance** > **Editor**. Make sure that you
 >
 > **NOTE: If your `functions.php` file is empty, make sure to input the opening php tag and append the code below (few lines after).**
 
-    <?php
+```php
+<?php
 
-    // Insert the code here...
+// Insert the code here...
+
+?>
+```
 
 **NOTE: If your `functions.php` file is not empty, make sure not to paste the code below after the closing php tag.**
+**See `?>`**
 
-    // Some code here...
+```php
+// Insert the code here..
+// Some code here...
 
-    ?>
+?>
 
-    // DO NOT INSERT CODE HERE
+// DO NOT INSERT CODE HERE
+
+```
 
 **Here's the right way below&#8230;**
 
-    <?php
+```php
+<?php
 
-    // Insert the code here... This is the line after the PHP opening tag and/or before the PHP closing tag
-    // If you have existing code, do not clear them out but just paste it above or below but always remember insert in between the opening and closing tags
+// Insert the code here... This is the line after the PHP opening tag and/or before the PHP closing tag
+// If you have existing code, do not clear them out but just paste it above or below but always remember insert in between the opening and closing tags
 
-    ?>
+?>
+```
 
 You may now paste the following code below (append it to the bottom part). Make sure to replace **`<YOUR_FACEBOOK_PAGE_ID>`** from Step 1.
 
-    // Messenger Chat
-    if ( ! function_exists('messenger_chat') ) {
-        function messenger_chat() {
-            echo '<div class="fb-customerchat" page_id="<YOUR_FACEBOOK_PAGE_ID>" minimized="false"></div>';
-        }
+```php
+// Messenger Chat
+if ( ! function_exists('messenger_chat') ) {
+    function messenger_chat() {
+        echo '<div class="fb-customerchat" page_id="<YOUR_FACEBOOK_PAGE_ID>" minimized="false"></div>';
     }
+}
 
-    // FB SDK
-    if ( ! function_exists('fb_sdk') ) {
-        function fb_sdk() {
-            echo '<script>window.fbAsyncInit=function(){FB.init({appId : "1678638095724206", autoLogAppEvents : true, xfbml : true, version : "v2.11"});}; (function(d, s, id){var js, fjs=d.getElementsByTagName(s)[0]; if (d.getElementById(id)){return;}js=d.createElement(s); js.id=id; js.src="https://connect.facebook.net/en_US/xfbml.customerchat.js"; fjs.parentNode.insertBefore(js, fjs);}(document, "script", "facebook-jssdk"));</script>';
-        }
+// FB SDK
+if ( ! function_exists('fb_sdk') ) {
+    function fb_sdk() {
+        echo '<script>window.fbAsyncInit=function(){FB.init({appId : "1678638095724206", autoLogAppEvents : true, xfbml : true, version : "v2.11"});}; (function(d, s, id){var js, fjs=d.getElementsByTagName(s)[0]; if (d.getElementById(id)){return;}js=d.createElement(s); js.id=id; js.src="https://connect.facebook.net/en_US/xfbml.customerchat.js"; fjs.parentNode.insertBefore(js, fjs);}(document, "script", "facebook-jssdk"));</script>';
     }
+}
 
-    add_action('wp_footer', 'messenger_chat');
-    add_action('wp_footer', 'fb_sdk');
+add_action('wp_footer', 'messenger_chat');
+add_action('wp_footer', 'fb_sdk');
+```
 
 Replace **`<YOUR_FACEBOOK_PAGE_ID>`** with your **Facebook Page ID**. Save. Hooray!
 

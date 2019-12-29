@@ -164,6 +164,10 @@ body.dark #sun-moon:after {
   border-color: #3f3f4c;
 }
 
+.gatsby-highlight {
+  margin-bottom: 2.565rem;
+}
+
 .gatsby-highlight-code-line {
   background-color: #feb;
   display: block;
