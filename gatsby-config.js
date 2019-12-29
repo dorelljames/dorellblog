@@ -3,10 +3,11 @@ module.exports = {
     title: `d||rell`,
     author: `Dorell James`,
     description: `Personal website of Dorell James.`,
-    siteUrl: `https://dorellblog.netlify.com/`,
+    siteUrl: `https://dorelljames.com/`,
     social: {
-      twitter: `dorelljames`,
-      github: `dorelljames`,
+      twitter: `https://twitter.com/dorelljames`,
+      github: `https://github.com/dorelljames`,
+      facebook: `https://facebook.com/galangdj`,
     },
   },
   plugins: [
@@ -46,6 +47,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-netlify`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // {
@@ -65,7 +67,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#794bc4`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/logo-icon.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -83,13 +85,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-dark-mode`,
-    `gatsby-plugin-netlify`,
-    {
-      resolve: "gatsby-plugin-html2amp",
-      options: {
-        files: ["blog/**", "index.html", "about.html", "projects.html"],
-        dist: "public/amp",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-html2amp",
+    //   options: {
+    //     files: ["blog/**", "index.html", "about.html", "projects.html"],
+    //     dist: "public/amp",
+    //   },
+    // },
   ],
 }
