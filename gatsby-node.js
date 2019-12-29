@@ -6,22 +6,19 @@ exports.createPages = ({ graphql, actions }) => {
 
   // Redirects from old website URLS
   createRedirect({
-    fromPath: "/personal/",
-    toPath: "/blog/",
+    fromPath: "/personal/*",
+    toPath: "/blog/:splat",
     isPermanent: true,
-    force: true,
   })
   createRedirect({
-    fromPath: "/search-engine-optimization/",
-    toPath: "/blog/",
+    fromPath: "/search-engine-optimization/*",
+    toPath: "/blog/:splat",
     isPermanent: true,
-    force: true,
   })
   createRedirect({
-    fromPath: "/category/web-development/",
-    toPath: "/blog/",
+    fromPath: "/web-development/*",
+    toPath: "/blog/:splat",
     isPermanent: true,
-    force: true,
   })
 
   const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
