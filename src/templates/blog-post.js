@@ -7,12 +7,20 @@ import moment from "moment"
 import { rhythm, scale } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
 import NavBottomMenu from "../components/NavBottomMenu"
+import Emoji from "../components/Emoji"
+import { DiscussionEmbed } from "disqus-react"
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    // const siteTitle = this.props.data.site.siteMetadata.title
+    const { markdownRemark: post, site } = this.props.data
     const { previous, next, slug } = this.props.pageContext
+
+    const disqusShortname = process.env.GATSBY_DISQUS_NAME || `dorelljames-site`
+    const disqusConfig = {
+      url: `${site.siteMetadata.siteUrl}/blog${slug}`,
+      identifier: slug,
+      title: post.frontmatter.title,
+    }
 
     return (
       <>
@@ -43,6 +51,12 @@ class BlogPostTemplate extends React.Component {
         />
         <Bio />
 
+        <h2>
+          Let me know your thoughts... <Emoji symbol="😊" label="happy-face" />
+        </h2>
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+
+        <h2>Or, continue reading...</h2>
         <ul
           style={{
             display: `flex`, // @todo: hide when on mobile
@@ -50,6 +64,8 @@ class BlogPostTemplate extends React.Component {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
+            marginLeft: 0,
+            marginTop: `1.565rem`,
           }}
         >
           <li>
@@ -85,6 +101,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
