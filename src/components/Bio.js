@@ -46,7 +46,7 @@ function Bio(props) {
             )) || (
               <p>
                 Personal blog by{" "}
-                <a href={"https://twitter.com/" + social.twitter}>
+                <a href={social.twitter}>
                   <strong>{author}</strong>
                 </a>
                 <br />I love you and coding!
