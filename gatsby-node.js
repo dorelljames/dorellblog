@@ -20,6 +20,12 @@ exports.createPages = ({ graphql, actions }) => {
     toPath: "/blog/:splat",
     isPermanent: true,
   })
+  createRedirect({
+    fromPath: "https://dorellblog.netlify.com/*",
+    toPath: "https://www.dorelljames.com/:splat",
+    isPermanent: true,
+    force: true,
+  })
 
   const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
   const createBlogPostsWithPagination = query => {

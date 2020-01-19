@@ -128,22 +128,19 @@ class Layout extends React.Component {
               <LightDarkModeToggler />
             </div>
           </header>
-          <main>
-            {location.pathname === "/" && (
-              <>
-                <h1>
-                  <span style={{ display: `block` }}>
-                    Hi, I'm Dorell James!
-                  </span>
-                </h1>
-                <Bio
-                  heading="Full Stack Developer"
-                  subHeading="Cebu City, Philippines"
-                />
-              </>
-            )}
-            {children}
-          </main>
+          {location.pathname === "/" && (
+            <div>
+              <h1>
+                <span style={{ display: `block` }}>Hi, I'm Dorell James!</span>
+              </h1>
+              <Bio
+                heading="Full Stack Developer"
+                subHeading="Cebu City, Philippines"
+              />
+            </div>
+          )}
+
+          <main>{children}</main>
           {/*<MessengerCustomerChat
             pageId="566722000166680"
             appId="1678638095724206"
