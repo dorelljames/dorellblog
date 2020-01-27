@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@weknow/gatsby-remark-twitter": "^0.2.3",
     "disqus-react": "^1.0.7",
     "gatsby": "^2.3.25",
     "gatsby-image": "^2.0.39",
