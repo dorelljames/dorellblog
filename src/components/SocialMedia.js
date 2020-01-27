@@ -7,6 +7,7 @@ const SocialMedia = () => (
         target="_blank"
         rel="noopener noreferrer"
         href="https://www.facebook.com/galangdj"
+        aria-label="Find me at Facebook"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +30,7 @@ const SocialMedia = () => (
         target="_blank"
         rel="noopener noreferrer"
         href="https://twitter.com/dorelljames"
+        aria-label="Follow me on Twitter"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +53,7 @@ const SocialMedia = () => (
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/dorelljames"
+        aria-label="See my GitHub profile"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
