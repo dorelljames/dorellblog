@@ -47,6 +47,7 @@ exports.createPages = ({ graphql, actions }) => {
         )
           ? "blog"
           : "blog/archives"
+        const path = `${basePath}${post.node.fields.slug}`
 
         createPage({
           path,
