@@ -28,8 +28,8 @@ exports.createPages = ({ graphql, actions }) => {
   })
 
   const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
-  const createBlogPostsWithPagination = query => {
-    return graphql(query).then(result => {
+  const createBlogPostsWithPagination = (query) => {
+    return graphql(query).then((result) => {
       if (result.errors) {
         throw result.errors
       }
@@ -42,17 +42,17 @@ exports.createPages = ({ graphql, actions }) => {
           index === posts.length - 1 ? null : posts[index + 1].node
         const next = index === 0 ? null : posts[index - 1].node
 
-        const path = `blog${
-          post.node.frontmatter.categories.includes("Web Development")
-            ? ""
-            : "/archives"
-        }${post.node.fields.slug}`
+        const basePath = post.node.frontmatter.categories.includes(
+          "Web Development"
+        )
+          ? "blog"
+          : "blog/archives"
 
         createPage({
           path,
-
           component: blogPostTemplate,
           context: {
+            basePath,
             slug: post.node.fields.slug,
             categories: post.node.frontmatter.categories,
             previous,
