@@ -7,12 +7,12 @@ exports.createPages = ({ graphql, actions }) => {
   // Redirects from old website URLS
   createRedirect({
     fromPath: "/personal/*",
-    toPath: "/blog/:splat",
+    toPath: "/blog/archives/:splat",
     isPermanent: true,
   })
   createRedirect({
     fromPath: "/search-engine-optimization/*",
-    toPath: "/blog/:splat",
+    toPath: "/blog/archives/:splat",
     isPermanent: true,
   })
   createRedirect({
@@ -28,8 +28,8 @@ exports.createPages = ({ graphql, actions }) => {
   })
 
   const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
-  const createBlogPostsWithPagination = (query) => {
-    return graphql(query).then((result) => {
+  const createBlogPostsWithPagination = query => {
+    return graphql(query).then(result => {
       if (result.errors) {
         throw result.errors
       }
