@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "name": "Intro to Testing with React",
+      "description": "Understand what is testing, how to do it, and more importantly, why we do it.",
+      "date": "07/31/2020",
+      "link": "https://www.facebook.com/events/673508976535889/",
+      "location": "Online Event: Webinar hosted at Cebu City, PH"
+    },
+    {
       "name": "JAMstack Workshop",
       "description": "Let's learn Javascript, APIs, and Markups together! Do JAMSTACK with a bang!",
       "date": "11/30/2019",
