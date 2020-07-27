@@ -20,15 +20,17 @@ exports.createPages = ({ graphql, actions }) => {
     toPath: "/blog/:splat",
     isPermanent: true,
   })
+
+  // Fixes files that were from old WP sites
   createRedirect({
-    fromPath: "https://dorellblog.netlify.com/*",
-    toPath: "https://www.dorelljames.com/:splat",
-    isPermanent: true,
+    fromPath: "https://www.dorelljames.com/wp-content/*",
+    toPath: "http://archive.dorelljames.com/wp-content/:splat",
+    isPermanent: false,
     force: true,
   })
 
   const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
-  const createBlogPostsWithPagination = query => {
+  const creattscyeBlogPostsWithPagination = query => {
     return graphql(query).then(result => {
       if (result.errors) {
         throw result.errors
