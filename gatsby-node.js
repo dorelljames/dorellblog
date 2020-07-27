@@ -30,7 +30,7 @@ exports.createPages = ({ graphql, actions }) => {
   })
 
   const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
-  const creattscyeBlogPostsWithPagination = query => {
+  const createBlogPostsWithPagination = query => {
     return graphql(query).then(result => {
       if (result.errors) {
         throw result.errors
