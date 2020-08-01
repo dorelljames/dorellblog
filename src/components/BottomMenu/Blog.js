@@ -29,7 +29,7 @@ const BottomMenuBlog = props => {
     <ul className="bottomMenu" style={{ alignItems: "baseline" }}>
       <li>
         {(previous && (
-          <Link to={"blog" + previous.fields.slug} rel="prev">
+          <Link to={"/blog" + previous.fields.slug} rel="prev">
             <p>← Prev</p>
             <small>{previous.frontmatter.title}</small>
           </Link>
@@ -37,7 +37,7 @@ const BottomMenuBlog = props => {
       </li>
       <li>
         {(next && (
-          <Link to={"blog" + next.fields.slug} rel="next">
+          <Link to={"/blog" + next.fields.slug} rel="next">
             <p>Next →</p>
             <small>{next.frontmatter.title} </small>
           </Link>

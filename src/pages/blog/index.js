@@ -21,6 +21,7 @@ class BlogIndex extends React.Component {
         <Bio />
         <ul style={{ listStyle: `none`, marginLeft: 0 }}>
           {posts.map(({ node }) => {
+            console.log("BlogIndex -> render -> node", node)
             const title = node.frontmatter.title || node.fields.slug
             return (
               <li key={node.fields.slug} style={{ marginBottom: rhythm(1.9) }}>
@@ -31,7 +32,7 @@ class BlogIndex extends React.Component {
                 >
                   <Link
                     style={{ boxShadow: `none` }}
-                    to={"blog" + node.fields.slug}
+                    to={"/blog" + node.fields.slug}
                   >
                     {title}
                   </Link>

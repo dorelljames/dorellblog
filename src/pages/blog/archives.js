@@ -30,7 +30,7 @@ class BlogIndex extends React.Component {
               >
                 <Link
                   style={{ boxShadow: `none` }}
-                  to={"blog/archives/" + node.fields.slug}
+                  to={"/blog/archives/" + node.fields.slug}
                 >
                   {title}
                 </Link>
