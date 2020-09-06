@@ -1,15 +1,32 @@
 import React from "react"
 import SEO from "../components/SEO"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Emoji from "../components/Emoji"
+import { format } from "date-fns"
 
-import events from "../../content/events.json"
+const BlockContent = require("@sanity/block-content-to-react")
+
+const serializers = {
+  types: {
+    code: props => (
+      <pre data-language={props.node.language}>
+        <code>{props.node.code}</code>
+      </pre>
+    ),
+  },
+}
 
 const EventsPage = props => {
-  const upcomingEvents = events.data.filter(
+  const events = props.data.allSanityEvent.nodes
+    .map(event => {
+      return { ...event, date: new Date(event.date) }
+    })
+    .sort((a, b) => b.date - a.date)
+
+  const upcomingEvents = events.filter(
     event => new Date(event.date).getTime() > new Date().getTime()
   )
-  const previousEvents = events.data.filter(
+  const previousEvents = events.filter(
     event => new Date(event.date).getTime() < new Date().getTime()
   )
 
@@ -52,15 +69,20 @@ const EventsPage = props => {
       <ul>
         {upcomingEvents.length > 0 ? (
           upcomingEvents.map(event => (
-            <li>
+            <li key={event.name}>
               <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
                 <a href={event.link} target="_blank" rel="noopener noreferrer">
                   {event.name}
                 </a>
               </h3>
-              <small>{event.date}</small>
+              <small>{format(event.date, "MM/dd/yyyy")}</small>
               <p>
-                <em>{event.description}</em>
+                <em>
+                  <BlockContent
+                    blocks={event._rawDescription || []}
+                    serializers={serializers}
+                  />
+                </em>
               </p>
             </li>
           ))
@@ -84,15 +106,18 @@ const EventsPage = props => {
       <ul>
         {previousEvents.length > 0 ? (
           previousEvents.map(event => (
-            <li>
+            <li key={event.name}>
               <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
                 <a href={event.link} target="_blank" rel="noopener noreferrer">
                   {event.name}
                 </a>
               </h3>
-              <small>{event.date}</small>
+              <small>{format(event.date, "MM/dd/yyyy")}</small>
               <p>
-                <em>{event.description}</em>
+                <BlockContent
+                  blocks={event._rawDescription || []}
+                  serializers={serializers}
+                />
               </p>
             </li>
           ))
@@ -105,3 +130,17 @@ const EventsPage = props => {
 }
 
 export default EventsPage
+
+export const query = graphql`
+  query EventsQuery {
+    allSanityEvent {
+      nodes {
+        name
+        _rawDescription
+        link
+        location
+        date
+      }
+    }
+  }
+`

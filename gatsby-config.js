@@ -91,6 +91,23 @@ module.exports = {
       },
     },
     `gatsby-plugin-dark-mode`,
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: `6851dj4d`,
+        dataset: `production`,
+        // a token with read permissions is required
+        // if you have a private dataset
+        token: process.env.SANITY_TOKEN,
+
+        // If the Sanity GraphQL API was deployed using `--tag <name>`,
+        // use `graphqlTag` to specify the tag name. Defaults to `default`.
+        graphqlTag: "default",
+
+        overlayDrafts: true,
+        watchMode: true,
+      },
+    },
     // {
     //   resolve: "gatsby-plugin-html2amp",
     //   options: {
