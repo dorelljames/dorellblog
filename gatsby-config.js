@@ -1,8 +1,6 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
-
-console.log(process.env.NODE_ENV)
+});
 
 const blogQuery = `
   {
@@ -23,7 +21,7 @@ const blogQuery = `
       }
     }
   }
-  `
+  `;
 
 const queries = [
   {
@@ -32,22 +30,7 @@ const queries = [
       data.allMarkdownRemark.edges.map(({ node }) => node), // optional
     indexName: process.env.ALGOLIA_INDEX_NAME || "siteData", // overrides main index name, optional
   },
-]
-
-console.log({
-  appId: process.env.ALGOLIA_APP_ID,
-  // Use Admin API key without GATSBY_ prefix, so that the key isn't exposed in the application
-  // Tip: use Search API key with GATSBY_ prefix to access the service from within components
-  apiKey: "",
-  indexName: process.env.ALGOLIA_INDEX_NAME, // for all queries
-  queries,
-  chunkSize: 10000, // default: 1000
-  settings: {
-    // optional, any index settings
-  },
-  enablePartialUpdates: true, // default: false
-  // matchFields: ["slug", "modified"], // Array<String> default: ['modified']
-})
+];
 
 module.exports = {
   siteMetadata: {
@@ -141,6 +124,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-sanity`,
       options: {
@@ -185,4 +169,4 @@ module.exports = {
     //   },
     // },
   ],
-}
+};
