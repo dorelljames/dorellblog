@@ -7,6 +7,10 @@ import Bio from "../components/Bio"
 import NavBottomMenu from "../components/NavBottomMenu"
 import { isPathBlogPost } from "../utils/helpers"
 
+import Search from "../components/search"
+
+const searchIndices = [{ name: `Pages`, title: `Pages` }]
+
 class Layout extends React.Component {
   constructor(props) {
     super(props)
@@ -124,10 +128,12 @@ class Layout extends React.Component {
                 </li>
               </ul>
             </div>
+
             <div style={{ position: "relative" }}>
               <LightDarkModeToggler />
             </div>
           </header>
+          <Search indices={searchIndices} />
           {location.pathname === "/" && (
             <div>
               <h1>

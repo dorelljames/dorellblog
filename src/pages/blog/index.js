@@ -1,16 +1,16 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import Bio from "../../components/Bio"
-import SEO from "../../components/SEO"
-import moment from "moment"
-import { rhythm } from "../../utils/typography"
-import { formatReadingTime } from "../../utils/helpers"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Bio from "../../components/Bio";
+import SEO from "../../components/SEO";
+import moment from "moment";
+import { rhythm } from "../../utils/typography";
+import { formatReadingTime } from "../../utils/helpers";
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
+    const { data } = this.props;
     // const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const posts = data.allMarkdownRemark.edges;
 
     return (
       <>
@@ -21,8 +21,7 @@ class BlogIndex extends React.Component {
         <Bio />
         <ul style={{ listStyle: `none`, marginLeft: 0 }}>
           {posts.map(({ node }) => {
-            console.log("BlogIndex -> render -> node", node)
-            const title = node.frontmatter.title || node.fields.slug
+            const title = node.frontmatter.title || node.fields.slug;
             return (
               <li key={node.fields.slug} style={{ marginBottom: rhythm(1.9) }}>
                 <h2
@@ -44,7 +43,8 @@ class BlogIndex extends React.Component {
                   }}
                 >
                   {moment(node.frontmatter.date).fromNow()}
-                </small>{" "}
+                </small>
+                {" "}
                 &middot;{" "}
                 <small>
                   <em>{formatReadingTime(node.timeToRead)}</em>
@@ -55,7 +55,7 @@ class BlogIndex extends React.Component {
                   }}
                 />
               </li>
-            )
+            );
           })}
         </ul>
         <hr
@@ -70,11 +70,11 @@ class BlogIndex extends React.Component {
           <Link to="/blog/archives">try going to the archives</Link>.
         </p>
       </>
-    )
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -107,4 +107,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

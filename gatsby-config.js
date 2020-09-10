@@ -1,3 +1,37 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
+const blogQuery = `
+  {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+      edges {
+        node {
+          objectID: id
+          fields {
+            slug
+          }
+          excerpt
+          rawMarkdownBody
+          frontmatter {
+            title
+            categories
+          }
+        }
+      }
+    }
+  }
+  `;
+
+const queries = [
+  {
+    query: blogQuery,
+    transformer: ({ data }) =>
+      data.allMarkdownRemark.edges.map(({ node }) => node), // optional
+    indexName: process.env.ALGOLIA_INDEX_NAME || "siteData", // overrides main index name, optional
+  },
+];
+
 module.exports = {
   siteMetadata: {
     title: `d||rell`,
@@ -76,7 +110,6 @@ module.exports = {
         icon: `content/assets/logo-icon.png`,
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {
@@ -91,6 +124,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-sanity`,
       options: {
@@ -108,6 +142,25 @@ module.exports = {
         watchMode: true,
       },
     },
+    {
+      // This plugin must be placed last in your list of plugins to ensure that it can query all the GraphQL data
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.ALGOLIA_APP_ID,
+        // Use Admin API key without GATSBY_ prefix, so that the key isn't exposed in the application
+        // Tip: use Search API key with GATSBY_ prefix to access the service from within components
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME, // for all queries
+        queries: require("./src/utils/algolia-queries"),
+        chunkSize: 10000, // default: 1000
+        settings: {
+          // optional, any index settings
+        },
+        enablePartialUpdates: false, // default: false
+        // matchFields: ["slug", "modified"], // Array<String> default: ['modified']
+      },
+    },
+    `gatsby-plugin-offline`,
     // {
     //   resolve: "gatsby-plugin-html2amp",
     //   options: {
@@ -116,4 +169,4 @@ module.exports = {
     //   },
     // },
   ],
-}
+};
