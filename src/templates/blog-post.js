@@ -14,6 +14,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const { markdownRemark: post, site } = this.props.data
     const { previous, next, slug, basePath } = this.props.pageContext
+    console.log("BlogPostTemplate -> render -> basePath", basePath)
 
     const disqusShortname = process.env.GATSBY_DISQUS_NAME || `dorelljames-site`
     const disqusConfig = {
@@ -70,14 +71,14 @@ class BlogPostTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <Link to={basePath + previous.fields.slug} rel="prev">
+              <Link to={`/${basePath}${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={basePath + next.fields.slug} rel="next">
+              <Link to={`/${basePath}${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
