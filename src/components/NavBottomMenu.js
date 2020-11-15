@@ -25,13 +25,13 @@ const HomeLink = props => (
 
 const NavBottomMenu = props => {
   if (isPathBlogPost(props.location.pathname)) {
-    const { previous, next } = props
+    const { previous, next, basePath } = props
 
     return (
       <ul className="bottomMenu" style={{ alignItems: "baseline" }}>
         <li>
           {(previous && (
-            <Link to={"/blog" + previous.fields.slug} rel="prev">
+            <Link to={`/${basePath}${previous.fields.slug}`} rel="prev">
               <p style={{ marginBottom: `0` }}>← Prev</p>
               <small>{previous.frontmatter.title}</small>
             </Link>
@@ -39,7 +39,7 @@ const NavBottomMenu = props => {
         </li>
         <li>
           {(next && (
-            <Link to={"/blog" + next.fields.slug} rel="next">
+            <Link to={`/${basePath}${next.fields.slug}`} rel="next">
               <p style={{ marginBottom: `0` }}>Next →</p>
               <small>{next.frontmatter.title} </small>
             </Link>

@@ -85,6 +85,7 @@ class BlogPostTemplate extends React.Component {
           </li>
         </ul>
         <NavBottomMenu
+          basePath={basePath}
           location={this.props.location}
           previous={previous}
           next={next}
