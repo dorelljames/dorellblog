@@ -10,7 +10,11 @@ categories:
 
 The [announcement of the availabilty of Background Functions](https://www.netlify.com/blog/2020/10/29/announcing-background-functions/) got me so excited that I immediately hopped into it. I even talked about this in an online stream we did last Nov 14 at **Uncaught Exceptions**. You can [watch that here](https://youtu.be/HYA-SYZWYWU?t=55) if you're interested! 😊
 
-## A Quick Intro
+## Short Demo
+
+<div style="position: relative; padding-bottom: 55.04587155963303%; height: 0;"><iframe src="https://www.loom.com/embed/2e855fffef5f4728a170227f9d804650" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+## Quick Intro
 
 Serverless functions open a world of possibilities for running on-demand, server-side code without having to run a dedicated server. AWS's serverless Lambda functions are great but it also comes with its own set of complexity, eg: managing service discovery, configuring API gateways, and many more which can become overwhelming especially if you're just new to this.
 
