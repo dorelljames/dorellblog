@@ -12,6 +12,8 @@ tags:
   - cebu
 ---
 
+> This is a raw draft of my talk last [WordCamp Cebu 2019](https://cebu.wordcamp.org/2019/speaker/dorell-james-galang/). If you find mispelling, wrong grammars, and anything else erroneous, please give this a pass.
+
 Today I'll be taking you outside of your current shell and these things that I'll be sharing might come new to you but it is my hope that you'll learn something from it. In my past 7 years as WordPress developer, I've had the privilege learn the trade and understand how things worked and helped my clients achieve their business goals. In the last 2 years, I've had the privilege to see what's the world outside and today let me do the honor in sharing to you everything I've learned.
 
 My name is Dorell, and I'm a full stack developer and it's my job to make sure that we provide just the right solution for our customers and clients. Since we're a small company, we're able to quickly adapt to new technologies and trends. I am also responsible for making sure that the company continues to have the best technology offering in a dynamically-evolving highly-competitive space.
@@ -22,9 +24,11 @@ Let me take you back to the time when the internet was born. Back in the 90's th
 
 And the first web page looks like this:
 
-// insert web page screenshot here: http://info.cern.ch/hypertext/WWW/TheProject.html
+![First Webpage](./first-webpage.png)
 
-Later on as the internet progressed, the web pages were mostly and purely static - meaning purely plain documents interconnected documents via hyperlinks.
+> http://info.cern.ch/hypertext/WWW/TheProject.html
+
+Later on, as the internet progressed, the web pages were mostly and purely static - meaning purely plain documents interconnected documents via hyperlinks.
 
 But then it became uneasy to maintain this, and this gave birth to popular content management system's we know today. A big round of applause to. WordPress, and some others like Drupal, Joomla, etc.. :)
 
@@ -36,7 +40,7 @@ So okay, static websites are fast, secure, cheap and simple. Fast because static
 
 So yeah, enough with all those static vs dynamic comparison. Let me take you one step further. Enter play a video of how one company moved their website from WordPress and experienced the benefits static sites are claiming to provide.
 
-// play netlify video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rB4Cl5LSe2c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I hope you've had enough information about the new trend of "static" but I don't want to leave them to you as static because in today's development because it's no longer really static as static as it is. Remember this word, "JAMstack", it's JavaScript, API's and Markups.
 
