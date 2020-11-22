@@ -5,16 +5,7 @@ import Emoji from "../components/Emoji"
 import { format } from "date-fns"
 
 const BlockContent = require("@sanity/block-content-to-react")
-
-const serializers = {
-  types: {
-    code: props => (
-      <pre data-language={props.node.language}>
-        <code>{props.node.code}</code>
-      </pre>
-    ),
-  },
-}
+const { blockContentSerializers: serializers } = require("../utils/helpers.js")
 
 const EventsPage = props => {
   const events = props.data.allSanityEvent.nodes

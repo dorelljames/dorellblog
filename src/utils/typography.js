@@ -64,7 +64,7 @@ theme.overrideThemeStyles = () => {
   }
 }
 
-delete theme.googleFonts
+// delete theme.googleFonts
 
 const typography = new Typography(theme)
 

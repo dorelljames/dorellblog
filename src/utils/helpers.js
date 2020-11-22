@@ -1,3 +1,5 @@
+import React from "react"
+
 export function formatReadingTime(minutes) {
   let cups = Math.round(minutes / 5)
   if (cups > 5) {
@@ -11,4 +13,14 @@ export function formatReadingTime(minutes) {
 
 export function isPathBlogPost(path) {
   return new RegExp(/^\/blog\//).test(path)
+}
+
+export const blockContentSerializers = {
+  types: {
+    code: props => (
+      <pre data-language={props.node.language}>
+        <code>{props.node.code}</code>
+      </pre>
+    ),
+  },
 }

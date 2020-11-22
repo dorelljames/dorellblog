@@ -66,6 +66,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
+    "start:studio": "cd studio && npm run start",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "serve-preview": "NODE_ENV=development gatsby develop --host 0.0.0.0 --p $PORT"
