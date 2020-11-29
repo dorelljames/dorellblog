@@ -123,7 +123,7 @@ const EventsPage = props => {
 export default EventsPage
 
 export const query = graphql`
-  query EventsQuery {
+  query EventsPageEventQuery {
     allSanityEvent {
       nodes {
         name

@@ -3,13 +3,24 @@ import { Link } from "gatsby"
 import Emoji from "../components/Emoji"
 import SEO from "../components/SEO"
 import SocialMedia from "../components/SocialMedia"
+import { format } from "date-fns"
 
-import events from "../../content/events.json"
+const BlockContent = require("@sanity/block-content-to-react")
+const { blockContentSerializers: serializers } = require("../utils/helpers.js")
 
 const IndexPage = props => {
-  const upcomingEvents = events.data.filter(
+  const events = props.data.allSanityEvent.nodes
+    .map(event => {
+      return { ...event, date: new Date(event.date) }
+    })
+    .sort((a, b) => b.date - a.date)
+
+  const upcomingEvents = events.filter(
     event => new Date(event.date).getTime() > new Date().getTime()
   )
+  console.log("🚀 ~ file: index.js ~ line 21 ~ upcomingEvents", upcomingEvents)
+
+  // return null
 
   return (
     <>
@@ -75,16 +86,21 @@ const IndexPage = props => {
       {upcomingEvents.length > 0 ? (
         <ul>
           {upcomingEvents.map(event => (
-            <li>
+            <li key={event.name}>
               <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
                 <a href={event.link} target="_blank" rel="noopener noreferrer">
                   {event.name}
                 </a>
               </h3>
-              <small>{event.date}</small>
               <p>
-                <em>{event.description}</em>
+                <em>
+                  <BlockContent
+                    blocks={event._rawDescription || []}
+                    serializers={serializers}
+                  />
+                </em>
               </p>
+              <small>{format(event.date, "MM/dd/yyyy")}</small>
             </li>
           ))}
         </ul>
@@ -149,3 +165,17 @@ const IndexPage = props => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query IndexPageEventsQuery {
+    allSanityEvent {
+      nodes {
+        name
+        _rawDescription
+        link
+        location
+        date
+      }
+    }
+  }
+`

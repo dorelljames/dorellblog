@@ -1,6 +1,7 @@
 import React from "react"
 import SEO from "../components/SEO"
 import Emoji from "../components/Emoji"
+import { graphql } from "gatsby"
 
 const BlockContent = require("@sanity/block-content-to-react")
 const { blockContentSerializers: serializers } = require("../utils/helpers.js")
