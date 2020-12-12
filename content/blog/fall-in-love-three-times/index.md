@@ -1,6 +1,6 @@
 ---
 title: Fall In Love Three Times
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-03-25T05:17:23+00:00
 url: /personal/fall-in-love-three-times/

@@ -1,6 +1,6 @@
 ---
 title: Why “neediness” is such repulsive characteristic?
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-06-29T07:31:12+00:00
 url: /personal/why-neediness-is-such-repulsive-characteristic/

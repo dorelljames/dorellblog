@@ -1,6 +1,6 @@
 ---
 title: Happy Hearts Day 2013
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-02-14T00:57:41+00:00
 url: /personal/happy-hearts-day-2013/

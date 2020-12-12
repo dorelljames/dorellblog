@@ -1,6 +1,6 @@
 ---
 title: The Things I Learned This Year 2013
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-12-31T06:23:40+00:00
 url: /personal/things-learned-year-2013/

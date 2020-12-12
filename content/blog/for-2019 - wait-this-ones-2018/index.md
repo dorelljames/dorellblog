@@ -1,6 +1,6 @@
 ---
 title: For 2019 — Wait This One’s 2018
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2019-01-05T13:35:04+00:00
 url: /personal/for-2019 - wait-this-ones-2018/

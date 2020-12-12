@@ -1,6 +1,6 @@
 ---
 title: Here’s To Woman Looking For Their ‘Perfect Guy’
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-11-25T09:26:24+00:00
 url: /personal/heres-to-woman-looking-for-their-perfect-guy/

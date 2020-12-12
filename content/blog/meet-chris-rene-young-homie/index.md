@@ -1,6 +1,6 @@
 ---
 title: Meet Chris Rene (Young Homie)
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-12-17T10:41:28+00:00
 url: /personal/meet-chris-rene-young-homie/

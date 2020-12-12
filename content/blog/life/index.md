@@ -1,6 +1,6 @@
 ---
 title: Life
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-05-15T14:50:51+00:00
 url: /personal/life/

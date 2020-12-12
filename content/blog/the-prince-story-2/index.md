@@ -1,6 +1,6 @@
 ---
 title: "The Prince Story II – Now Where Are We?"
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-04-08T16:56:16+00:00
 url: /personal/the-prince-story-2/

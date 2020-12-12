@@ -1,6 +1,6 @@
 ---
 title: This Is Your Life
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-08-22T13:33:46+00:00
 url: /personal/this-is-your-life/

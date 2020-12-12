@@ -1,6 +1,6 @@
 ---
 title: "The Prince Story"
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-03-04T17:49:09+00:00
 url: /personal/the-prince-story/

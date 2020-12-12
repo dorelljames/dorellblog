@@ -1,6 +1,6 @@
 ---
 title: WordPress Messenger Customer Chat Plugin Installation
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2017-12-06T15:33:50+00:00
 url: /web-development/wordpress-messenger-customer-chat-plugin-installation/

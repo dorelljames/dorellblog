@@ -1,6 +1,6 @@
 ---
 title: Running Bootstrap Documentation Locally (Portable Way)
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-05-16T15:11:32+00:00
 url: /web-development/running-bootstrap-documentation-locally-portable-way/
@@ -60,7 +60,6 @@ C:\PortableJekyll\ruby\bin;C:\PortableJekyll\devkit\bin;C:\PortableJekyll\Git;C:
 jekyll build
 ```
 
-  
 3.) Now, lastly run command and more importantly do not close this shell and leave it running: `jekyll serve`
 
 4.) Voila! Browse in your browser the URL: <a href="http://localhost:9001" target="_blank"><span class="file">http://localhost:9001</span></a>

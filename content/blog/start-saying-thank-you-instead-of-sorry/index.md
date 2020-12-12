@@ -1,6 +1,6 @@
 ---
 title: "For 2016: Start saying “Thank You” instead of “Sorry”"
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-12-26T09:00:01+00:00
 url: /personal/start-saying-thank-you-instead-of-sorry/

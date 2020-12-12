@@ -1,6 +1,6 @@
 ---
 title: Adding Google Authorship Into Your WordPress Site
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-09-11T05:33:29+00:00
 url: /web-development/adding-google-authorship-into-your-wordpress-site/

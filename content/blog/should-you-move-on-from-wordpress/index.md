@@ -1,6 +1,6 @@
 ---
 title: Should You Move On From WordPress?
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2019-04-17T02:10:36+00:00
 categories:

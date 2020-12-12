@@ -1,6 +1,6 @@
 ---
 title: Moral Fiber
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-05-04T23:36:46+00:00
 url: /personal/moral-fiber/

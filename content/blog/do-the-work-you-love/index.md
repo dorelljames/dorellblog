@@ -1,6 +1,6 @@
 ---
 title: Do The Work You Love
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-07-15T17:01:13+00:00
 url: /personal/do-the-work-you-love/

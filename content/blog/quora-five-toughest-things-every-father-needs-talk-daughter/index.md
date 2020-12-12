@@ -1,6 +1,6 @@
 ---
 title: "Quora: What are the five toughest things every father needs to talk to his daughter about?"
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: -001-11-30T00:00:00+00:00
 draft: true

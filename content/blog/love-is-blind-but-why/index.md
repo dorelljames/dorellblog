@@ -1,6 +1,6 @@
 ---
 title: Love is blind. But, why?
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2016-02-13T16:00:05+00:00
 url: /personal/love-is-blind-but-why/

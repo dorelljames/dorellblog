@@ -1,6 +1,6 @@
 ---
 title: To The Girl I Once Like
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-03-04T05:03:25+00:00
 draft: true

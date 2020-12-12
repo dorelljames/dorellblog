@@ -1,6 +1,6 @@
 ---
 title: The Prince Story III – The End And A New Beginning
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: -001-11-30T00:00:00+00:00
 draft: true
@@ -10,4 +10,4 @@ categories:
   - Personal
 ---
 
-The prince met her princess year 2013 and he was one lucky prince. 
+The prince met her princess year 2013 and he was one lucky prince.

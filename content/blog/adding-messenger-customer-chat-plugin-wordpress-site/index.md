@@ -1,6 +1,6 @@
 ---
 title: Adding Messenger Customer Chat Plugin To Your WordPress Site
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2017-11-30T03:38:12+00:00
 url: /web-development/adding-messenger-customer-chat-plugin-wordpress-site/

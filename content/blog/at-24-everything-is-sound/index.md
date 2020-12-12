@@ -1,6 +1,6 @@
 ---
 title: AT 24 – EVERYTHING IS SOUND
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-07-20T16:00:47+00:00
 draft: true

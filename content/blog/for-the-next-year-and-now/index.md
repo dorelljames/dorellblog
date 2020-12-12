@@ -1,6 +1,6 @@
 ---
 title: For The Next Year And Now
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-03-24T03:02:41+00:00
 url: /personal/for-the-next-year-and-now/

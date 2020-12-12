@@ -1,6 +1,6 @@
 ---
 title: My First Ever “Google” Shirt
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-05-17T12:37:59+00:00
 url: /personal/my-first-ever-google-shirt/

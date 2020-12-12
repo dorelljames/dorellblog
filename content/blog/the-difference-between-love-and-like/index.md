@@ -1,6 +1,6 @@
 ---
 title: The Difference Between Love And Like
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-04-06T17:06:09+00:00
 url: /personal/the-difference-between-love-and-like/

@@ -1,6 +1,6 @@
 ---
 title: Laravel Valet Driver For AbanteCart
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2016-11-25T04:22:49+00:00
 url: /web-development/laravel-valet-driver-for-abantecart/

@@ -1,6 +1,6 @@
 ---
 title: At 23 – Living In The Moment
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-07-21T09:29:30+00:00
 url: /personal/at-23-living-in-the-moment/

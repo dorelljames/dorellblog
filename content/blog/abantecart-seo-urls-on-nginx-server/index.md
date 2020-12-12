@@ -1,6 +1,6 @@
 ---
 title: AbanteCart SEO URL’s On Nginx Server
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-02-24T04:14:30+00:00
 url: /web-development/abantecart-seo-urls-on-nginx-server/

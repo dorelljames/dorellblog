@@ -1,6 +1,6 @@
 ---
 title: A Sense Of A Goose
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-05-26T01:38:38+00:00
 url: /personal/a-sense-of-a-goose/

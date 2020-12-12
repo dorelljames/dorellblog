@@ -1,6 +1,6 @@
 ---
 title: Quick Difference (array_merge vs ( array + array ))
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-05-18T13:50:05+00:00
 url: /web-development/quick-difference-array_merge-vs-array-array/

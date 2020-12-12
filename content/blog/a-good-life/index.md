@@ -1,6 +1,6 @@
 ---
 title: A Good Life
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-07-15T16:28:21+00:00
 url: /personal/a-good-life/

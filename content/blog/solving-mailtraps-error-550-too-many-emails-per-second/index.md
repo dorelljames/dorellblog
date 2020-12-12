@@ -1,6 +1,6 @@
 ---
 title: Solving Mailtrap’s Error 550 (too many emails per second)
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2018-04-25T07:18:56+00:00
 url: /web-development/solving-mailtraps-error-550-too-many-emails-per-second/

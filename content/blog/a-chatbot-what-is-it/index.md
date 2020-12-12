@@ -1,6 +1,6 @@
 ---
 title: A Chatbot – What Is It?
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2016-11-20T02:10:36+00:00
 url: /web-development/a-chatbot-what-is-it/

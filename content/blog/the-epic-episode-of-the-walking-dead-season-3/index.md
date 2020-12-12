@@ -1,6 +1,6 @@
 ---
 title: The Epic Episode of The Walking Dead Season 3
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-03-25T17:57:08+00:00
 url: /personal/the-epic-episode-of-the-walking-dead-season-3/

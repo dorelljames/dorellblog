@@ -1,6 +1,6 @@
 ---
 title: No Match Found – Happy Love Day 2015
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-02-14T13:24:00+00:00
 url: /personal/no-match-found-happy-love-day-2015/

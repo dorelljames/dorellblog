@@ -1,6 +1,6 @@
 ---
 title: Short Trip Going Home
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-01-21T12:21:42+00:00
 url: /personal/short-trip-going-home/

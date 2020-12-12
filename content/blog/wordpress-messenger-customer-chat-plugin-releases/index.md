@@ -1,6 +1,6 @@
 ---
 title: WordPress Messenger Customer Chat Plugin Releases
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2018-06-21T08:56:28+00:00
 url: /web-development/wordpress-messenger-customer-chat-plugin-releases/

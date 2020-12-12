@@ -1,6 +1,6 @@
 ---
 title: What I Want To Achieve This 2014
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-01-04T20:54:32+00:00
 url: /personal/what-i-want-to-achieve-this-2014/

@@ -1,6 +1,6 @@
 ---
 title: Love is Arguments + Makeups
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-12-05T17:15:10+00:00
 url: /personal/love-arguments-makeups/

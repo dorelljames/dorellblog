@@ -1,6 +1,6 @@
 ---
 title: Everything You Need To Know About Netlify Functions including Background Functions
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2020-11-15T04:14:30+00:00
 featured_image:
@@ -8,7 +8,9 @@ categories:
   - Web Development
 ---
 
-The [announcement of the availabilty of Background Functions](https://www.netlify.com/blog/2020/10/29/announcing-background-functions/) got me so excited that I immediately hopped into it. I even talked about this in an online stream we did last Nov 14 at **Uncaught Exceptions**. You can [watch that here](https://youtu.be/HYA-SYZWYWU?t=55) if you're interested! 😊
+The [announcement of the availability of Background Functions](https://www.netlify.com/blog/2020/10/29/announcing-background-functions/) got me so excited that I immediately hopped into it. I even talked about this in an online stream we did last Nov 14 at **Uncaught Exceptions**. You can [watch that here](https://youtu.be/HYA-SYZWYWU?t=55) if you're interested! 😊
+
+> This article was originally posted at [dorelljames.com/blog/everything-you-need-to-know-about-netlify-functions-including-background-functions/](https://www.dorelljames.com/blog/everything-you-need-to-know-about-netlify-functions-including-background-functions/)
 
 ## Short Demo
 
@@ -157,7 +159,7 @@ As soon as the function is invoked, a 202 response is received and the process i
 
 ### What happens after the 202 response in background functions?
 
-A: It is up to you! For example, if you're processing thousands of document data, then you can probably send the result summary in an email, forward the raw response to a webhook, and many more.
+A: It is up to you! For example, if you're processing thousands of document data, then you can probably send the result summary in an email, forward the raw response to a webhook and many more.
 
 ### Can you only build functions in JavaScript?
 

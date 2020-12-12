@@ -1,6 +1,6 @@
 ---
 title: Why Would You Want To Smile More Often Now?
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-02-08T13:55:12+00:00
 url: /personal/why-would-you-want-to-smile-more-often-now/

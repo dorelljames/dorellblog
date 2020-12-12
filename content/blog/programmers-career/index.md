@@ -1,6 +1,6 @@
 ---
 title: Programmers In Their Career
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-12-13T02:42:39+00:00
 url: /personal/programmers-career/

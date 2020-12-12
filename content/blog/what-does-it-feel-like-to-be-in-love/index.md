@@ -1,6 +1,6 @@
 ---
 title: What does it feel like to be in love?
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-03-26T15:07:27+00:00
 url: /personal/what-does-it-feel-like-to-be-in-love/

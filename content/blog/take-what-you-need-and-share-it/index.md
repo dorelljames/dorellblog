@@ -1,6 +1,6 @@
 ---
 title: "Take What You Need & Share It! :)"
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-03-09T13:17:16+00:00
 url: /personal/take-what-you-need-and-share-it/
@@ -57,4 +57,3 @@ The experience I get from this is worth it. I know now that people really need s
 And lastly,
 
 _&#8220;You can't always get what you want, but.. Take What You Need and Share it <3&#8221;_
-

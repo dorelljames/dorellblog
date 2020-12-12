@@ -1,6 +1,6 @@
 ---
 title: Simply Complicated!
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-03-22T17:54:35+00:00
 url: /personal/simply-complicated/

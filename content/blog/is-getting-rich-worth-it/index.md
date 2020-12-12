@@ -1,6 +1,6 @@
 ---
 title: Is Getting Rich Worth It?
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-09-13T14:26:05+00:00
 url: /personal/is-getting-rich-worth-it/

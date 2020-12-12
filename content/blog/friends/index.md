@@ -1,6 +1,6 @@
 ---
 title: Friends
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2014-08-25T17:08:17+00:00
 url: /personal/friends/

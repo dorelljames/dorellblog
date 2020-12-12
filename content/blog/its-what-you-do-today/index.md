@@ -1,6 +1,6 @@
 ---
 title: It’s What You Do Today
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2013-09-22T08:18:55+00:00
 url: /personal/its-what-you-do-today/

@@ -1,6 +1,6 @@
 ---
 title: "Hidden Gem: Google Chrome’s Offline Game"
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2015-01-21T03:35:44+00:00
 url: /personal/hidden-gem-google-chrome-offline-game/

@@ -1,6 +1,6 @@
 ---
 title: 2019 - A personal retrospective
-author: Dorell James Galang
+author: Dorell James
 type: post
 date: 2020-11-20T02:10:36+00:00
 draft: true
