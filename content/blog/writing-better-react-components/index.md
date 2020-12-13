@@ -12,5 +12,3 @@ tags:
   - React
   - components
 ---
-
-Last Dec 5, I gave a very opinionated talk about how one could or should write components so that they're manageable and don't fall on the common pitfalls we often get into when we get into writing React components.
