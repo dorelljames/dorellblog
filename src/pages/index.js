@@ -18,9 +18,6 @@ const IndexPage = props => {
   const upcomingEvents = events.filter(
     event => new Date(event.date).getTime() > new Date().getTime()
   )
-  console.log("🚀 ~ file: index.js ~ line 21 ~ upcomingEvents", upcomingEvents)
-
-  // return null
 
   return (
     <>

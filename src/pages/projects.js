@@ -7,11 +7,7 @@ const BlockContent = require("@sanity/block-content-to-react")
 const { blockContentSerializers: serializers } = require("../utils/helpers.js")
 
 const ProjectsPage = props => {
-  console.log("props", props)
   const projects = props.data.allSanityProject.nodes
-  console.log("projects", projects)
-
-  // return null
 
   return (
     <>
