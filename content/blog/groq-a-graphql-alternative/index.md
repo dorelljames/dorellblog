@@ -6,6 +6,7 @@ date: 2020-12-30T07:26:59.437Z
 categories:
   - Web Development
 url: /groq-a-graphql-alternative
+tags:
 ---
 
 Here below is a sample GraphQL query.
@@ -39,18 +40,18 @@ Or we could also write it this way,
 
 ```
 
-Alright. Awesome. We call the above as [Graph-Relational Object Queries](https://www.sanity.io/docs/groq) or GROQ for short.
+Alright. Awesome. We call the above as [Graph-Relational Object Queries](https://www.sanity.io/docs/groq) or GROQ for short but what exactly is it?
 
-## Before You Dive In
+## Before We Dive In
 
-I made a quick demo so we could see it in action. The video is 5 minutes only…
+I made a quick demo so we could see it in action. The video is 5 minutes only. If you want to skip the video and read through it, <a href="#getting-started">click here</a>.
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/53581656dba94c0a9990352374a3405a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 55.04587155963303%; height: 0;"><iframe src="https://www.loom.com/embed/53581656dba94c0a9990352374a3405a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<br />
 
-<br/>
-Didn't managed to finish my demo there. 😅
+> Oooops! Didn't managed to finish my demo there. 😅
 
-So for the last example, we want to get only results `id`, `name` and `base` stats. So the GROQ query would be like this below:
+So for the last example, we want to get only results `id`, `name` and `base` stats. The query would be like this below:
 
 ```json
 *[ id == 4 ] {
@@ -79,29 +80,35 @@ And here's the result:
 ]
 ```
 
-## Getting Started (Introduction)
+<h2 id="getting-started">Getting Started</h2>
 
-In today's modern web, GraphQL has pretty much changed how we approach fetching data. For so long, we've gone accustomed to thinking in terms of [endpoints](https://searchapparchitecture.techtarget.com/definition/API-endpoint). [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer) has long been the de-facto standard until GraphQL came. One can't simply ignore the benefits of using the latter. But not everyone has the capacity to start new or move their old stack to the new one. I should also mention that GraphQL is not a replacement for REST API. Right.
+In today's modern web, [GraphQL](https://graphql.org/) has pretty much changed how we approach fetching data. For so long, we've gone accustomed to thinking in terms of [endpoints](https://searchapparchitecture.techtarget.com/definition/API-endpoint). [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer) had become the de-facto standard until the former came. One can't simply ignore the benefits of using it but unfortunately, not everyone has the capacity to begin adopting it and/or start new.
 
-Now, the question is, what do we do about the ones who are still stuck with the good old JSON responses of REST API? Can we get similar benefits of GraphQL to our current ways?
+> NOTE: GraphQL is not a replacement for REST API.
 
-The answer to that is, YES!
+So now, the question is - "**_Is there a way that we could gain GraphQL's declarative and expressive syntax without doing much work on our good old responses in JSON format?_**"
 
-Absolutely.
+Well, the answer to that is, **YES!**
+
+**Absolutely.**
 
 ## [Graph-Relational Object Queries (GROQ)](https://www.sanity.io/docs/groq)
 
-GROQ is a JSON-based query language similar to GraphQL. It carries on the work that has become so fashionable similar to the implementations of GraphQL which allows robust transformation, filters, projections of data sets based on a given query. In simpler terms, GROQ just like GraphQL allows us to describe exactly what we want to fetch and how exactly it should be returned to us.
+GraphQL is a query language for API's and **GROQ** is also a query language but JSON-based. It carries on the work that has become so fashionable similar to the implementations of GraphQL which allows robust transformations, filters, projections, and many more.
 
-Let's go back to our example query above. Here below:
+In simpler terms, GROQ just like GraphQL allows us to describe exactly how we want to shape our data through filters, projections, and many more.
+
+What's great with GROQ is that it also takes it a step further...
+
+Let's go back to our example query above, here shown below:
 
 ```json
 *[] { id, email }
 ```
 
-If you're new, you'd probably reject what you're seeing. When I first started using GROQ, I have this feeling that it's not something I shouldn't get myself into and learn but I was wrong, and I realized how it could be useful in other areas.
+If you're new, you'd probably reject what you're seeing. When I first started using GROQ, I have this feeling that it's not something I shouldn't get myself into and learn. I was wrong, and I realized how it could be useful in other areas of my professional career as a developer.
 
-`*` denotes everything, within the `[]` is our filter (though not required here but for the sake of example) and lastly, the `{ id, email }` is our transformation which only returns those fields.
+`*` denotes everything, within the `[]` is our filter (_though not required here but for the sake of example_) and lastly, the `{ id, email }` is our transformation which only returns those fields.
 
 It's not that easy from the very beginning but just like any other thing we try to learn, it gets easier through practice.
 
@@ -185,18 +192,46 @@ Result:
 
 Play with it here: [https://groq.dev/nTm9ARCLuYmDlpLIMTXlIr](https://groq.dev/nTm9ARCLuYmDlpLIMTXlIr)
 
-## Real-Life Usage
+## Why GraphQL alternative? (Real Life Usage)
 
-So where could you apply this? In my experience, we're able to easily transform and get the data on how we want it without having to deal with creating a GraphQL layer for it. One example is I used it to do multi-filtering, such as below in an eCommerce project I'm in.
+In our experience, using GROQ with our REST APIs has allowed us to take its superpowers like filtering, sorting, and shaping our JSON response data however we want it. It has brought tremendous benefits and it never felt so easy. From an investment standpoint, sure, you'll have to learn GROQ's syntax additionally but the benefits are just tenfolds.
 
-Given all shoes, get all of the color blue and the size is greater than 12.
+For example in one of our eCommerce projects, we fetch the JSON data and used GROQ to do multi-level filtering based on customers' selection.
 
-```json
-*[color == "blue" && size > 12]
+_It's such a breeze of joy._
+
+Let's say, given all shoes, get all of the color **blue** and the size is **greater than 12**.
+
+Pretty contrived example below:
+
+```js
+import { parse, evaluate } from 'groq-js'
+
+let input = *[type == "shoes" && color == "blue" && size > 12] {
+  id,
+  name,
+  description,
+  price,
+  images,
+}
+
+// Returns an ESTree-inspired syntax tree
+let tree = parse(input)
+
+let dataset = await fetch(PRODUCTS_API_ENDPOINT);
+
+// Evaluate a tree against a dataset
+let value = await evaluate(tree, {dataset})
+
+// Gather everything into one JavaScript object
+let shoeProducts = await value.get()
 ```
 
-To learn more about GROQ, head over to [Sanity.io introduction](https://www.sanity.io/docs/how-queries-work), and refer to [this cheat sheet](https://www.sanity.io/docs/query-cheat-sheet) anytime.
-I've also found some challenges you could try like this one here.
+> [GROQ-JS](https://github.com/sanity-io/groq-js) is a (work-in-progress) JavaScript implementation of GROQ which follows the official specification.
+
+And that's it! No need for GraphQL. We've supercharged our REST API without doing too much. 😊
+
+To learn more about GROQ, head over to [Sanity.io introduction](https://www.sanity.io/docs/how-queries-work), and refer to [this cheat sheet](https://www.sanity.io/docs/query-cheat-sheet) anytime. I've also found some challenges you could try [like this one here](https://dev.to/mornir/7-challenges-for-querying-with-groq-3p0p).
 
 ### Additional Resources:
 
