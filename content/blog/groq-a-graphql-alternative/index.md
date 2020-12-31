@@ -27,7 +27,7 @@ Great! 😎
 Now, here is also a query. See below:
 
 ```json
-[users] { id, email }
+*[] { id, email }
 ```
 
 Or we could also write it this way,
@@ -40,7 +40,7 @@ Or we could also write it this way,
 
 ```
 
-Alright. Awesome. We call the above as [Graph-Relational Object Queries](https://www.sanity.io/docs/groq) or GROQ for short but what exactly is it?
+Alright. Awesome. We call the above as [Graph-Relational Object Queries](https://www.sanity.io/docs/groq) or GROQ for short. And the two functions exactly the same but what exactly is GROQ?
 
 ## Before We Dive In
 
@@ -82,7 +82,7 @@ And here's the result:
 
 <h2 id="getting-started">Getting Started</h2>
 
-In today's modern web, [GraphQL](https://graphql.org/) has pretty much changed how we approach fetching data. For so long, we've gone accustomed to thinking in terms of [endpoints](https://searchapparchitecture.techtarget.com/definition/API-endpoint). [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer) had become the de-facto standard until the former came. One can't simply ignore the benefits of using it but unfortunately, not everyone has the capacity to begin adopting it and/or start new.
+In today's modern web, [GraphQL](https://graphql.org/) has pretty much changed how we approach fetching and shaping data. For so long, we've gone accustomed to thinking in terms of [endpoints](https://searchapparchitecture.techtarget.com/definition/API-endpoint). [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer) had become the de-facto standard until the former came. One can't simply ignore the benefits of using it but unfortunately, not everyone has the capacity to begin adopting it and/or start new.
 
 > NOTE: GraphQL is not a replacement for REST API.
 
@@ -94,7 +94,7 @@ Well, the answer to that is, **YES!**
 
 ## [Graph-Relational Object Queries (GROQ)](https://www.sanity.io/docs/groq)
 
-GraphQL is a query language for API's and **GROQ** is also a query language but JSON-based. It carries on the work that has become so fashionable similar to the implementations of GraphQL which allows robust transformations, filters, projections, and many more.
+GraphQL is a query language for API's and **GROQ** is also a query language but for JSON. It carries on the work that has become so fashionable similar to the implementations of GraphQL which allows robust transformations, filters, projections, and many more.
 
 In simpler terms, GROQ just like GraphQL allows us to describe exactly how we want to shape our data through filters, projections, and many more.
 
@@ -108,13 +108,15 @@ Let's go back to our example query above, here shown below:
 
 If you're new, you'd probably reject what you're seeing. When I first started using GROQ, I have this feeling that it's not something I shouldn't get myself into and learn. I was wrong, and I realized how it could be useful in other areas of my professional career as a developer.
 
-`*` denotes everything, within the `[]` is our filter (_though not required here but for the sake of example_) and lastly, the `{ id, email }` is our transformation which only returns those fields.
+`*` denotes everything, within the `[]` is our filter (_though not required here but for the sake of example_) and lastly, the `{ id, email }` is our projection which only returns those fields.
 
 It's not that easy from the very beginning but just like any other thing we try to learn, it gets easier through practice.
 
 ## Let's Play
 
 Here below are basic to advanced usages of GROQ with its corresponding GraphQL equivalent. The data is based on Pokemon's API.
+
+Don't worry if you don't understand it at this point. I'll point you to the right resource below.
 
 1. **Find all Pokemon of Grass-type together with their stats**
 
@@ -194,19 +196,18 @@ Play with it here: [https://groq.dev/nTm9ARCLuYmDlpLIMTXlIr](https://groq.dev/nT
 
 ## Why GraphQL alternative? (Real Life Usage)
 
-In our experience, using GROQ with our REST APIs has allowed us to take its superpowers like filtering, sorting, and shaping our JSON response data however we want it. It has brought tremendous benefits and it never felt so easy. From an investment standpoint, sure, you'll have to learn GROQ's syntax additionally but the benefits are just tenfolds.
+In our experience, using GROQ with our REST APIs has allowed us to take its superpowers like filtering, sorting, and shaping our JSON response data however we want it. From an investment standpoint, sure you'll have to learn GROQ's syntax additionally but the benefits are just tenfolds when you get versatile with it.
 
 For example in one of our eCommerce projects, we fetch the JSON data and used GROQ to do multi-level filtering based on customers' selection.
 
-_It's such a breeze of joy._
-
-Let's say, given all shoes, get all of the color **blue** and the size is **greater than 12**.
+Let's say, given all shoes, get all of the color **blue** and the size which is **greater than 12**.
 
 Pretty contrived example below:
 
 ```js
 import { parse, evaluate } from 'groq-js'
 
+// We save our query here
 let input = *[type == "shoes" && color == "blue" && size > 12] {
   id,
   name,
@@ -218,6 +219,7 @@ let input = *[type == "shoes" && color == "blue" && size > 12] {
 // Returns an ESTree-inspired syntax tree
 let tree = parse(input)
 
+// Here we fetch our JSON dataset
 let dataset = await fetch(PRODUCTS_API_ENDPOINT);
 
 // Evaluate a tree against a dataset
