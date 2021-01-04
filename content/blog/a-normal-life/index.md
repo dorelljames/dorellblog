@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-09-18T17:13:03+00:00
 url: /personal/a-normal-life/
-featured_image: /wp-content/uploads/2014/09/water-flow.jpg
+featured_image: "./water-flow.jpg"
 categories:
   - Personal
 tags:

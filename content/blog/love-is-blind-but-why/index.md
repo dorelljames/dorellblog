@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2016-02-13T16:00:05+00:00
 url: /personal/love-is-blind-but-why/
-featured_image: /wp-content/uploads/2015/11/lamp.jpg
+featured_image: "./lamp.jpg"
 categories:
   - Personal
 ---

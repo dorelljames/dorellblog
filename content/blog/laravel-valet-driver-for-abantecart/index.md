@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2016-11-25T04:22:49+00:00
 url: /web-development/laravel-valet-driver-for-abantecart/
-featured_image: /wp-content/uploads/2016/11/valet-driver-abantecart.png
+featured_image: "./valet-driver-abantecart.png"
 thb_meta_bigfoot_pageheader_layout:
   - left
 thb_meta_bigfoot_pageheader_height:

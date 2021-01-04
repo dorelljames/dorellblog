@@ -6,6 +6,7 @@ date: 2020-12-30T07:26:59.437Z
 categories:
   - Web Development
 url: /groq-a-graphql-alternative
+featured_image: "./groq-a-graphql-alternative.png"
 tags:
 ---
 

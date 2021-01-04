@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-12-05T17:15:10+00:00
 url: /personal/love-arguments-makeups/
-featured_image: /wp-content/uploads/2013/11/love-quarrel-makeups.gif
+featured_image: "./love-quarrel-makeups.gif"
 categories:
   - Personal
 format: image

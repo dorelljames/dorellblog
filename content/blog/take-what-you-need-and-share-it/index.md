@@ -4,9 +4,7 @@ author: Dorell James
 type: post
 date: 2013-03-09T13:17:16+00:00
 url: /personal/take-what-you-need-and-share-it/
-featured_image: /wp-content/uploads/2013/05/Take-what-you-need-inspiration.jpg
-roki_postmeta:
-  - 'a:5:{s:17:"head_info_display";s:5:"false";s:15:"heading_display";s:4:"true";s:22:"heading_search_display";s:5:"false";s:22:"heading_social_display";s:4:"true";s:10:"subheading";s:0:"";}'
+featured_image: "./Take-what-you-need-inspiration.jpg"
 qode_show-sidebar:
   - default
 qode_hide-featured-image:

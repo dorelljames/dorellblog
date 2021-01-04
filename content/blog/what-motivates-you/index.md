@@ -5,7 +5,7 @@ type: post
 date: 2012-12-19T05:21:52+00:00
 draft: true
 url: /?p=94
-featured_image: /wp-content/uploads/2012/12/blog_06.jpg
+featured_image: "./blog_06.jpg"
 categories:
   - Personal
 ---

@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-06-29T07:31:12+00:00
 url: /personal/why-neediness-is-such-repulsive-characteristic/
-featured_image: /wp-content/uploads/2013/06/numebers-in-person.png
+featured_image: "./numebers-in-person.png"
 categories:
   - Personal
 tags:

@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2015-03-25T05:17:23+00:00
 url: /personal/fall-in-love-three-times/
-featured_image: /wp-content/uploads/2015/03/love-wide-wallpaper-1920x1200-008.jpg
+featured_image: "./love-wide-wallpaper-1920x1200-008.jpg"
 categories:
   - Personal
 tags:

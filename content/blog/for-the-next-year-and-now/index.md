@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-03-24T03:02:41+00:00
 url: /personal/for-the-next-year-and-now/
-featured_image: /wp-content/uploads/2014/03/change-the-world.jpg
+featured_image: "./change-the-world.jpg"
 thb_meta_bigfoot_pageheader_layout:
   - left
 thb_meta_bigfoot_pageheader_height:

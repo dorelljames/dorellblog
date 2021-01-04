@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-09-22T08:18:55+00:00
 url: /personal/its-what-you-do-today/
-featured_image: /wp-content/uploads/2013/09/yellow_futuristic_text_quotes_typography_today_textures_tomorrow.jpg
+featured_image: "./yellow_futuristic_text_quotes_typography_today_textures_tomorrow.jpg"
 qode_show-sidebar:
   - default
 qode_hide-featured-image:

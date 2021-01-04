@@ -4,7 +4,6 @@ author: Dorell James
 type: post
 date: 2013-05-26T01:38:38+00:00
 url: /personal/a-sense-of-a-goose/
-featured_image: /wp-content/uploads/2013/05/goose-v-formation.jpg
 categories:
   - Personal
 tags:

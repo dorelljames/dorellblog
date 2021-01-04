@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-09-13T14:26:05+00:00
 url: /personal/is-getting-rich-worth-it/
-featured_image: /wp-content/uploads/2014/09/money-falling.jpg
+featured_image: "./money-falling.jpg"
 categories:
   - Personal
 tags:

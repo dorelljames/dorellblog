@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-02-08T13:55:12+00:00
 url: /personal/why-would-you-want-to-smile-more-often-now/
-featured_image: /wp-content/uploads/2014/02/smile-gif.gif
+featured_image: "./smile-gif.gif"
 categories:
   - Personal
 tags:

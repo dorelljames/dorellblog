@@ -4,9 +4,7 @@ author: Dorell James
 type: post
 date: 2013-05-17T12:37:59+00:00
 url: /personal/my-first-ever-google-shirt/
-featured_image: /wp-content/uploads/2013/05/me-google-tshirt.jpg
-roki_postmeta:
-  - 'a:5:{s:17:"head_info_display";s:5:"false";s:15:"heading_display";s:4:"true";s:22:"heading_search_display";s:5:"false";s:22:"heading_social_display";s:4:"true";s:10:"subheading";s:0:"";}'
+featured_image: "./me-google-tshirt.jpg"
 dsq_thread_id:
   - 1813320560
 categories:

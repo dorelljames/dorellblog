@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-01-04T20:54:32+00:00
 url: /personal/what-i-want-to-achieve-this-2014/
-featured_image: /wp-content/uploads/2014/01/ayala-terraces-cebu.jpg
+featured_image: "./ayala-terraces-cebu.jpg"
 categories:
   - Personal
 tags:

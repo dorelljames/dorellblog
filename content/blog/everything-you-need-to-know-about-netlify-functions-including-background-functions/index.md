@@ -3,14 +3,11 @@ title: Everything You Need To Know About Netlify Functions including Background 
 author: Dorell James
 type: post
 date: 2020-11-15T04:14:30+00:00
-featured_image:
 categories:
   - Web Development
 ---
 
 The [announcement of the availability of Background Functions](https://www.netlify.com/blog/2020/10/29/announcing-background-functions/) got me so excited that I immediately hopped into it. I even talked about this in an online stream we did last Nov 14 at **Uncaught Exceptions**. You can [watch that here](https://youtu.be/HYA-SYZWYWU?t=55) if you're interested! 😊
-
-> This article was originally posted at [dorelljames.com/blog/everything-you-need-to-know-about-netlify-functions-including-background-functions/](https://www.dorelljames.com/blog/everything-you-need-to-know-about-netlify-functions-including-background-functions/)
 
 ## Short Demo
 

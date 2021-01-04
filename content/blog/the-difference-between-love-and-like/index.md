@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-04-06T17:06:09+00:00
 url: /personal/the-difference-between-love-and-like/
-featured_image: /wp-content/uploads/2014/04/Love-vs-like.jpg
+featured_image: "./Love-vs-like.jpg"
 categories:
   - Personal
 tags:

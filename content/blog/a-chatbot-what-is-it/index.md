@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2016-11-20T02:10:36+00:00
 url: /web-development/a-chatbot-what-is-it/
-featured_image: /wp-content/uploads/2016/11/mz-newsroom-01.jpg
+featured_image: "./mz-newsroom-01.jpg"
 categories:
   - Web Development
 tags:

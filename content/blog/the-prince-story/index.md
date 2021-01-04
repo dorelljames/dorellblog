@@ -4,9 +4,7 @@ author: Dorell James
 type: post
 date: 2013-03-04T17:49:09+00:00
 url: /personal/the-prince-story/
-featured_image: /wp-content/uploads/2013/03/tumblr_m1a2kg6x5c1qbuar8o2_1280.jpg
-roki_postmeta:
-  - 'a:5:{s:17:"head_info_display";s:5:"false";s:15:"heading_display";s:4:"true";s:22:"heading_search_display";s:5:"false";s:22:"heading_social_display";s:4:"true";s:10:"subheading";s:0:"";}'
+featured_image: "./tumblr_m1a2kg6x5c1qbuar8o2_1280.jpg"
 dsq_thread_id:
   - 1900565061
 categories:

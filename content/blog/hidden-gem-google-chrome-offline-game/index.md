@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2015-01-21T03:35:44+00:00
 url: /personal/hidden-gem-google-chrome-offline-game/
-featured_image: /wp-content/uploads/2015/01/google-chrome-dinosaur-animate.gif
+featured_image: "./google-chrome-dinosaur-animate.gif"
 thb_meta_bigfoot_pageheader_layout:
   - left
 thb_meta_bigfoot_pageheader_height:

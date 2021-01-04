@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2015-02-24T04:14:30+00:00
 url: /web-development/abantecart-seo-urls-on-nginx-server/
-featured_image: /wp-content/uploads/2015/02/abantecart-seo-settings-banner.png
+featured_image: "./abantecart-seo-settings-banner.png"
 categories:
   - Web Development
 ---

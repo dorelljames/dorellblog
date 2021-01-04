@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-04-08T16:56:16+00:00
 url: /personal/the-prince-story-2/
-featured_image: /wp-content/uploads/2013/03/tumblr_m1a2kg6x5c1qbuar8o2_1280.jpg
+featured_image: "./tumblr_m1a2kg6x5c1qbuar8o2_1280.jpg"
 categories:
   - Personal
 tags:

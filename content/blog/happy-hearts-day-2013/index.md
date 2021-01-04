@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-02-14T00:57:41+00:00
 url: /personal/happy-hearts-day-2013/
-featured_image: /wp-content/uploads/2013/02/30-Days-...-Heart-Touching-Story.jpg
+featured_image: "./Heart-Touching-Story.jpg"
 dsq_thread_id:
   - 1860370818
 categories:

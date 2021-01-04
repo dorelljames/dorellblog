@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2015-03-26T15:07:27+00:00
 url: /personal/what-does-it-feel-like-to-be-in-love/
-featured_image: /wp-content/uploads/2015/03/falling-in-love3.jpg
+featured_image: "./falling-in-love3.jpg"
 categories:
   - Personal
 tags:

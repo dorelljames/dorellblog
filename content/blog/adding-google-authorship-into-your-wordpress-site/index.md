@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-09-11T05:33:29+00:00
 url: /web-development/adding-google-authorship-into-your-wordpress-site/
-featured_image: /wp-content/uploads/2013/09/google_authorship.png
+featured_image: "./google_authorship.png"
 categories:
   - Search Engine Optimization
   - Web Development

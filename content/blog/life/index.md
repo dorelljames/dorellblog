@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-05-15T14:50:51+00:00
 url: /personal/life/
-featured_image: /wp-content/uploads/2014/05/life-horizon.jpg
+featured_image: "./life-horizon.jpg"
 categories:
   - Personal
 tags:

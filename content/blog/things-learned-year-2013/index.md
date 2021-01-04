@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-12-31T06:23:40+00:00
 url: /personal/things-learned-year-2013/
-featured_image: /wp-content/uploads/2013/12/2014.jpg
+featured_image: "./2014.jpg"
 categories:
   - Personal
 tags:

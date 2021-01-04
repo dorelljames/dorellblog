@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-12-17T10:41:28+00:00
 url: /personal/meet-chris-rene-young-homie/
-featured_image: /wp-content/uploads/2013/12/chris-rene-staying-sober-in-stressful-times.jpeg
+featured_image: "./chris-rene-staying-sober-in-stressful-times.jpeg"
 categories:
   - Personal
 format: video

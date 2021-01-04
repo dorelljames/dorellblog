@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-05-23T16:27:57+00:00
 url: /personal/eleven-hints-for-life/
-featured_image: /wp-content/uploads/2013/05/karneeva_elena_child_photography_81.jpg
+featured_image: "./karneeva_elena_child_photography_81.jpg"
 categories:
   - Personal
 tags:

@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-08-22T13:33:46+00:00
 url: /personal/this-is-your-life/
-featured_image: /wp-content/uploads/2013/08/life-is-short.jpg
+featured_image: "./life-is-short.jpg"
 dsq_thread_id:
   - 1789814744
 categories:

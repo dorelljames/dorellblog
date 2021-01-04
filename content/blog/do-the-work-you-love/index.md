@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-07-15T17:01:13+00:00
 url: /personal/do-the-work-you-love/
-featured_image: /wp-content/uploads/2013/05/choose-a-job.jpg
+featured_image: "./choose-a-job.jpg"
 categories:
   - Personal
 tags:

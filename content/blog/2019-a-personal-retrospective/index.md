@@ -5,7 +5,6 @@ type: post
 date: 2020-11-20T02:10:36+00:00
 draft: true
 url:
-featured_image:
 categories:
   - Web Development
 tags:

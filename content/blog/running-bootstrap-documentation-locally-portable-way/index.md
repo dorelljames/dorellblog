@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2015-05-16T15:11:32+00:00
 url: /web-development/running-bootstrap-documentation-locally-portable-way/
-featured_image: /wp-content/uploads/2015/05/bootstrap.png
+featured_image: "./bootstrap.png"
 categories:
   - Web Development
 ---

@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2019-01-05T13:35:04+00:00
 url: /personal/for-2019 - wait-this-ones-2018/
-featured_image: /wp-content/uploads/2019/01/luca-zanon-38843-unsplash.jpg
+featured_image: "./luca-zanon-38843-unsplash.jpg"
 categories:
   - Personal
 ---

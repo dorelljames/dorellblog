@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2015-02-14T13:24:00+00:00
 url: /personal/no-match-found-happy-love-day-2015/
-featured_image: /wp-content/uploads/2015/02/hands-forming-a-heart-14251.jpg
+featured_image: "./hands-forming-a-heart-14251.jpg"
 categories:
   - Personal
 tags:

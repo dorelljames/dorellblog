@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-07-15T16:28:21+00:00
 url: /personal/a-good-life/
-featured_image: /wp-content/uploads/2014/07/a-good-life.jpg
+featured_image: "./a-good-life.jpg"
 categories:
   - Personal
 tags:

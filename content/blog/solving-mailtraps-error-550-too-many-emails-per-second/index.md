@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2018-04-25T07:18:56+00:00
 url: /web-development/solving-mailtraps-error-550-too-many-emails-per-second/
-featured_image: /wp-content/uploads/2018/04/mailtrap-emails-per-second.png
+featured_image: "./mailtrap-emails-per-second.png"
 categories:
   - Web Development
 tags:

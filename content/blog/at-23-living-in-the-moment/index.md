@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-07-21T09:29:30+00:00
 url: /personal/at-23-living-in-the-moment/
-featured_image: /wp-content/uploads/2013/07/Fotor072117268.png
+featured_image: "./Fotor072117268.png"
 categories:
   - Personal
 tags:

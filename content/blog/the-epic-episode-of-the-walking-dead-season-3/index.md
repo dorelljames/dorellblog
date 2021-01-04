@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-03-25T17:57:08+00:00
 url: /personal/the-epic-episode-of-the-walking-dead-season-3/
-featured_image: /wp-content/uploads/2013/03/BGNlOEMCUAEvn0u.jpg
+featured_image: "./BGNlOEMCUAEvn0u.jpg"
 dsq_thread_id:
   - 1860435941
 categories:

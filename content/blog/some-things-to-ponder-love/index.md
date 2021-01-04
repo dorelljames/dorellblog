@@ -4,15 +4,9 @@ author: Dorell James
 type: post
 date: 2013-05-27T09:48:38+00:00
 url: /personal/some-things-to-ponder-love/
-featured_image: /wp-content/uploads/2013/05/4599918992_30547c6068_o.jpg
-roki_postmeta:
-  - 'a:5:{s:17:"head_info_display";s:5:"false";s:15:"heading_display";s:4:"true";s:22:"heading_search_display";s:5:"false";s:22:"heading_social_display";s:4:"true";s:10:"subheading";s:0:"";}'
+featured_image: "./4599918992_30547c6068_o.jpg"
 qode_show-sidebar:
   - default
-qode_hide-featured-image:
-  - no
-qode_use-slider-instead-of-image:
-  - no
 dsq_thread_id:
   - 1840412142
 categories:

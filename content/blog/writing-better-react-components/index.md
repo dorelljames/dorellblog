@@ -5,7 +5,6 @@ type: post
 date: 2020-12-12T02:10:36+00:00
 draft: true
 url: /web-development/writing-better-react-components
-featured_image:
 categories:
   - Web Development
 tags:

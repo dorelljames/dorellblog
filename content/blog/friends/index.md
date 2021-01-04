@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2014-08-25T17:08:17+00:00
 url: /personal/friends/
-featured_image: /wp-content/uploads/2014/08/friendship101.jpg
+featured_image: "./friendship101.jpg"
 categories:
   - Personal
 tags:

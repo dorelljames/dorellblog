@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2018-06-21T08:56:28+00:00
 url: /web-development/wordpress-messenger-customer-chat-plugin-releases/
-featured_image: /wp-content/uploads/2017/12/banner-772×250-2.jpg
+featured_image: "./banner-772×250-2.jpg"
 categories:
   - Web Development
 tags:

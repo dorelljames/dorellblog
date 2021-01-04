@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2013-03-22T17:54:35+00:00
 url: /personal/simply-complicated/
-featured_image: /wp-content/uploads/2013/03/complicated-header.png
+featured_image: "./complicated-header.png"
 dsq_thread_id:
   - 1800867310
 categories:

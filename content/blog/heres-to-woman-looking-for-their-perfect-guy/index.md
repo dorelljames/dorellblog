@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2015-11-25T09:26:24+00:00
 url: /personal/heres-to-woman-looking-for-their-perfect-guy/
-featured_image: /wp-content/uploads/2015/11/perfect-guy2.jpg
+featured_image: "./perfect-guy2.jpg"
 categories:
   - Personal
 ---

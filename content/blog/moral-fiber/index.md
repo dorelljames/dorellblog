@@ -4,7 +4,7 @@ author: Dorell James
 type: post
 date: 2015-05-04T23:36:46+00:00
 url: /personal/moral-fiber/
-featured_image: /wp-content/uploads/2015/05/original_504400_BmbXxIr7H4icQDKc2XUfnH4x8.jpg
+featured_image: "./original_504400_BmbXxIr7H4icQDKc2XUfnH4x8.jpg"
 categories:
   - Personal
 tags:
