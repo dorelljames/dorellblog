@@ -60,7 +60,7 @@ class BlogIndex extends React.Component {
         <p>
           It seems you have reached the end of all these blog archives. Didn't
           you find what you're looking for? Perhaps{" "}
-          <Link to="/blog/archives">try going to the latest blog posts</Link>.
+          <Link to="/blog">try going to the latest blog posts</Link>.
         </p>
       </>
     )
