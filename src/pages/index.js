@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Emoji from "../components/Emoji"
 import SEO from "../components/SEO"
 import SocialMedia from "../components/SocialMedia"
