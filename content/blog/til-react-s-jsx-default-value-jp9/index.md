@@ -6,7 +6,6 @@ date: 2020-02-14T02:42:35.325Z
 categories:
   - Web Development
 description:
-tags: til, react, jsx
 ---
 
 Today I learned about React JSX's default value.

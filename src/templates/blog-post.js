@@ -3,9 +3,9 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/Bio"
 import SEO from "../components/SEO"
-import moment from "moment"
 import { rhythm, scale } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
+import { format } from 'date-fns'
 import NavBottomMenu from "../components/NavBottomMenu"
 import Emoji from "../components/Emoji"
 import { DiscussionEmbed } from "disqus-react"
@@ -39,7 +39,7 @@ class BlogPostTemplate extends React.Component {
             color: `var(--textSecondary)`,
           }}
         >
-          {moment(post.frontmatter.date).format("MMMM DD, YYYY")}
+          {format(new Date(post.frontmatter.date), "MMMM dd, yyyy", { addSuffix: true })}
           <span> &middot; </span>
           <em>{formatReadingTime(post.timeToRead)}</em>
         </p>

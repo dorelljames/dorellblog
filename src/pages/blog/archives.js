@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Bio from "../../components/Bio"
 import SEO from "../../components/SEO"
-import moment from "moment"
+import { formatDistanceToNow } from 'date-fns';
 import { rhythm } from "../../utils/typography"
 import { formatReadingTime } from "../../utils/helpers"
 
@@ -41,7 +41,7 @@ class BlogIndex extends React.Component {
                   display: "inline-block",
                 }}
               >
-                {moment(node.frontmatter.date).fromNow()}
+                {formatDistanceToNow(new Date(node.frontmatter.date), { addSuffix: true })}
               </small>{" "}
               &middot;{" "}
               <small>
