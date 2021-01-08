@@ -6,7 +6,7 @@ import { graphql } from "gatsby"
 const BlockContent = require("@sanity/block-content-to-react")
 const { blockContentSerializers: serializers } = require("../utils/helpers.js")
 
-const ProjectsPage = props => {
+const ProjectsPage = (props) => {
   const projects = props.data.allSanityProject.nodes
 
   return (
@@ -19,13 +19,13 @@ const ProjectsPage = props => {
       </p>
 
       <ul>
-        {projects.map(project => (
+        {projects.map((project) => (
           <li>
-            <h3>
+            <h2>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 {project.title}
               </a>
-            </h3>
+            </h2>
             <p>
               <BlockContent
                 blocks={project.body || []}

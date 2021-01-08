@@ -8,15 +8,15 @@ import { format } from "date-fns"
 const BlockContent = require("@sanity/block-content-to-react")
 const { blockContentSerializers: serializers } = require("../utils/helpers.js")
 
-const IndexPage = props => {
+const IndexPage = (props) => {
   const events = props.data.allSanityEvent.nodes
-    .map(event => {
+    .map((event) => {
       return { ...event, date: new Date(event.date) }
     })
     .sort((a, b) => b.date - a.date)
 
   const upcomingEvents = events.filter(
-    event => new Date(event.date).getTime() > new Date().getTime()
+    (event) => new Date(event.date).getTime() > new Date().getTime()
   )
 
   return (
@@ -82,7 +82,7 @@ const IndexPage = props => {
 
       {upcomingEvents.length > 0 ? (
         <ul>
-          {upcomingEvents.map(event => (
+          {upcomingEvents.map((event) => (
             <li key={event.name}>
               <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
                 <a href={event.link} target="_blank" rel="noopener noreferrer">
@@ -102,7 +102,7 @@ const IndexPage = props => {
           ))}
         </ul>
       ) : (
-        <p style={{ marginLeft: `2.375rem` }}>
+        <p>
           <em>No upcoming events at the moment...</em>
 
           <Emoji symbol="😊" label="happy-face" />

@@ -1,14 +1,7 @@
 import Typography from "typography"
-import CodePlugin from "typography-plugin-code"
-import theme from "typography-theme-github"
+import theme from "typography-theme-sutro"
 
 import "./global.css"
-
-theme.baseFontSize = "20px"
-theme.baseLineHeight = 1.9
-theme.blockMarginBottom = 1.35
-
-theme.plugins = [new CodePlugin()]
 
 theme.overrideThemeStyles = () => {
   return {
@@ -46,10 +39,10 @@ theme.overrideThemeStyles = () => {
     blockquote: {
       borderLeftColor: `var(--textInteractive)`,
     },
-    "p, li, code, label": {
+    "p, li, label": {
       color: `var(--textNormal)`,
     },
-    "tt, code, pre": {
+    tt: {
       backgroundColor: `var(--bgSecondary)`,
     },
     "small,em": {

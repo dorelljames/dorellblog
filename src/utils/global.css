@@ -1,7 +1,7 @@
 body {
   --bg: #fff;
   --bgSecondary: #e6ecf0;
-  --textPrimary: #14171a;
+  --textPrimary: rgba(0, 0, 0, 0.85);
   --textNormal: #14171a;
   --textSecondary: #657786;
   --textInteractive: #794bc4;
@@ -14,10 +14,10 @@ body.dark {
   --bg: #15202b;
   --bgSecondary: #192734;
   --textPrimary: #fff;
-  --textNormal: rgba(255, 255, 255, 0.8);
+  --textNormal: rgba(255, 255, 255, 0.85);
   --textSecondary: #8899a6;
-  --textInteractive: #794bc4;
-  --textInteractiveHover: #865dca;
+  --textInteractive: #bc6ff1;
+  --textInteractiveHover: #794bc4;
 }
 
 h1.header {
@@ -36,7 +36,7 @@ h1.header {
 }
 
 .primaryMenu li a {
-  /*font-family: "Varela Round", sans-serif;*/
+  font-family: "Varela Round", sans-serif;
   color: var(--textPrimary);
   font-weight: bold;
   text-transform: uppercase;

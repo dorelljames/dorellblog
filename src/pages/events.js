@@ -3,22 +3,23 @@ import SEO from "../components/SEO"
 import { Link, graphql } from "gatsby"
 import Emoji from "../components/Emoji"
 import { format } from "date-fns"
+import { rhythm } from "../utils/typography"
 
 const BlockContent = require("@sanity/block-content-to-react")
 const { blockContentSerializers: serializers } = require("../utils/helpers.js")
 
-const EventsPage = props => {
+const EventsPage = (props) => {
   const events = props.data.allSanityEvent.nodes
-    .map(event => {
+    .map((event) => {
       return { ...event, date: new Date(event.date) }
     })
     .sort((a, b) => b.date - a.date)
 
   const upcomingEvents = events.filter(
-    event => new Date(event.date).getTime() > new Date().getTime()
+    (event) => new Date(event.date).getTime() > new Date().getTime()
   )
   const previousEvents = events.filter(
-    event => new Date(event.date).getTime() < new Date().getTime()
+    (event) => new Date(event.date).getTime() < new Date().getTime()
   )
 
   return (
@@ -59,21 +60,25 @@ const EventsPage = props => {
       </h6>
       <ul>
         {upcomingEvents.length > 0 ? (
-          upcomingEvents.map(event => (
+          upcomingEvents.map((event) => (
             <li key={event.name}>
-              <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
+              <h2
+                style={{
+                  display: `inline-block`,
+                  marginRight: `10px`,
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
                 <a href={event.link} target="_blank" rel="noopener noreferrer">
                   {event.name}
                 </a>
-              </h3>
+              </h2>
               <small>{format(event.date, "MM/dd/yyyy")}</small>
               <p>
-                <em>
-                  <BlockContent
-                    blocks={event._rawDescription || []}
-                    serializers={serializers}
-                  />
-                </em>
+                <BlockContent
+                  blocks={event._rawDescription || []}
+                  serializers={serializers}
+                />
               </p>
             </li>
           ))
@@ -96,14 +101,28 @@ const EventsPage = props => {
       </h6>
       <ul>
         {previousEvents.length > 0 ? (
-          previousEvents.map(event => (
+          previousEvents.map((event) => (
             <li key={event.name}>
-              <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
+              <h2
+                style={{
+                  display: `inline-block`,
+                  marginRight: `10px`,
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
                 <a href={event.link} target="_blank" rel="noopener noreferrer">
                   {event.name}
                 </a>
-              </h3>
-              <small>{format(event.date, "MM/dd/yyyy")}</small>
+              </h2>
+              <br />
+              <small
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                  display: "inline-block",
+                }}
+              >
+                {format(event.date, "MM/dd/yyyy")}
+              </small>
               <p>
                 <BlockContent
                   blocks={event._rawDescription || []}
