@@ -6,10 +6,10 @@ class LightDarkModeToggler extends React.Component {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <label style={{ display: `flex` }}>
+          <label style={{ display: `flex`, marginLeft: `28px` }}>
             <input
               type="checkbox"
-              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+              onChange={(e) => toggleTheme(e.target.checked ? "dark" : "light")}
               checked={theme === "dark"}
               style={{ visibility: `hidden` }}
             />{" "}

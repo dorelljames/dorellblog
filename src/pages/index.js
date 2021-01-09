@@ -26,46 +26,48 @@ const IndexPage = (props) => {
         title="Full Stack Developer in Cebu City, Philippines"
         description="Developer (Web & Software) in Cebu City, PH passionately crafting valuable digital products offering you the best that'll surely make you 100% satisfied."
       />
-      <p>
-        Your average guy that can do both frontend and backend!{" "}
-        <Emoji
-          symbol="😅"
-          label="grinning-face-with-squinting-eyes-and-sweat-drop"
-        />
-      </p>
-      <p>
-        I also lead / co-lead different tech communities here in Cebu namely{" "}
-        <a
-          href="https://www.facebook.com/laravelcebu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Laravel Cebu
-        </a>
-        ,{" "}
-        <a
-          href="https://www.facebook.com/reactcebu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React Cebu
-        </a>{" "}
-        and{" "}
-        <a
-          href="https://www.facebook.com/JavaScriptCebu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          JavaScript Cebu
-        </a>
-        . I work together with these ever so passionate and amazing people who
-        relentlessly share and dedicate their time in bringing these events -
-        meetups, workshops and more for the benefit of the community. 💯
-      </p>
-      <p>
-        If we ever get the chance to meet, please say hi!{" "}
-        <Emoji symbol="😊" label="happy-face" />
-      </p>
+      <div>
+        <p>
+          Your average guy that can do both frontend and backend!{" "}
+          <Emoji
+            symbol="😅"
+            label="grinning-face-with-squinting-eyes-and-sweat-drop"
+          />
+        </p>
+        <p>
+          I also lead / co-lead different tech communities here in Cebu namely{" "}
+          <a
+            href="https://www.facebook.com/laravelcebu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Laravel Cebu
+          </a>
+          ,{" "}
+          <a
+            href="https://www.facebook.com/reactcebu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            React Cebu
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.facebook.com/JavaScriptCebu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            JavaScript Cebu
+          </a>
+          . I work together with these ever so passionate and amazing people who
+          relentlessly share and dedicate their time in bringing these events -
+          meetups, workshops and more for the benefit of the community. 💯
+        </p>
+        <p>
+          If we ever get the chance to meet, please say hi!{" "}
+          <Emoji symbol="😊" label="happy-face" />
+        </p>
+      </div>
 
       <h2
         style={{

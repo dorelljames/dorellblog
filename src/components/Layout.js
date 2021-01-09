@@ -6,6 +6,7 @@ import { rhythm, scale } from "../utils/typography"
 import Bio from "../components/Bio"
 import NavBottomMenu from "../components/NavBottomMenu"
 import { isPathBlogPost } from "../utils/helpers"
+import SlashChar from "./SlashChar"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -98,7 +99,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(20),
+            maxWidth: rhythm(location.pathname.includes("/blog") ? 20 : 32),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
@@ -110,21 +111,26 @@ class Layout extends React.Component {
               marginBottom: rhythm(1.5),
             }}
           >
-            <div style={{ display: `flex` }}>
-              {header}
+            <div style={{ display: `flex` }}>{header}</div>
+            <div style={{ display: `flex`, position: "relative" }}>
               <ul className="primaryMenu">
                 <li>
-                  <Link to="/projects">Projects</Link>
+                  <Link to="/projects">
+                    <SlashChar>Projects</SlashChar>
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/events">Events</Link>
+                  <Link to="/events">
+                    <SlashChar>Events</SlashChar>
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/blog">Blog</Link>
+                  <Link to="/blog">
+                    <SlashChar>Blog</SlashChar>
+                  </Link>
                 </li>
               </ul>
-            </div>
-            <div style={{ position: "relative" }}>
+
               <LightDarkModeToggler />
             </div>
           </header>
