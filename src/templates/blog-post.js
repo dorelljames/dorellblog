@@ -58,7 +58,10 @@ class BlogPostTemplate extends React.Component {
         </h2>
         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
 
-        <h2>What's next?</h2>
+        <h2 style={{ marginBottom: rhythm(1 / 3) }}>What's next?</h2>
+        <p style={{ marginBottom: rhythm(2) }}>
+          <em>Continue reading articles using the links below...</em>
+        </p>
         <ul
           style={{
             display: `flex`, // @todo: hide when on mobile
@@ -72,16 +75,46 @@ class BlogPostTemplate extends React.Component {
         >
           <li style={{ width: `calc(48% - 15px)`, marginRight: `15px` }}>
             {previous && (
-              <Link to={`/${basePath}${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
+              <>
+                <span
+                  style={{
+                    border: `1px solid var(--textInteractive)`,
+                    padding: 8,
+                    borderRadius: 5,
+                    marginBottom: rhythm(1 / 2),
+                    display: `inline-block`,
+                    fontSize: rhythm(0.25),
+                  }}
+                >
+                  YOU MIGHT ENJOY
+                </span>
+                <br />
+                <Link to={`/${basePath}${previous.fields.slug}`} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              </>
             )}
           </li>
           <li style={{ width: `calc(48% - 15px)`, marginLeft: `15px` }}>
             {next && (
-              <Link to={`/${basePath}${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
+              <>
+                <span
+                  style={{
+                    border: `1px solid var(--textInteractive)`,
+                    padding: 8,
+                    borderRadius: 5,
+                    marginBottom: rhythm(1 / 2),
+                    display: `inline-block`,
+                    fontSize: rhythm(0.25),
+                  }}
+                >
+                  RECOMMENDED FOR YOU
+                </span>
+                <br />
+                <Link to={`/${basePath}${next.fields.slug}`} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              </>
             )}
           </li>
         </ul>

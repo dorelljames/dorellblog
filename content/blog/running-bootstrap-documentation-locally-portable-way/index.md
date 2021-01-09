@@ -38,13 +38,13 @@ git clone git@github.com:twbs/bootstrap.git
 
 ### A Little Bit Of Configuration
 
-1.) Extract contents of PortableJekyll-master.zip in any directory you want. In my case, I will extracted it on drive C and that I have renamed folder <span class="file">PortableJekyll-master</span> to <span class="file">PortableJekyll</span>.
+1.) Extract contents of PortableJekyll-master.zip in any directory you want. In my case, I will extracted it on drive C and that I have renamed folder `PortableJekyll-master` to `PortableJekyll`.
 
 2.) Right now, Jekyll isn't known by Windows so we need to set the correct %PATH% to get and properly recognized needed binaries and executable to execute jekyll. So, let's add or update our PATH environment variable on Windows. Use this [guide here][3] to how to do that.
 
 3.) Input the following where PortableJekyll folder can be found on drive C:. Update as it seem appropriate on your end if PortableJekyll is located somewhere else other than drive C:
 
-```
+```shell
 C:\PortableJekyll\ruby\bin;C:\PortableJekyll\devkit\bin;C:\PortableJekyll\Git;C:\PortableJekyll\Python\App;C:\PortableJekyll\devkit\mingw\bin;C:\PortableJekyll\curl\bin;
 ```
 
@@ -52,17 +52,17 @@ C:\PortableJekyll\ruby\bin;C:\PortableJekyll\devkit\bin;C:\PortableJekyll\Git;C:
 
 ### And Finally
 
-1.) We need to go the directory where Twitter bootstrap is cloned. As for my example, it is located in drive <span class="file">C:\xampp\htdocs\documentations\bootstrap</span>.
+1.) We need to go the directory where Twitter bootstrap is cloned. As for my example, it is located in drive `C:\xampp\htdocs\documentations\bootstrap</span>.
 
 2.) Using cmd or any Windows powershell, navigate to the Twitter bootstrap directory and issue the command below to build the documentation.
 
-```bash
+```command
 jekyll build
 ```
 
 3.) Now, lastly run command and more importantly do not close this shell and leave it running: `jekyll serve`
 
-4.) Voila! Browse in your browser the URL: <a href="http://localhost:9001" target="_blank"><span class="file">http://localhost:9001</span></a>
+4.) Voila! Browse in your browser the URL: <a href="http://localhost:9001" target="_blank">`http://localhost:9001</span></a>
 
 [1]: http://jekyllrb.com/
 [2]: http://jekyllrb.com/docs/installation/
