@@ -58,7 +58,7 @@ const EventsPage = (props) => {
       >
         UPCOMING EVENTS
       </h6>
-      <ul>
+      <ul style={{ listStyle: "none" }}>
         {upcomingEvents.length > 0 ? (
           upcomingEvents.map((event) => (
             <li key={event.name}>
@@ -99,7 +99,7 @@ const EventsPage = (props) => {
       >
         PAST EVENTS
       </h6>
-      <ul>
+      <ul style={{ listStyle: "none" }}>
         {previousEvents.length > 0 ? (
           previousEvents.map((event) => (
             <li key={event.name}>

@@ -4,6 +4,7 @@ import Emoji from "../components/Emoji"
 import SEO from "../components/SEO"
 import SocialMedia from "../components/SocialMedia"
 import { format } from "date-fns"
+import { rhythm } from "../utils/typography"
 
 const BlockContent = require("@sanity/block-content-to-react")
 const { blockContentSerializers: serializers } = require("../utils/helpers.js")
@@ -81,7 +82,7 @@ const IndexPage = (props) => {
       </p>
 
       {upcomingEvents.length > 0 ? (
-        <ul>
+        <ul style={{ marginLeft: rhythm(1) }}>
           {upcomingEvents.map((event) => (
             <li key={event.name}>
               <h3 style={{ display: `inline-block`, marginRight: `10px` }}>
@@ -102,7 +103,7 @@ const IndexPage = (props) => {
           ))}
         </ul>
       ) : (
-        <p>
+        <p style={{ marginLeft: rhythm(1) }}>
           <em>No upcoming events at the moment...</em>
 
           <Emoji symbol="😊" label="happy-face" />
@@ -121,7 +122,7 @@ const IndexPage = (props) => {
         Here are some useless things I've built. Who knows, it might be a
         treasure for you or anyone, right?
       </p>
-      <ul>
+      <ul style={{ marginLeft: rhythm(1) }}>
         <li>
           <h3>
             <a

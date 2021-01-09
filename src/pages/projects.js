@@ -18,7 +18,7 @@ const ProjectsPage = (props) => {
         didn't screwed up so much. <Emoji symbol="😅" label="grinning-face" />
       </p>
 
-      <ul>
+      <ul style={{ listStyle: "none" }}>
         {projects.map((project) => (
           <li>
             <h2>
