@@ -174,6 +174,7 @@ module.exports = {
         devMode: true,
       },
     },
+    `gatsby-plugin-nprogress`,
     // {
     //   resolve: "gatsby-plugin-html2amp",
     //   options: {
