@@ -5,7 +5,7 @@ import Bio from "../components/Bio"
 import SEO from "../components/SEO"
 import { rhythm, scale } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
-import { format } from 'date-fns'
+import { format } from "date-fns"
 import NavBottomMenu from "../components/NavBottomMenu"
 import Emoji from "../components/Emoji"
 import { DiscussionEmbed } from "disqus-react"
@@ -39,7 +39,9 @@ class BlogPostTemplate extends React.Component {
             color: `var(--textSecondary)`,
           }}
         >
-          {format(new Date(post.frontmatter.date), "MMMM dd, yyyy", { addSuffix: true })}
+          {format(new Date(post.frontmatter.date), "MMMM dd, yyyy", {
+            addSuffix: true,
+          })}
           <span> &middot; </span>
           <em>{formatReadingTime(post.timeToRead)}</em>
         </p>
@@ -56,7 +58,7 @@ class BlogPostTemplate extends React.Component {
         </h2>
         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
 
-        <h2>Or, continue reading...</h2>
+        <h2>What's next?</h2>
         <ul
           style={{
             display: `flex`, // @todo: hide when on mobile
@@ -68,14 +70,14 @@ class BlogPostTemplate extends React.Component {
             marginTop: `1.565rem`,
           }}
         >
-          <li>
+          <li style={{ width: `calc(48% - 15px)`, marginRight: `15px` }}>
             {previous && (
               <Link to={`/${basePath}${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
-          <li>
+          <li style={{ width: `calc(48% - 15px)`, marginLeft: `15px` }}>
             {next && (
               <Link to={`/${basePath}${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
