@@ -33,7 +33,7 @@ So in a nutshell, these two JSX expressions below are equivalent:
 
 And so, if you use make use of JavaScript coercion nature. These two JSX expressions are also equivalent.
 
-```
+```jsx
 <Button loading={false}/>
 
 <Button />
@@ -41,11 +41,13 @@ And so, if you use make use of JavaScript coercion nature. These two JSX express
 
 Plus tip! If you have type-checking in your React project, this could help.
 
-```
+```typescript
 type TButtonProps = {
- loading?: Boolean
+  loading?: Boolean
 }
+```
 
+```jsx
 // So if you do this the type checking won't complain
 <Button />
 ```
