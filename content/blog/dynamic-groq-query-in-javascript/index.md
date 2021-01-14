@@ -2,17 +2,16 @@
 title: Dynamic GROQ Query in JavaScript
 author: Dorell James
 type: post
-date: 2021-01-13T14:58:21.017Z
-description: As you deepen
+date: 2021-01-14T02:29:23.967Z
+description: As we get to used GROQ more and more, it's inevitable when we get to situations when we need to construct queries dynamically. Here's how you make dynamic GROQ query in JavaScript.
 categories:
   - Web Development
 url: /dynamic-groq-query-in-javascript
 featured_image: "./dynamic-groq-query-in-javascript-banner.png"
-draft: true
 tags:
 ---
 
-As you use Sanity.io's GROQ more and more, you'll soon get yourselves into situations where you'll have to construct your queries dynamically. A very good example of that is say, you're working on getting all products based on different attributes.
+As we use Sanity.io's GROQ more and more, we'll soon get yourselves into situations where we will have to construct our queries dynamically. A very good example of that is say, we're working on getting all products based on different attributes.
 
 Imagine we have the following product filters below and their options:
 
@@ -23,25 +22,26 @@ gender = ["Male", "Female"]
 ```
 
 Now, the user first then filters the products by selecting a `color` attribute of value `Red`.
+
 We could then write our query like this below:
 
 ```bash
 *[color == "Red"]
 ```
 
-But let's say, now our user also selects a `size` of value `Small`, and so now, it looks like this below:
+But let's say, now our user also selects a `size` of value `Small`, and so now, it looks like this:
 
 ```bash
 *[color == "Red" && size == "Small"]
 ```
 
-And once more, the user selects a `gender` of value `Female`, so finally looking like this below:
+And once more, the user selects a `gender` of value `Female`, so finally looking like this. Whoops...
 
 ```bash
 *[color == "Red" && size == "Small" && gender == "Female"]
 ```
 
-In situations like this, we'll need to write our GROQ query dynamically that's because only then we can formulate it when the user has done a selection. What's more, is that the values `Red`, `Small`, and `Female` are dynamic too. So basically we have two things to do:
+In situations like this, we'll need to write our GROQ query dynamically, that's because only then we can formulate it when the user has done a selection. What's more, is that the values `Red`, `Small`, and `Female` are dynamic too. So basically, we have two things to do:
 
 1. Construct our query properly based on selected product filters
 2. Substitute the values in
@@ -63,9 +63,9 @@ But if we use the code above when the user has filtered the products by `color` 
 
 Not good! 😔
 
-One last thing before we go all out and explore this more. You probably haven't considered but the above example is pretty contrived, GROQ queries aren't just as simple as that. It can get more complicated especially when you're working with all different shapes of data. There are times that you'll do just more than that like filters, filters in projections or joins and/or pipes, and many more.
+One last thing before we go all out! The above example is pretty contrived, GROQ queries aren't just as simple as that. It can get more complicated especially when we're working with all different shapes of data. In some challenging datasets, there are times that we'll do one or many forms of projections, joins, filters, orders, pipes, and so many more.
 
-There are tons of possibilities and as an example below, we specified some projections instead of returning all values by default:
+There are tons of possibilities really and as another example, here below we added some projections to pick specific fields we want to get:
 
 ```bash
 *[color == "Red" && size == "Small" && gender == "Female"] {
@@ -76,7 +76,9 @@ There are tons of possibilities and as an example below, we specified some proje
 }
 ```
 
-We'll get back to that later. But for now, the real question is how can we create a dynamic GROQ query that will be able to handle any complexity and flexible enough?
+We'll get back to that later. But for now, the real question is:
+
+> How can we create a dynamic GROQ query that will be able to handle any complexity and flexible enough?
 
 If you haven't had the chance to learn [GROQ](https://www.sanity.io/docs/groq), you might be interested in [learning the basics here](https://www.sanity.io/docs/how-queries-work) and/or probably check out why I could think [GROQ as a GraphQL alternative here](https://dorelljames.medium.com/groq-a-graphql-alternative-9291edada5d7).
 
@@ -133,7 +135,7 @@ const query = `*[ ${filters} ] {
 }`
 ```
 
-And so, we could create a projections too to take care of that. Nice!
+And so, we could create `projections` too to take care of that. Nice!
 
 ```javascript
 const projections = [
@@ -188,7 +190,7 @@ const query = `*[ ${filters} ] {
 } ${$order}`
 ```
 
-Sounds like we've made some progress. But we can do more. See below.
+Sounds like we've made some progress but we can do more. Yes! See below.
 
 ## Using Tagged Templates for Dynamic GROQ Query
 
