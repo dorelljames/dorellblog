@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import Bio from "../../components/Bio"
 import SEO from "../../components/SEO"
-import { formatDistanceToNow } from 'date-fns';
+import { formatDistanceToNow } from "date-fns"
 import { rhythm } from "../../utils/typography"
 import { formatReadingTime } from "../../utils/helpers"
 
@@ -51,7 +51,9 @@ class BlogIndex extends React.Component {
                     display: "inline-block",
                   }}
                 >
-                  {formatDistanceToNow(new Date(node.frontmatter.date), { addSuffix: true })}
+                  {formatDistanceToNow(new Date(node.frontmatter.date), {
+                    addSuffix: true,
+                  })}
                 </small>{" "}
                 &middot;{" "}
                 <small>
@@ -110,6 +112,7 @@ export const pageQuery = graphql`
           frontmatter {
             date
             title
+            description
             featured_image {
               childImageSharp {
                 fluid {
