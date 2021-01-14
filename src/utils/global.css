@@ -169,7 +169,7 @@ body.dark #sun-moon:after {
 }
 
 .gatsby-highlight-code-line {
-  background-color: #feb;
+  background: linear-gradient(to right, rgba(179, 98, 255, 0.17), transparent);
   display: block;
   margin-right: -1em;
   margin-left: -1em;
