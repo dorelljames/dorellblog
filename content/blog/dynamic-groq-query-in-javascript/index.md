@@ -80,7 +80,7 @@ We'll get back to that later. But for now, the real question is:
 
 > How can we create a dynamic GROQ query that will be able to handle any complexity and flexible enough?
 
-If you haven't had the chance to learn [GROQ](https://www.sanity.io/docs/groq), you might be interested in [learning the basics here](https://www.sanity.io/docs/how-queries-work) and/or probably check out why I could think [GROQ as a GraphQL alternative here](https://dorelljames.medium.com/groq-a-graphql-alternative-9291edada5d7).
+If you haven't had the chance to learn [GROQ](https://www.sanity.io/docs/groq), you might be interested in [learning the basics here](https://www.sanity.io/docs/how-queries-work) and/or probably check out why I could think [GROQ as a GraphQL alternative here](https://www.dorelljames.com/blog/groq-a-graphql-alternative/).
 
 ## Basic Dynamic GROQ Query
 
