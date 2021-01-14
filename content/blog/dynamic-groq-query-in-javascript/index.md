@@ -2,7 +2,7 @@
 title: Dynamic GROQ Query in JavaScript
 author: Dorell James
 type: post
-date: 2021-01-14T02:29:23.967Z
+date: 2021-01-14T02:35:44.364Z
 description: As we get to used GROQ more and more, it's inevitable when we get to situations when we need to construct queries dynamically. Here's how you make dynamic GROQ query in JavaScript.
 categories:
   - Web Development
