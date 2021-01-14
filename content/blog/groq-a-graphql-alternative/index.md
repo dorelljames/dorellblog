@@ -7,6 +7,7 @@ categories:
   - Web Development
 url: /groq-a-graphql-alternative
 featured_image: "./groq-a-graphql-alternative.png"
+description: Heard of GROQ? How can it be used as an alternative to GraphQL? This article will not only introduce you to GROQ but you'll also learn to hopefully appreciate it. Truly a hidden gem out there!
 tags:
 ---
 
