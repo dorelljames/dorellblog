@@ -249,8 +249,8 @@ What do you think? I'd like to hear your opinion.
 
 <h2 id="resources">Resources</h2>
 
-- [GROQ tagged template literal](https://www.npmjs.com/package/groq) - Used to signal that it represents a GRQO-query. The result will be the exact same string as the input - this is currently helpful for getting syntax highlighting in editors, but in the future it might also parse and validate queries, strip unncessary whitespace and similar.
+- [GROQ tagged template literal](https://www.npmjs.com/package/groq) - Used to signal that it represents a GRQO-query. The result will be the exact same string as the input  -  this is currently helpful for getting syntax highlighting in editors, but in the future, it might also parse and validate queries, strip unnecessary whitespace, and similar.
 - [minify-groq](https://www.npmjs.com/package/minify-groq) - Minifies a GROQ-query by reducing unnecessary whitespace and supports placeholder(s) just like in my example above. I would personally say that you use this.
-- [How Queries Work - GROQ](https://www.sanity.io/docs/how-queries-work) - A tutorial on using the Sanity query language GROQ. This will give you an idea how GROQ works.
+- [How Queries Work - GROQ](https://www.sanity.io/docs/how-queries-work) - A tutorial on using the Sanity query language GROQ. This will give you an idea of how GROQ works.
 - [sanity-typed-queries](https://www.npmjs.com/package/sanity-typed-queries) - More than just a query builder but also a schema generator that is fully-typed and works in JavaScript and TypeScript.
-- [sanity-query-helper](https://www.npmjs.com/package/sanity-query-helper) - provides an API which might be easier to understand to build queries.
+- [sanity-query-helper](https://www.npmjs.com/package/sanity-query-helper) - provides an API that might be easier to understand to build queries.
