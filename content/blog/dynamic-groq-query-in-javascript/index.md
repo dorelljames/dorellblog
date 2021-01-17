@@ -237,7 +237,7 @@ const query = makeQuery({
 })
 ```
 
-For the sake of example, I created a `groq` tagged template function above but I think you're probably better of using [minify-groq](http://minify-groq) created by [Espen Hovlandsdal of Sanity.io's Principal Engineer](https://www.sanity.io/community/people/rexxars). Check it out!
+For the sake of example, I created a `groq` tagged template function above but I think you're probably better of using [minify-groq](https://www.npmjs.com/package/minify-groq) created by [Espen Hovlandsdal of Sanity.io's Principal Engineer](https://www.sanity.io/community/people/rexxars). Check it out!
 
 ## What's Next?
 
