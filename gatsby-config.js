@@ -1,14 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: `d||rell`,
-    author: `Dorell James`,
-    description: `Personal website of Dorell James.`,
-    siteUrl: `https://dorelljames.com/`,
+    author: `@dorelljames`,
+    description: `Personal website of Dorell James`,
+    siteUrl:
+      process.env.NODE_ENV !== "production"
+        ? "http://localhost:8000"
+        : `https://dorelljames.com`,
     social: {
       twitter: `https://twitter.com/dorelljames`,
       github: `https://github.com/dorelljames`,
       facebook: `https://facebook.com/galangdj`,
     },
+    defaultImage: "",
   },
   plugins: [
     {

@@ -28,6 +28,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
           slug={slug}
+          image={`${site.siteMetadata.siteUrl}${post.frontmatter?.featured_image?.publicURL}`}
         />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -138,6 +139,7 @@ export const pageQuery = graphql`
         title
         author
         siteUrl
+        defaultImage
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -148,6 +150,10 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
+        description
+        featured_image {
+          publicURL
+        }
       }
     }
   }
