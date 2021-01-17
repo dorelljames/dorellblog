@@ -172,13 +172,35 @@ module.exports = {
         watchMode: true,
       },
     },
+    `gatsby-plugin-nprogress`,
     {
-      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        devMode: true,
+        fonts: {
+          google: [
+            {
+              family: "Open Sans",
+              variants: ["700"],
+              fontDisplay: "swap",
+              strategy: "selfHosted",
+            },
+            {
+              family: "Merriweather",
+              variants: ["300", "300i", "700", "700i"],
+              fontDisplay: "swap",
+              strategy: "selfHosted",
+            },
+            {
+              family: "Varela Round",
+              variants: ["400"],
+              text: "d|el",
+              fontDisplay: "swap",
+              strategy: "selfHosted",
+            },
+          ],
+        },
       },
     },
-    `gatsby-plugin-nprogress`,
     // {
     //   resolve: "gatsby-plugin-html2amp",
     //   options: {
