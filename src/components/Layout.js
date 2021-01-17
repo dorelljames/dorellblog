@@ -68,10 +68,6 @@ class Layout extends React.Component {
     // const { location, title, children } = this.props
     // const rootPath = `${__PATH_PREFIX__}/`
     const { children, title, location, pageContext } = this.props
-    console.log(
-      "🚀 ~ file: Layout.js ~ line 71 ~ Layout ~ render ~ pageContext",
-      pageContext
-    )
     let header
 
     header = (

@@ -4,7 +4,6 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage } = actions
 
-  console.log("🚀 ~ file: gatsby-node.js ~ line 8 ~ page.path", page.path)
   if (page.path.match(/404/)) {
     page.context.layout = "404"
     createPage(page)
