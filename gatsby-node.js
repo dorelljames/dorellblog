@@ -1,8 +1,18 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+
+  console.log("🚀 ~ file: gatsby-node.js ~ line 8 ~ page.path", page.path)
+  if (page.path.match(/404/)) {
+    page.context.layout = "404"
+    createPage(page)
+  }
+}
+
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage, createRedirect } = actions
+  const { createPage, createRedirect, page } = actions
 
   // Redirects from old website URLS
   createRedirect({
@@ -30,8 +40,8 @@ exports.createPages = ({ graphql, actions }) => {
   })
 
   const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
-  const createBlogPostsWithPagination = query => {
-    return graphql(query).then(result => {
+  const createBlogPostsWithPagination = (query) => {
+    return graphql(query).then((result) => {
       if (result.errors) {
         throw result.errors
       }

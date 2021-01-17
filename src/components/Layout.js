@@ -67,7 +67,11 @@ class Layout extends React.Component {
   render() {
     // const { location, title, children } = this.props
     // const rootPath = `${__PATH_PREFIX__}/`
-    const { children, title, location } = this.props
+    const { children, title, location, pageContext } = this.props
+    console.log(
+      "🚀 ~ file: Layout.js ~ line 71 ~ Layout ~ render ~ pageContext",
+      pageContext
+    )
     let header
 
     header = (
@@ -92,6 +96,10 @@ class Layout extends React.Component {
         </Link>
       </h1>
     )
+
+    if (pageContext.layout === "404") {
+      return <div>{children}</div>
+    }
 
     return (
       <>
