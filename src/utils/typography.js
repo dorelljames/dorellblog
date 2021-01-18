@@ -54,9 +54,6 @@ theme.overrideThemeStyles = () => {
     hr: {
       background: `var(--hr)`,
     },
-    "ul, ol": {
-      paddingLeft: typography.rhythm(0.5),
-    },
   }
 }
 
