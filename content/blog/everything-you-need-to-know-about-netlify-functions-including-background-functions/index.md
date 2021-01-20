@@ -3,6 +3,7 @@ title: Everything You Need To Know About Netlify Functions including Background 
 author: Dorell James
 type: post
 date: 2020-11-15T04:14:30+00:00
+featured_image: "./netlify-function-cover.png"
 categories:
   - Web Development
 ---
@@ -115,7 +116,7 @@ const fetch = require("node-fetch")
 exports.handler = async (event, context) => {
   const destination = `http://localhost:8888/.netlify/functions/hello`
   const timeout = 15 // seconds
-  const sleep = seconds =>
+  const sleep = (seconds) =>
     Promise.resolve(() => setTimeout(resolve, +seconds * 1000))
 
   // Simulating fake long running sequence
@@ -130,8 +131,9 @@ exports.handler = async (event, context) => {
   fetch(destination, {
     method: "POST",
     body: JSON.stringify({
-      message: `Successfully processed request with ID: ${Math.random() *
-        1000}`,
+      message: `Successfully processed request with ID: ${
+        Math.random() * 1000
+      }`,
       date: new Date().toGMTString(),
     }),
   })
