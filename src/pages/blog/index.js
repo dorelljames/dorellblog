@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Bio from "../../components/Bio"
 import SEO from "../../components/SEO"
 import { formatDistanceToNow } from "date-fns"
@@ -35,10 +35,12 @@ class BlogIndex extends React.Component {
                     to={"/blog" + node.fields.slug}
                   >
                     {node.frontmatter.featured_image && (
-                      <Image
-                        fluid={
-                          node.frontmatter.featured_image.childImageSharp.fluid
+                      <GatsbyImage
+                        image={
+                          node.frontmatter.featured_image.childImageSharp
+                            .gatsbyImageData
                         }
+                        alt={node.frontmatter.title}
                         style={{ marginBottom: `1em` }}
                       />
                     )}
@@ -87,7 +89,7 @@ class BlogIndex extends React.Component {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
+  {
     site {
       siteMetadata {
         title
@@ -115,9 +117,12 @@ export const pageQuery = graphql`
             description
             featured_image {
               childImageSharp {
-                fluid(maxWidth: 961) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
+                gatsbyImageData(
+                  width: 961
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
           }

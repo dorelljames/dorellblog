@@ -20,7 +20,7 @@ const ProjectsPage = (props) => {
 
       <ul style={{ listStyle: "none" }}>
         {projects.map((project) => (
-          <li>
+          <li key={project._id}>
             <h2>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 {project.title}
@@ -45,6 +45,7 @@ export const query = graphql`
   query ProjectsQuery {
     allSanityProject {
       nodes {
+        _id
         title
         link
       }
