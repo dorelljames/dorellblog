@@ -74,12 +74,10 @@ const EventsPage = (props) => {
                 </a>
               </h2>
               <small>{format(event.date, "MM/dd/yyyy")}</small>
-              <p>
-                <BlockContent
-                  blocks={event._rawDescription || []}
-                  serializers={serializers}
-                />
-              </p>
+              <BlockContent
+                blocks={event._rawDescription || []}
+                serializers={serializers}
+              />
             </li>
           ))
         ) : (
@@ -123,12 +121,10 @@ const EventsPage = (props) => {
               >
                 {format(event.date, "MM/dd/yyyy")}
               </small>
-              <p>
-                <BlockContent
-                  blocks={event._rawDescription || []}
-                  serializers={serializers}
-                />
-              </p>
+              <BlockContent
+                blocks={event._rawDescription || []}
+                serializers={serializers}
+              />
             </li>
           ))
         ) : (
