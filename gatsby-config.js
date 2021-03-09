@@ -61,6 +61,7 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -199,6 +200,10 @@ module.exports = {
             },
           ],
         },
+        formats: ["woff2"],
+        useMinify: true,
+        usePreload: true,
+        usePreconnect: true,
       },
     },
     // {
