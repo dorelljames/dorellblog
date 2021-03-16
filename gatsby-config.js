@@ -62,6 +62,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -200,6 +201,10 @@ module.exports = {
             },
           ],
         },
+        formats: ["woff2"],
+        useMinify: true,
+        usePreload: true,
+        usePreconnect: true,
       },
     },
     // {

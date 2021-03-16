@@ -118,8 +118,8 @@ export const pageQuery = graphql`
             featured_image {
               childImageSharp {
                 gatsbyImageData(
-                  width: 961
-                  placeholder: BLURRED
+                  width: 913
+                  placeholder: DOMINANT_COLOR
                   layout: CONSTRAINED
                   formats: [AUTO, WEBP, AVIF]
                 )
