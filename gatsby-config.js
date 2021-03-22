@@ -203,7 +203,7 @@ module.exports = {
         },
         formats: ["woff2"],
         useMinify: true,
-        usePreload: true,
+        usePreload: false,
         usePreconnect: true,
       },
     },
