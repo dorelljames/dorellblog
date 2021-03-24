@@ -121,19 +121,13 @@ class Layout extends React.Component {
             <div style={{ display: `flex`, position: "relative" }}>
               <ul className="primaryMenu">
                 <li>
-                  <Link to="/projects">
-                    <SlashChar>Projects</SlashChar>
-                  </Link>
+                  <Link to="/projects">Projects</Link>
                 </li>
                 <li>
-                  <Link to="/events">
-                    <SlashChar>Events</SlashChar>
-                  </Link>
+                  <Link to="/events">Events</Link>
                 </li>
                 <li>
-                  <Link to="/blog">
-                    <SlashChar>Blog</SlashChar>
-                  </Link>
+                  <Link to="/blog">Blog</Link>
                 </li>
               </ul>
 
@@ -141,16 +135,12 @@ class Layout extends React.Component {
             </div>
           </header>
           {location.pathname === "/" && (
-            <div>
+            <div style={{ marginTop: rhythm(4) }}>
               <h1>
                 <span style={{ display: `block` }}>
                   Hi, I'm Dorell James! <Emoji symbol="👋" label="hand-wave" />
                 </span>
               </h1>
-              <Bio
-                heading="Full Stack Developer"
-                subHeading="Cebu City, Philippines"
-              />
             </div>
           )}
 

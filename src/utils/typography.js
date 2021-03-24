@@ -11,7 +11,6 @@ import "./global.css"
 const theme = {
   title: "CustomTheme",
   baseFontSize: "20px",
-  baseLineHeight: 1.65,
   headerFontFamily: ["Elena", "Open Sans", "sans-serif"],
   bodyFontFamily: ["Elena", "Merriweather", "Georgia", "serif"],
   bodyColor: "hsla(0,0%,0%,0.9)",
@@ -71,6 +70,7 @@ const theme = {
     },
     h1: {
       ...scale(6 / 5),
+      letterSpacing: "-2px",
     },
     h6: {
       fontStyle: "italic",
