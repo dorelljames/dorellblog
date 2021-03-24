@@ -181,18 +181,6 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Open Sans",
-              variants: ["700"],
-              fontDisplay: "swap",
-              strategy: "selfHosted",
-            },
-            {
-              family: "Merriweather",
-              variants: ["300", "300i", "700", "700i"],
-              fontDisplay: "swap",
-              strategy: "selfHosted",
-            },
-            {
               family: "Varela Round",
               variants: ["400"],
               text: "d|el",
