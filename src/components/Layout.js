@@ -2,10 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
-import Bio from "../components/Bio"
 import NavBottomMenu from "../components/NavBottomMenu"
 import { isPathBlogPost } from "../utils/helpers"
-import SlashChar from "./SlashChar"
 import Emoji from "../components/Emoji"
 
 class Layout extends React.Component {
@@ -68,6 +66,8 @@ class Layout extends React.Component {
     // const { location, title, children } = this.props
     // const rootPath = `${__PATH_PREFIX__}/`
     const { children, title, location, pageContext } = this.props
+    const isBlogPost =
+      !location.pathname.startsWith("/blog") && location.pathname !== "/blog"
     let header
 
     header = (
@@ -112,27 +112,29 @@ class Layout extends React.Component {
           <header
             style={{
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: !isBlogPost ? "space-around" : "space-between",
               alignItems: "center",
-              marginBottom: rhythm(1.5),
+              marginBottom: rhythm(4.5),
             }}
           >
-            <div style={{ display: `flex` }}>{header}</div>
-            <div style={{ display: `flex`, position: "relative" }}>
-              <ul className="primaryMenu">
-                <li>
-                  <Link to="/projects">Projects</Link>
-                </li>
-                <li>
-                  <Link to="/events">Events</Link>
-                </li>
-                <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-              </ul>
+            <div>{header}</div>
+            {isBlogPost && (
+              <div style={{ display: `flex`, position: "relative" }}>
+                <ul className="primaryMenu">
+                  <li>
+                    <Link to="/projects">Projects</Link>
+                  </li>
+                  <li>
+                    <Link to="/events">Events</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                </ul>
 
-              <LightDarkModeToggler />
-            </div>
+                <LightDarkModeToggler />
+              </div>
+            )}
           </header>
           {location.pathname === "/" && (
             <div style={{ marginTop: rhythm(4) }}>
