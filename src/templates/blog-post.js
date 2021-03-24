@@ -30,12 +30,12 @@ class BlogPostTemplate extends React.Component {
           slug={slug}
           image={`${site.siteMetadata.siteUrl}${post.frontmatter?.featured_image?.publicURL}`}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <h1 style={{ marginBottom: rhythm(0.3) }}>{post.frontmatter.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
             display: `block`,
-            marginBottom: rhythm(1),
+            marginBottom: rhythm(2),
             marginTop: rhythm(-2 / 5),
             color: `var(--textSecondary)`,
           }}

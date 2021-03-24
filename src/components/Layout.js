@@ -2,11 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
-// import MessengerCustomerChat from "react-messenger-customer-chat"
 import Bio from "../components/Bio"
 import NavBottomMenu from "../components/NavBottomMenu"
 import { isPathBlogPost } from "../utils/helpers"
 import SlashChar from "./SlashChar"
+import Emoji from "../components/Emoji"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -76,6 +76,7 @@ class Layout extends React.Component {
           ...scale(1.5),
           marginBottom: 0,
           marginTop: 0,
+          fontFamily: "Varela Round",
         }}
         className="header"
       >
@@ -85,6 +86,7 @@ class Layout extends React.Component {
             textDecoration: `none`,
             color: `inherit`,
             backgroundImage: `none`,
+            fontFamily: "Varela Round",
           }}
           to={`/`}
         >
@@ -103,7 +105,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(30),
+            maxWidth: rhythm(24),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
@@ -141,7 +143,9 @@ class Layout extends React.Component {
           {location.pathname === "/" && (
             <div>
               <h1>
-                <span style={{ display: `block` }}>Hi, I'm Dorell James!</span>
+                <span style={{ display: `block` }}>
+                  Hi, I'm Dorell James! <Emoji symbol="👋" label="hand-wave" />
+                </span>
               </h1>
               <Bio
                 heading="Full Stack Developer"
