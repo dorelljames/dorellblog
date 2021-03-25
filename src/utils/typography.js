@@ -70,7 +70,6 @@ const theme = {
     },
     h1: {
       ...scale(6 / 5),
-      letterSpacing: "-2px",
     },
     h6: {
       fontStyle: "italic",
