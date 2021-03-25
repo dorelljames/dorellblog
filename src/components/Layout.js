@@ -73,7 +73,7 @@ class Layout extends React.Component {
     header = (
       <h1
         style={{
-          ...scale(1.5),
+          ...scale(1.25),
           marginBottom: 0,
           marginTop: 0,
           fontFamily: "Varela Round",
@@ -122,9 +122,6 @@ class Layout extends React.Component {
               <div style={{ display: `flex`, position: "relative" }}>
                 <ul className="primaryMenu">
                   <li>
-                    <Link to="/projects">Projects</Link>
-                  </li>
-                  <li>
                     <Link to="/events">Events</Link>
                   </li>
                   <li>
@@ -154,8 +151,8 @@ class Layout extends React.Component {
 
           <footer
             style={{
-              fontSize: rhythm(0.5),
-              marginTop: rhythm(3.5),
+              fontSize: rhythm(0.55),
+              marginTop: rhythm(7),
               bottom: 0,
               marginBottom: rhythm(0.5),
             }}
@@ -186,14 +183,7 @@ class Layout extends React.Component {
             >
               GitHub
             </a>
-            . Visit{" "}
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://archive.dorelljames.com"
-            >
-              old website
-            </a>
+            .
           </footer>
         </div>
 

@@ -125,7 +125,7 @@ theme.overrideThemeStyles = () => {
     tt: {
       backgroundColor: `var(--bgSecondary)`,
     },
-    "small,em": {
+    small: {
       color: `var(--textSecondary)`,
     },
     'a.anchor svg[aria-hidden="true"]': {
