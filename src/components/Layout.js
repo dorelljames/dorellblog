@@ -2,11 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
-// import MessengerCustomerChat from "react-messenger-customer-chat"
-import Bio from "../components/Bio"
 import NavBottomMenu from "../components/NavBottomMenu"
 import { isPathBlogPost } from "../utils/helpers"
-import SlashChar from "./SlashChar"
+import Emoji from "../components/Emoji"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -68,14 +66,17 @@ class Layout extends React.Component {
     // const { location, title, children } = this.props
     // const rootPath = `${__PATH_PREFIX__}/`
     const { children, title, location, pageContext } = this.props
+    const isBlogPost =
+      !location.pathname.startsWith("/blog") && location.pathname !== "/blog"
     let header
 
     header = (
       <h1
         style={{
-          ...scale(1.5),
+          ...scale(1.25),
           marginBottom: 0,
           marginTop: 0,
+          fontFamily: "Varela Round",
         }}
         className="header"
       >
@@ -85,6 +86,7 @@ class Layout extends React.Component {
             textDecoration: `none`,
             color: `inherit`,
             backgroundImage: `none`,
+            fontFamily: "Varela Round",
           }}
           to={`/`}
         >
@@ -103,50 +105,41 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(30),
+            maxWidth: rhythm(24),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
           <header
             style={{
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: !isBlogPost ? "space-around" : "space-between",
               alignItems: "center",
-              marginBottom: rhythm(1.5),
+              marginBottom: rhythm(4.5),
             }}
           >
-            <div style={{ display: `flex` }}>{header}</div>
-            <div style={{ display: `flex`, position: "relative" }}>
-              <ul className="primaryMenu">
-                <li>
-                  <Link to="/projects">
-                    <SlashChar>Projects</SlashChar>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/events">
-                    <SlashChar>Events</SlashChar>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/blog">
-                    <SlashChar>Blog</SlashChar>
-                  </Link>
-                </li>
-              </ul>
+            <div>{header}</div>
+            {isBlogPost && (
+              <div style={{ display: `flex`, position: "relative" }}>
+                <ul className="primaryMenu">
+                  <li>
+                    <Link to="/events">Events</Link>
+                  </li>
+                  <li>
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                </ul>
 
-              <LightDarkModeToggler />
-            </div>
+                <LightDarkModeToggler />
+              </div>
+            )}
           </header>
           {location.pathname === "/" && (
-            <div>
+            <div style={{ marginTop: rhythm(4) }}>
               <h1>
-                <span style={{ display: `block` }}>Hi, I'm Dorell James!</span>
+                <span style={{ display: `block` }}>
+                  Hi, I'm Dorell James! <Emoji symbol="👋" label="hand-wave" />
+                </span>
               </h1>
-              <Bio
-                heading="Full Stack Developer"
-                subHeading="Cebu City, Philippines"
-              />
             </div>
           )}
 
@@ -158,8 +151,8 @@ class Layout extends React.Component {
 
           <footer
             style={{
-              fontSize: rhythm(0.5),
-              marginTop: rhythm(3.5),
+              fontSize: rhythm(0.55),
+              marginTop: rhythm(7),
               bottom: 0,
               marginBottom: rhythm(0.5),
             }}
@@ -190,14 +183,7 @@ class Layout extends React.Component {
             >
               GitHub
             </a>
-            . Visit{" "}
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://archive.dorelljames.com"
-            >
-              old website
-            </a>
+            .
           </footer>
         </div>
 

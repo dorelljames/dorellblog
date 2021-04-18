@@ -1,3 +1,51 @@
+@font-face {
+  font-family: "Mija";
+  src: url("../fonts/Mija_Regular-webfont-subset.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mija";
+  src: url("../fonts/Mija_Bold-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Elena";
+  src: url("../fonts/ElenaWebBold-subset.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Elena";
+  src: url("../fonts/ElenaWebRegular-subset.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Elena";
+  src: url("../fonts/ElenaWebBoldItalic-subset.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Elena";
+  src: url("../fonts/ElenaWebRegularItalic-subset.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 body {
   --bg: #fff;
   --bgSecondary: #e6ecf0;
@@ -21,7 +69,7 @@ body.dark {
 }
 
 h1.header {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Varela Round", sans-serif !important;
 }
 
 .primaryMenu {
@@ -36,7 +84,7 @@ h1.header {
 }
 
 .primaryMenu li a {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Mija", sans-serif;
   color: var(--textPrimary);
   font-weight: bold;
   text-transform: uppercase;

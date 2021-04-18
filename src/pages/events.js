@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "../components/SEO"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Emoji from "../components/Emoji"
 import { format } from "date-fns"
 import { rhythm } from "../utils/typography"
@@ -26,6 +26,10 @@ const EventsPage = (props) => {
     <>
       <SEO title="Tech Events in Cebu" description="" />
 
+      <h1>
+        Awesome Events <Emoji label="celebrate" symbol="🙌" />
+      </h1>
+
       <p>
         Aside from organizing events, I also give talks and conduct workshops as
         a way to share back to the community. I've spoken at{" "}
@@ -44,94 +48,74 @@ const EventsPage = (props) => {
         >
           Facebook Developer Circle event
         </a>
-        , and participated / organised in other events. If you'd like to invite
-        me to give a talk or conduct a workshop at your event, please feel free
-        to <Link to="/#contact">get in touch</Link>.
+        , and participated / organised in other events.
       </p>
 
-      <h6
-        style={{
-          borderBottom: `2px solid #f0f0f0`,
-          paddingBottom: `5px`,
-          display: `inline-block`,
-        }}
-      >
-        UPCOMING EVENTS
-      </h6>
-      <ul style={{ listStyle: "none" }}>
-        {upcomingEvents.length > 0 ? (
-          upcomingEvents.map((event) => (
-            <li key={event.name}>
-              <h2
-                style={{
-                  display: `inline-block`,
-                  marginRight: `10px`,
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <a href={event.link} target="_blank" rel="noopener noreferrer">
-                  {event.name}
-                </a>
-              </h2>
-              <small>{format(event.date, "MM/dd/yyyy")}</small>
-              <BlockContent
-                blocks={event._rawDescription || []}
-                serializers={serializers}
-              />
-            </li>
-          ))
-        ) : (
-          <React.Fragment>
-            <em>No upcoming events at the moment... </em>
-            <Emoji symbol="😊" label="happy-face" />
-          </React.Fragment>
-        )}
-      </ul>
+      <p>
+        Be really happy if you'd invite me in one of your events, please feel
+        free to <a href="mailto: galangdj+events@gmail.com">reach out</a>.
+      </p>
 
-      <h6
-        style={{
-          borderBottom: `2px solid #f0f0f0`,
-          paddingBottom: `5px`,
-          display: `inline-block`,
-        }}
-      >
-        PAST EVENTS
-      </h6>
-      <ul style={{ listStyle: "none" }}>
-        {previousEvents.length > 0 ? (
-          previousEvents.map((event) => (
-            <li key={event.name}>
-              <h2
-                style={{
-                  display: `inline-block`,
-                  marginRight: `10px`,
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <a href={event.link} target="_blank" rel="noopener noreferrer">
-                  {event.name}
-                </a>
-              </h2>
-              <br />
-              <small
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                  display: "inline-block",
-                }}
-              >
-                {format(event.date, "MM/dd/yyyy")}
-              </small>
-              <BlockContent
-                blocks={event._rawDescription || []}
-                serializers={serializers}
-              />
-            </li>
-          ))
-        ) : (
-          <em>No previous events found...</em>
-        )}
-      </ul>
+      <section style={{ marginTop: rhythm(3) }}>
+        <h5
+          style={{
+            borderBottom: `2px solid #f0f0f0`,
+            paddingBottom: `5px`,
+            display: `inline-block`,
+            color: `var(--textInteractive)`,
+          }}
+        >
+          UPCOMING EVENTS
+        </h5>
+        <EventsList events={upcomingEvents} />
+      </section>
+
+      <section style={{ marginTop: rhythm(3) }}>
+        <h5
+          style={{
+            borderBottom: `2px solid #f0f0f0`,
+            paddingBottom: `5px`,
+            display: `inline-block`,
+            color: `var(--textInteractive)`,
+          }}
+        >
+          PAST EVENTS
+        </h5>
+        <EventsList events={previousEvents} />
+      </section>
     </>
+  )
+}
+
+function EventsList({ events }) {
+  return events.length > 0 ? (
+    <ul style={{ listStyle: "none", marginTop: -40 }}>
+      {events.map((event) => (
+        <li key={event.name}>
+          <h2
+            style={{
+              display: `inline-block`,
+              marginRight: `10px`,
+              marginBottom: rhythm(1 / 4),
+            }}
+          >
+            <a href={event.link} target="_blank" rel="noopener noreferrer">
+              {event.name}
+            </a>
+          </h2>
+          <small>{format(event.date, "MM/dd/yyyy")}</small>
+          <BlockContent
+            blocks={event._rawDescription || []}
+            serializers={serializers}
+          />
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <div>
+      <em>No upcoming events at the moment... </em>
+      <Emoji symbol="😊" label="happy-face" />
+    </div>
   )
 }
 
