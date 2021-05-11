@@ -170,7 +170,7 @@ Thank you for reading up until here. I hope you can at least get something usefu
 
 ## What's next?
 
-Build your own Sanity plugin! I think it's really important to really understand the `Part Sytem` I mentioned in this article. I hope there were more documentation about it. I just try to make out of the examples of anything I can find. Probably a good tip is to browse the `node_modules` of the `@sanity` package you're working on. You'll find some examples there. 😉
+Build your own Sanity plugin! I think it's really important to really understand the `Part System` I mentioned in this article. I hope there was more documentation about it. I just try to make out of the examples of anything I can find. Probably a good tip is to browse the `node_modules` of the `@sanity` package you're working on. You'll find some examples there. 😉
 
 ## References
 
