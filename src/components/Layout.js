@@ -190,6 +190,10 @@ class Layout extends React.Component {
         {!isPathBlogPost(location.pathname) && (
           <NavBottomMenu location={location} />
         )}
+
+        <div className="cursor" id="cursor"></div>
+        <div className="cursor2" id="cursor2"></div>
+        <div className="cursor3" id="cursor3"></div>
       </>
     )
   }

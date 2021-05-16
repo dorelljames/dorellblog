@@ -82,7 +82,7 @@ theme.overrideThemeStyles = () => {
     body: {
       color: `var(--textNormal)`,
     },
-    "a,a:hover": {
+    a: {
       fontFamily: `Mija`,
       fontWeight: 700,
       textShadow: `none`,
@@ -92,6 +92,12 @@ theme.overrideThemeStyles = () => {
     "a:hover": {
       textDecoration: `underline`,
       color: `var(--textInteractiveHover)`,
+      animation: `bounce 0.9s infinite`,
+      transform: `translateY(-3px)`,
+    },
+    "a:after": {
+      position: "relative",
+      zIndex: 1,
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
