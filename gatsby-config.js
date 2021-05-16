@@ -38,6 +38,8 @@ module.exports = {
             options: {
               maxWidth: 590,
               withWebp: true,
+              withAvif: true,
+              linkImagesToOriginal: false,
             },
           },
           {
@@ -55,6 +57,20 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-images-medium-zoom`,
+            options: {
+              margin: 36,
+              scrollOffset: 0,
+            },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "noopener nofollow",
+            },
+          },
         ],
       },
     },
