@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import { graphql } from "gatsby"
 import Emoji from "../components/Emoji"
 import { format } from "date-fns"
@@ -24,7 +24,7 @@ const EventsPage = (props) => {
 
   return (
     <>
-      <SEO title="Tech Events in Cebu" description="" />
+      <Seo title="Tech Events in Cebu" description="" />
 
       <h1>
         Awesome Events <Emoji label="celebrate" symbol="🙌" />

@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/Bio"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import { rhythm, scale } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
 import { format } from "date-fns"
@@ -24,7 +24,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <>
-        <SEO
+        <Seo
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
           slug={slug}

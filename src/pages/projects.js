@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import Emoji from "../components/Emoji"
 import { graphql } from "gatsby"
 
@@ -11,7 +11,7 @@ const ProjectsPage = (props) => {
 
   return (
     <>
-      <SEO title="Projects" />
+      <Seo title="Projects" />
 
       <p>
         I most probably wrote a bunch but below's most probably the one's I

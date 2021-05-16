@@ -12,7 +12,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { rhythm } from "../utils/typography"
 
 function Bio(props) {
-  console.log("🚀 ~ file: Bio.js ~ line 15 ~ Bio ~ props", props)
   return (
     <StaticQuery
       query={bioQuery}

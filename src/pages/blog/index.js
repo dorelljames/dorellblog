@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Bio from "../../components/Bio"
-import SEO from "../../components/SEO"
+import Seo from "../../components/Seo"
 import { formatDistanceToNow } from "date-fns"
 import { rhythm } from "../../utils/typography"
 import { formatReadingTime } from "../../utils/helpers"
@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
 
     return (
       <>
-        <SEO
+        <Seo
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />

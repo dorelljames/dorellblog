@@ -1,8 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Bio from "../../components/Bio"
-import SEO from "../../components/SEO"
-import { formatDistanceToNow } from 'date-fns';
+import Seo from "../../components/Seo"
+import { formatDistanceToNow } from "date-fns"
 import { rhythm } from "../../utils/typography"
 import { formatReadingTime } from "../../utils/helpers"
 
@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
 
     return (
       <>
-        <SEO
+        <Seo
           title="Archived Posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`, `archived`]}
         />
@@ -41,7 +41,9 @@ class BlogIndex extends React.Component {
                   display: "inline-block",
                 }}
               >
-                {formatDistanceToNow(new Date(node.frontmatter.date), { addSuffix: true })}
+                {formatDistanceToNow(new Date(node.frontmatter.date), {
+                  addSuffix: true,
+                })}
               </small>{" "}
               &middot;{" "}
               <small>

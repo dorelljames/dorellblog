@@ -1,11 +1,11 @@
 import React from "react"
 import Emoji from "../components/Emoji"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 
 const IndexPage = (props) => {
   return (
     <>
-      <SEO
+      <Seo
         title="Full Stack Developer in Cebu City, Philippines"
         description="Developer (Web & Software) in Cebu City, PH passionately crafting valuable digital products offering you the best that'll surely make you 100% satisfied."
       />

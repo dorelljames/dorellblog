@@ -1,6 +1,6 @@
 import React from "react"
 
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 
 class NotFoundPage extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class NotFoundPage extends React.Component {
           height: `100vh`,
         }}
       >
-        <SEO title="404: Not Found" />
+        <Seo title="404: Not Found" />
         <h1>Lost in cyberspace?</h1>
         <p>
           It looks like that page doesn't exist - please check the URL and try

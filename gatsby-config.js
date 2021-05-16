@@ -36,9 +36,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1080,
+              maxWidth: 1024,
               withWebp: true,
-              withAvif: true,
               linkImagesToOriginal: false,
             },
           },
@@ -185,9 +184,6 @@ module.exports = {
         // If the Sanity GraphQL API was deployed using `--tag <name>`,
         // use `graphqlTag` to specify the tag name. Defaults to `default`.
         graphqlTag: "default",
-
-        overlayDrafts: true,
-        watchMode: true,
       },
     },
     `gatsby-plugin-nprogress`,
