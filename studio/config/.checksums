@@ -3,5 +3,9 @@
   "@sanity/default-layout": "bb034f391ba508a6ca8cd971967cbedeb131c4d19b17b28a0895f32db5d568ea",
   "@sanity/default-login": "6fb6d3800aa71346e1b84d95bbcaa287879456f2922372bb0294e30b968cd37f",
   "@sanity/form-builder": "b38478227ba5e22c91981da4b53436df22e48ff25238a55a973ed620be5068aa",
-  "@sanity/data-aspects": "d199e2c199b3e26cd28b68dc84d7fc01c9186bf5089580f2e2446994d36b3cb6"
+  "@sanity/data-aspects": "d199e2c199b3e26cd28b68dc84d7fc01c9186bf5089580f2e2446994d36b3cb6",
+  "schema-dnd-builder": "922902575995e62af8f628e6abe652ecc5f3b1e1d2dec5859392e79e47707088",
+  "sanity-plugin-netlify-deploy-status-badge": "a4bd5c500d2f0c8ab002ffcd3d8e5a5c86fe9154c3bbb7cf1093726556243655",
+  "@dorelljames/sanity-plugin-netlify-deploy-status-badge": "c64a9ca5d992dd40fce86b8621bb88945125fd7726d20b377a7eeab89d5f7e12",
+  "netlify-deploy-status-badge": "c64a9ca5d992dd40fce86b8621bb88945125fd7726d20b377a7eeab89d5f7e12"
 }
