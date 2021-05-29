@@ -252,3 +252,11 @@ body.dark #sun-moon:after {
     transform: translateY(-10px);
   }
 }
+
+.gatsby-resp-image-image {
+  box-shadow: none !important;
+}
+
+.dark .medium-zoom-overlay {
+  background: var(--bg) !important;
+}

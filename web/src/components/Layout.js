@@ -31,15 +31,15 @@ class Layout extends React.Component {
     const primaryMenu = document.querySelector(".primaryMenu")
 
     if (window && window.innerWidth <= 768) {
-      bottomMenu.classList.add("show")
-      bottomMenu.classList.remove("hidden")
-      primaryMenu.classList.add("hidden")
-      primaryMenu.classList.remove("show")
+      bottomMenu?.classList?.add("show")
+      bottomMenu?.classList?.remove("hidden")
+      primaryMenu?.classList?.add("hidden")
+      primaryMenu?.classList?.remove("show")
     } else {
-      bottomMenu.classList.add("hidden")
-      bottomMenu.classList.remove("show")
-      primaryMenu.classList.add("show")
-      primaryMenu.classList.remove("hidden")
+      bottomMenu?.classList?.add("hidden")
+      bottomMenu?.classList?.remove("show")
+      primaryMenu?.classList?.add("show")
+      primaryMenu?.classList?.remove("hidden")
     }
   }
 
@@ -49,11 +49,11 @@ class Layout extends React.Component {
 
       var st = window.pageYOffset || document.documentElement.scrollTop // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
       if (st > this.state.lastScrollTop) {
-        bottomMenu.classList.add("hidden")
-        bottomMenu.classList.remove("show")
+        bottomMenu?.classList?.add("hidden")
+        bottomMenu?.classList?.remove("show")
       } else {
-        bottomMenu.classList.add("show")
-        bottomMenu.classList.remove("hidden")
+        bottomMenu?.classList?.add("show")
+        bottomMenu?.classList?.remove("hidden")
       }
 
       this.setState({
