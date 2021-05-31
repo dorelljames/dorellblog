@@ -4,7 +4,6 @@ import LightDarkModeToggler from "./Toggler"
 import { rhythm, scale } from "../utils/typography"
 import NavBottomMenu from "../components/NavBottomMenu"
 import { isPathBlogPost } from "../utils/helpers"
-import Emoji from "../components/Emoji"
 
 class Layout extends React.Component {
   constructor(props) {
@@ -133,15 +132,6 @@ class Layout extends React.Component {
               </div>
             )}
           </header>
-          {location.pathname === "/" && (
-            <div style={{ marginTop: rhythm(4) }}>
-              <h1>
-                <span style={{ display: `block` }}>
-                  Hi, I'm Dorell James! <Emoji symbol="👋" label="hand-wave" />
-                </span>
-              </h1>
-            </div>
-          )}
 
           <main>{children}</main>
           {/*<MessengerCustomerChat
