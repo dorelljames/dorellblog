@@ -6,6 +6,7 @@ date: 2021-09-21T17:23:08.605Z
 categories:
   - Web Development
 url: /conditional-fields-in-array-of-type-object-sanity-io
+featured_image: "./conditial-fields-of-object-type-in-array.png"
 description: Here's how you can work with conditional fields in array of type object - Sanity.io.
 tags: sanity.io, conditional fields, array of type object
 ---
