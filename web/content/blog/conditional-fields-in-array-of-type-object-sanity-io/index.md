@@ -8,7 +8,9 @@ categories:
 url: /conditional-fields-in-array-of-type-object-sanity-io
 featured_image: "./conditial-fields-of-object-type-in-array.png"
 description: Here's how you can work with conditional fields in array of type object - Sanity.io.
-tags: sanity.io, conditional fields, array of type object
+tags:
+  - sanity.io conditional fields
+  - array of type object
 ---
 
 ICYMI. [Sanity.io released conditional fields](https://www.sanity.io/docs/conditional-fields) and yay, it basically allows us to hide a given field depending on the values of other fields in our document. Cool, neat, awesome, you name it but I'd say finally! Yes!!!
